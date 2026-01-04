@@ -54,10 +54,11 @@ const Navbar = React.forwardRef<HTMLElement, NavbarProps>(
               {/* Mobile: Theme Toggle and Hamburger Button */}
               <div className="flex items-center gap-2 sm:hidden">
                 <ThemeToggle />
-                <button
+                <Button
                   type="button"
+                  variant="default"
+                  size="icon"
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
-                  className="flex rounded border-2 border-border bg-background p-2 transition-all hover:bg-primary hover:shadow-hard-sm active:translate-x-1 active:translate-y-1 active:shadow-none"
                   aria-label="Toggle menu"
                 >
                   {isMenuOpen ? (
@@ -65,7 +66,7 @@ const Navbar = React.forwardRef<HTMLElement, NavbarProps>(
                   ) : (
                     <Menu size={20} className="text-foreground" />
                   )}
-                </button>
+                </Button>
               </div>
             </div>
           </div>
@@ -140,7 +141,10 @@ const MobileNavLink = ({
   }
 
   return (
-    <Link href={href} onClick={handleClick}>
+    <Link
+      href={href as React.ComponentProps<typeof Link>["href"]}
+      onClick={handleClick}
+    >
       {linkContent}
     </Link>
   );
@@ -166,7 +170,11 @@ const NavLink = ({ href, label, external }: NavItem) => {
     );
   }
 
-  return <Link href={href}>{linkContent}</Link>;
+  return (
+    <Link href={href as React.ComponentProps<typeof Link>["href"]}>
+      {linkContent}
+    </Link>
+  );
 };
 
 function ThemeToggle() {
