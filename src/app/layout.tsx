@@ -1,17 +1,20 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Archivo_Black, Space_Grotesk } from "next/font/google";
- 
+import { Navbar } from "@/features/global/components/navbar";
+import { ThemeProvider } from "@/features/global/components/theme-provider";
+import { navItems } from "@/features/global/config/navigation";
+
 const archivoBlack = Archivo_Black({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-head",
   display: "swap",
 });
- 
+
 const space = Space_Grotesk({
   subsets: ["latin"],
-  weight: "400",
+  weight: ["400", "500", "600", "700"],
   variable: "--font-sans",
   display: "swap",
 });
@@ -27,11 +30,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${archivoBlack.variable} ${space.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar items={navItems} />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

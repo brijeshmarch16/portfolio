@@ -3,10 +3,36 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
 @theme inline {
   /* Fonts */
   --font-head: var(--font-head);
   --font-sans: var(--font-sans);
+
+  /* Typography Scale */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-lg: 1.125rem; /* 18px */
+  --font-size-xl: 1.25rem; /* 20px */
+  --font-size-2xl: 1.5rem; /* 24px */
+  --font-size-3xl: 1.875rem; /* 30px */
+  --font-size-4xl: 2.25rem; /* 36px */
+  --font-size-5xl: 3rem; /* 48px */
+
+  /* Line Heights */
+  --leading-tight: 1.25;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+
+  /* Letter Spacing */
+  --tracking-tight: -0.025em;
+  --tracking-normal: 0em;
 
   /* Shadows */
   --shadow-xs: 1px 1px 0 0 var(--border);
@@ -140,5 +166,19 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0.15) 1px,
+      transparent 1px
+    );
+    background-size: 20px 20px;
+  }
+
+  .dark body {
+    background-image: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.15) 1px,
+      transparent 1px
+    );
   }
 }
