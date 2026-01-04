@@ -4,7 +4,7 @@ import React, { type ButtonHTMLAttributes } from "react";
 import { cn } from "@/lib/utils";
 
 export const buttonVariants = cva(
-  "flex cursor-pointer items-center rounded font-head font-medium outline-hidden transition-all duration-200",
+  "flex cursor-pointer items-center justify-center rounded font-head font-medium outline-hidden transition-all duration-200",
   {
     variants: {
       variant: {
@@ -13,14 +13,14 @@ export const buttonVariants = cva(
         secondary:
           "border-2 border-black bg-secondary text-secondary-foreground shadow-md shadow-primary transition hover:translate-y-1 hover:bg-secondary-hover hover:shadow active:translate-x-1 active:translate-y-2 active:shadow-none",
         outline:
-          "border-2 bg-transparent shadow-md transition hover:translate-y-1 hover:shadow active:translate-x-1 active:translate-y-2 active:shadow-none",
+          "border-2 bg-background shadow-md transition hover:translate-y-1 hover:shadow active:translate-x-1 active:translate-y-2 active:shadow-none",
         link: "bg-transparent hover:underline",
         ghost: "bg-transparent hover:bg-accent",
       },
       size: {
-        sm: "px-3 py-1 text-sm shadow hover:shadow-none",
-        md: "px-4 py-1.5 text-base",
-        lg: "px-6 py-2 text-md lg:px-8 lg:py-3 lg:text-lg",
+        sm: "min-h-10 px-2 py-1.5 text-xs sm:px-3 sm:text-sm",
+        md: "min-h-11 px-3 py-2 text-sm sm:px-4 sm:py-2.5 sm:text-base",
+        lg: "min-h-12 px-4 py-2.5 text-base sm:px-6 sm:py-3 sm:text-lg",
         icon: "p-2",
       },
     },

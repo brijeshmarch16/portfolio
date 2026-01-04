@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Archivo_Black, Space_Grotesk } from "next/font/google";
- 
+import { Navbar } from "@/features/global/components/navbar";
+import { navItems } from "@/features/global/config/navigation";
+
 const archivoBlack = Archivo_Black({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-head",
   display: "swap",
 });
- 
+
 const space = Space_Grotesk({
   subsets: ["latin"],
   weight: "400",
@@ -31,6 +33,7 @@ export default function RootLayout({
       <body
         className={`${archivoBlack.variable} ${space.variable} antialiased`}
       >
+        <Navbar items={navItems} />
         {children}
       </body>
     </html>
