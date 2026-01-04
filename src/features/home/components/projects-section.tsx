@@ -1,3 +1,4 @@
+import { ExternalLink, Github } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -18,10 +19,10 @@ export function ProjectsSection() {
         {projects.map((project) => (
           <Card
             key={project.title}
-            className="hover:-translate-y-1 flex flex-col overflow-hidden shadow-md"
+            className="group flex flex-col overflow-hidden shadow-md transition-all hover:translate-y-1 hover:shadow-hard-lg"
           >
             <div className="h-40 overflow-hidden bg-muted sm:h-48">
-              <div className="h-full w-full bg-linear-to-br from-accent to-primary" />
+              <div className="h-full w-full bg-linear-to-br from-accent to-primary transition-transform duration-300 group-hover:scale-110" />
             </div>
             <CardHeader>
               <CardTitle className="text-lg sm:text-xl">
@@ -46,6 +47,7 @@ export function ProjectsSection() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
+                    <Github size={16} className="mr-1.5" />
                     GitHub
                   </a>
                 </Button>
@@ -60,6 +62,7 @@ export function ProjectsSection() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
+                    <ExternalLink size={16} className="mr-1.5" />
                     Website
                   </a>
                 </Button>

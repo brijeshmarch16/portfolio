@@ -34,7 +34,7 @@ const Navbar = React.forwardRef<HTMLElement, NavbarProps>(
         <nav
           ref={ref}
           className={cn(
-            "-translate-x-1/2 fixed top-5 left-1/2 z-50 w-[95%] max-w-2xl border-3 border-black bg-white px-2 py-2 shadow shadow-hard sm:px-4 sm:py-3",
+            "-translate-x-1/2 fixed top-5 left-1/2 z-50 w-[95%] max-w-2xl border-3 border-black bg-white px-2 py-2 shadow sm:px-4 sm:py-3",
             className,
           )}
           {...props}
@@ -115,7 +115,7 @@ const MobileNavLink = ({
   };
 
   const linkContent = (
-    <span className="block border-black border-b-2 px-3 py-4 font-bold text-lg transition-all hover:bg-primary">
+    <span className="block border-black border-b-2 px-3 py-4 font-bold font-sans text-lg transition-all hover:bg-primary">
       {label}
     </span>
   );
@@ -142,7 +142,7 @@ const MobileNavLink = ({
 
 const NavLink = ({ href, label, external }: NavItem) => {
   const linkContent = (
-    <span className="font-medium text-sm transition-all hover:text-primary active:translate-x-1 active:translate-y-1 sm:text-base">
+    <span className="font-medium font-sans text-sm transition-all hover:text-primary active:translate-x-1 active:translate-y-1 sm:text-base">
       {label}
     </span>
   );

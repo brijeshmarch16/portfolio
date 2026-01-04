@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BlogCard } from "@/components/ui/blog-card";
 import { Button } from "@/components/ui/button";
 import { Section, SectionTitle } from "@/components/ui/section";
@@ -24,7 +25,7 @@ export function BlogSection() {
       {hasMorePosts && (
         <div className="mt-6 flex justify-center">
           <Button asChild variant="outline" size="lg">
-            <a href="/blog">View All Articles</a>
+            <Link href="/blog">View All Articles</Link>
           </Button>
         </div>
       )}

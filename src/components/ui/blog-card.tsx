@@ -1,5 +1,6 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
+import { H3, Small, Text } from "./typography";
 
 export interface BlogCardProps extends React.HTMLAttributes<HTMLDivElement> {
   image: string;
@@ -29,15 +30,11 @@ const BlogCard = React.forwardRef<HTMLDivElement, BlogCardProps>(
           <div className="h-full w-full bg-linear-to-br from-primary to-accent" />
         </div>
         <div className="p-4 sm:p-6">
-          <p className="mb-2 text-muted-foreground text-xs sm:text-sm">
-            {formattedDate}
-          </p>
-          <h3 className="mb-2 font-bold font-heading text-lg sm:text-xl">
-            {title}
-          </h3>
-          <p className="text-muted-foreground text-sm leading-relaxed sm:text-base">
+          <Small className="mb-2 block">{formattedDate}</Small>
+          <H3 className="mb-2">{title}</H3>
+          <Text className="text-muted-foreground text-sm sm:text-base">
             {description}
-          </p>
+          </Text>
         </div>
       </div>
     );

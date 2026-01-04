@@ -19,16 +19,53 @@ export const aboutMe = {
   ],
 };
 
+export const skillCategories = [
+  {
+    name: "Frontend",
+    variant: "default" as const,
+    skills: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Tailwind CSS",
+      "HTML/CSS",
+    ],
+  },
+  {
+    name: "Backend",
+    variant: "secondary" as const,
+    skills: ["Node.js", "Express", "PostgreSQL", "MongoDB", "REST APIs"],
+  },
+  {
+    name: "Tools & Others",
+    variant: "outline" as const,
+    skills: ["Git", "Docker", "Vercel", "Figma", "Jest", "CI/CD"],
+  },
+];
+
 export const workExperience = [
   {
     title: "Senior Software Engineer",
     company: "Tech Company Inc.",
     period: "2023 - Present",
+    current: true,
+    description: [
+      "Led development of new features reaching 100K+ users",
+      "Improved application performance by 40% through optimization",
+      "Mentored junior developers and conducted code reviews",
+    ],
   },
   {
     title: "Software Engineer",
     company: "Startup Co.",
     period: "2021 - 2023",
+    current: false,
+    description: [
+      "Built responsive web applications using React and TypeScript",
+      "Collaborated with design team to implement pixel-perfect UIs",
+      "Contributed to architecture decisions and tech stack choices",
+    ],
   },
 ];
 
@@ -40,6 +77,7 @@ export const projects = [
     techStack: ["Next.js", "TypeScript", "Prisma"],
     githubUrl: "https://github.com/yourusername/project-one",
     liveUrl: "https://project-one.demo.com",
+    metrics: { users: "10K+", performance: "95" },
   },
   {
     title: "Project Two",
@@ -48,6 +86,7 @@ export const projects = [
     techStack: ["React", "Python", "OpenAI"],
     githubUrl: "https://github.com/yourusername/project-two",
     liveUrl: "https://project-two.demo.com",
+    metrics: { stars: "500+", performance: "98" },
   },
 ];
 

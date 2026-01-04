@@ -14,7 +14,7 @@ export function ContactSection() {
   return (
     <Section id="contact" className="p-4 pb-8 sm:pb-12">
       <SectionTitle>Get in Touch</SectionTitle>
-      <Card className="hover:-translate-y-1 max-w-2xl shadow-md">
+      <Card className="shadow-md hover:translate-y-1">
         <CardHeader>
           <CardTitle className="text-lg sm:text-xl">
             {contactInfo.title}

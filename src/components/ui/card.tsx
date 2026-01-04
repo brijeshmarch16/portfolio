@@ -1,5 +1,6 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
+import { H3, Text } from "./typography";
 
 export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   variant?: "default" | "outlined" | "flat";
@@ -53,14 +54,7 @@ const CardTitle = React.forwardRef<
   HTMLHeadingElement,
   React.HTMLAttributes<HTMLHeadingElement>
 >(({ className, ...props }, ref) => (
-  <h3
-    ref={ref}
-    className={cn(
-      "font-bold font-heading text-2xl leading-none tracking-tight",
-      className,
-    )}
-    {...props}
-  />
+  <H3 ref={ref} className={cn("leading-none", className)} {...props} />
 ));
 CardTitle.displayName = "CardTitle";
 
@@ -68,7 +62,7 @@ const CardDescription = React.forwardRef<
   HTMLParagraphElement,
   React.HTMLAttributes<HTMLParagraphElement>
 >(({ className, ...props }, ref) => (
-  <p
+  <Text
     ref={ref}
     className={cn("text-muted-foreground text-sm", className)}
     {...props}

@@ -8,7 +8,7 @@ interface LogoProps {
 export const Logo: React.FC<LogoProps> = ({ text }) => {
   return (
     <Link href="/" className="group inline-block">
-      <span className="font-bold font-heading text-lg transition-all group-hover:text-primary">
+      <span className="font-head font-heading text-lg transition-all group-hover:text-primary">
         {text}
       </span>
     </Link>

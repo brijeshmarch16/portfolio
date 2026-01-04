@@ -1,5 +1,6 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
+import { H2, Text } from "./typography";
 
 export interface SectionProps extends React.HTMLAttributes<HTMLElement> {
   id?: string;
@@ -21,14 +22,7 @@ const SectionTitle = React.forwardRef<
   HTMLHeadingElement,
   React.HTMLAttributes<HTMLHeadingElement>
 >(({ className, ...props }, ref) => (
-  <h2
-    ref={ref}
-    className={cn(
-      "mb-4 font-bold font-heading text-2xl sm:mb-6 sm:text-3xl",
-      className,
-    )}
-    {...props}
-  />
+  <H2 ref={ref} className={cn("mb-4 sm:mb-6", className)} {...props} />
 ));
 SectionTitle.displayName = "SectionTitle";
 
@@ -36,9 +30,9 @@ const SectionDescription = React.forwardRef<
   HTMLParagraphElement,
   React.HTMLAttributes<HTMLParagraphElement>
 >(({ className, ...props }, ref) => (
-  <p
+  <Text
     ref={ref}
-    className={cn("mb-6 text-muted-foreground text-sm sm:text-base", className)}
+    className={cn("mb-6 text-muted-foreground", className)}
     {...props}
   />
 ));
