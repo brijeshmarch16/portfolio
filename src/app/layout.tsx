@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Archivo_Black, Space_Grotesk } from "next/font/google";
 import { Navbar } from "@/features/global/components/navbar";
+import { ThemeProvider } from "@/features/global/components/theme-provider";
 import { navItems } from "@/features/global/config/navigation";
 
 const archivoBlack = Archivo_Black({
@@ -29,12 +30,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${archivoBlack.variable} ${space.variable} antialiased`}
       >
-        <Navbar items={navItems} />
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar items={navItems} />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

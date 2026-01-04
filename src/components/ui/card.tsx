@@ -22,7 +22,7 @@ const Card = React.forwardRef<HTMLDivElement, CardProps>(
       <div
         ref={ref}
         className={cn(
-          "border-3 border-black bg-white transition-transform",
+          "border-3 border-border bg-card transition-transform",
           shadowClass,
           variant === "outlined" && "bg-transparent",
           variant === "flat" && "shadow-none",

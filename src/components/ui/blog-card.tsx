@@ -21,7 +21,7 @@ const BlogCard = React.forwardRef<HTMLDivElement, BlogCardProps>(
       <div
         ref={ref}
         className={cn(
-          "border-3 border-black bg-white shadow-md transition-transform hover:translate-y-1",
+          "border-3 border-border bg-card shadow-md transition-transform hover:translate-y-1",
           className,
         )}
         {...props}

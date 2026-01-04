@@ -1,8 +1,10 @@
 "use client";
 
-import { Menu, X } from "lucide-react";
+import { Menu, Moon, Sun, X } from "lucide-react";
 import Link from "next/link";
+import { useTheme } from "next-themes";
 import * as React from "react";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { logo } from "../config/navigation";
 import { Logo } from "./logo";
@@ -34,7 +36,7 @@ const Navbar = React.forwardRef<HTMLElement, NavbarProps>(
         <nav
           ref={ref}
           className={cn(
-            "-translate-x-1/2 fixed top-5 left-1/2 z-50 w-[95%] max-w-2xl border-3 border-black bg-white px-2 py-2 shadow sm:px-4 sm:py-3",
+            "-translate-x-1/2 fixed top-5 left-1/2 z-50 w-[95%] max-w-2xl border-3 border-border bg-background px-2 py-2 shadow sm:px-4 sm:py-3",
             className,
           )}
           {...props}
@@ -47,20 +49,24 @@ const Navbar = React.forwardRef<HTMLElement, NavbarProps>(
                 {items.map((item) => (
                   <NavLink key={item.href} {...item} />
                 ))}
+                <ThemeToggle />
               </div>
-              {/* Mobile Hamburger Button */}
-              <button
-                type="button"
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="flex rounded border-2 border-black bg-white p-2 transition-all hover:bg-primary hover:shadow-hard-sm active:translate-x-1 active:translate-y-1 active:shadow-none sm:hidden"
-                aria-label="Toggle menu"
-              >
-                {isMenuOpen ? (
-                  <X size={20} className="text-black" />
-                ) : (
-                  <Menu size={20} className="text-black" />
-                )}
-              </button>
+              {/* Mobile: Theme Toggle and Hamburger Button */}
+              <div className="flex items-center gap-2 sm:hidden">
+                <ThemeToggle />
+                <button
+                  type="button"
+                  onClick={() => setIsMenuOpen(!isMenuOpen)}
+                  className="flex rounded border-2 border-border bg-background p-2 transition-all hover:bg-primary hover:shadow-hard-sm active:translate-x-1 active:translate-y-1 active:shadow-none"
+                  aria-label="Toggle menu"
+                >
+                  {isMenuOpen ? (
+                    <X size={20} className="text-foreground" />
+                  ) : (
+                    <Menu size={20} className="text-foreground" />
+                  )}
+                </button>
+              </div>
             </div>
           </div>
         </nav>
@@ -86,7 +92,7 @@ interface MobileMenuOverlayProps {
 
 const MobileMenuOverlay = ({ items, onClose }: MobileMenuOverlayProps) => {
   return (
-    <div className="-translate-x-1/2 fixed top-24 left-1/2 z-40 w-[95%] max-w-2xl border-3 border-black bg-white shadow">
+    <div className="-translate-x-1/2 fixed top-24 left-1/2 z-40 w-[95%] max-w-2xl border-3 border-border bg-card shadow">
       <div className="overflow-y-auto px-4 py-6">
         <div className="space-y-1">
           {items.map((item) => (
@@ -115,7 +121,7 @@ const MobileNavLink = ({
   };
 
   const linkContent = (
-    <span className="block border-black border-b-2 px-3 py-4 font-bold font-sans text-lg transition-all hover:bg-primary">
+    <span className="block border-border border-b-2 px-3 py-4 font-bold font-sans text-lg transition-all hover:bg-primary">
       {label}
     </span>
   );
@@ -162,5 +168,45 @@ const NavLink = ({ href, label, external }: NavItem) => {
 
   return <Link href={href}>{linkContent}</Link>;
 };
+
+function ThemeToggle() {
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return (
+      <Button
+        variant="outline"
+        size="icon"
+        className="border-2 border-border"
+        aria-label="Toggle theme"
+      >
+        <Sun size={20} className="text-foreground" />
+      </Button>
+    );
+  }
+
+  const isDark = theme === "dark";
+
+  return (
+    <Button
+      variant="outline"
+      size="icon"
+      onClick={() => setTheme(isDark ? "light" : "dark")}
+      className="border-2 border-border"
+      aria-label="Toggle theme"
+    >
+      {isDark ? (
+        <Sun size={20} className="text-foreground" />
+      ) : (
+        <Moon size={20} className="text-foreground" />
+      )}
+    </Button>
+  );
+}
 
 export { Navbar, NavLink };

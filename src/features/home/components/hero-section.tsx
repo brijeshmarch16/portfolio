@@ -39,7 +39,7 @@ export function HeroSection() {
             <Button
               asChild
               size="sm"
-              className="group border-2 border-black p-2 transition-all hover:bg-primary hover:shadow-hard-lg"
+              className="group border-2 border-border p-2 transition-all hover:bg-primary hover:shadow-hard-lg"
               title="GitHub"
             >
               <a
@@ -56,7 +56,7 @@ export function HeroSection() {
             <Button
               asChild
               size="sm"
-              className="group border-2 border-black p-2 transition-all hover:bg-primary hover:shadow-hard-lg"
+              className="group border-2 border-border p-2 transition-all hover:bg-primary hover:shadow-hard-lg"
               title="LinkedIn"
             >
               <a
@@ -73,7 +73,7 @@ export function HeroSection() {
           </div>
         </div>
         <div className="flex shrink-0">
-          <div className="group h-32 w-32 overflow-hidden rounded-xl border-3 border-black bg-muted shadow-md transition-transform hover:translate-y-1">
+          <div className="group h-32 w-32 overflow-hidden rounded-xl border-3 border-border bg-muted shadow-md transition-transform hover:translate-y-1">
             <div className="h-full w-full bg-linear-to-br from-primary to-accent" />
           </div>
         </div>
