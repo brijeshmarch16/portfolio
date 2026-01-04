@@ -2,70 +2,64 @@ export const personalInfo = {
   shortName: "Brijesh",
   fullName: "Brijeshkumar Yadav",
   title: "Frontend Engineer | React, Next.js & TypeScript",
-  description:
-    "I build elegant digital experiences with modern web technologies. Passionate about clean code, user experience, and bringing ideas to life.",
-  email: "your.email@example.com",
-  github: "https://github.com/yourusername",
-  linkedin: "https://linkedin.com/in/yourusername",
-  twitter: "https://twitter.com/yourusername",
+  email: "brijeshkumaryadav@gmail.com",
+  github: "https://github.com/brijeshmarch16",
+  linkedin: "https://linkedin.com/in/brijeshmarch16",
   heroImage: "/images/hero/profile.jpg",
 };
 
-export const aboutMe = {
-  paragraphs: [
-    "I'm a software engineer with a passion for building products that make a difference. My journey in tech started with curiosity and evolved into a career focused on creating intuitive, performant web applications.",
-    "Over the years, I've worked with various technologies and frameworks, always eager to learn and adapt. I believe in writing clean, maintainable code and creating experiences that users love.",
-    "When I'm not coding, you can find me exploring new technologies, contributing to open source, or sharing knowledge with the developer community.",
-  ],
-};
+export const aboutMe = [
+  "I'm Brijeshkumar Yadav, a frontend engineer based in India. I specialize in building modern web applications using Next.js, React, and TypeScript.",
+  "My journey in web development started in 2020 when I began learning HTML, CSS, and JavaScript. Through consistent practice and building projects, I landed my first developer role in 2021, even before completing my 12th grade.",
+  "Today, I work with technologies like Next.js, React, TypeScript, Tailwind CSS, and shadcn/ui to create efficient and user-friendly applications. I'm currently available for freelance projects and always open to new opportunities.",
+];
 
 export const skillCategories = [
   {
     name: "Frontend",
     variant: "default" as const,
     skills: [
-      "React",
+      "React.js",
       "Next.js",
       "TypeScript",
-      "JavaScript",
+      "Zustand",
+      "TanStack Query",
+      "React Hook Form",
       "Tailwind CSS",
+      "shadcn/ui",
+      "Redux Toolkit",
+      "JavaScript",
       "HTML/CSS",
     ],
   },
   {
-    name: "Backend",
-    variant: "secondary" as const,
-    skills: ["Node.js", "Express", "PostgreSQL", "MongoDB", "REST APIs"],
-  },
-  {
     name: "Tools & Others",
     variant: "outline" as const,
-    skills: ["Git", "Docker", "Vercel", "Figma", "Jest", "CI/CD"],
+    skills: ["Git", "Github", "Vercel", "pnpm", "Biome", "Cursor"],
   },
 ];
 
 export const workExperience = [
   {
-    title: "Senior Software Engineer",
-    company: "Tech Company Inc.",
-    period: "2023 - Present",
+    title: "Frontend Engineer",
+    company: "Self Employed",
+    period: "May 2023 - Present",
     current: true,
-    description: [
-      "Led development of new features reaching 100K+ users",
-      "Improved application performance by 40% through optimization",
-      "Mentored junior developers and conducted code reviews",
-    ],
+    description: [],
   },
   {
-    title: "Software Engineer",
-    company: "Startup Co.",
-    period: "2021 - 2023",
+    title: "Full Stack Engineer",
+    company: "SolGuruz®",
+    period: "Mar 2022 - Apr 2023",
     current: false,
-    description: [
-      "Built responsive web applications using React and TypeScript",
-      "Collaborated with design team to implement pixel-perfect UIs",
-      "Contributed to architecture decisions and tech stack choices",
-    ],
+    description: [],
+  },
+  {
+    title: "Frontend Engineer",
+    company: "Emperor Brains",
+    period: "May 2021 - Feb 2022",
+    current: false,
+    description: [],
   },
 ];
 

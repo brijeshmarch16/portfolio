@@ -1,4 +1,4 @@
-import { Github, Linkedin } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Section } from "@/components/ui/section";
 import { H1, Text } from "@/components/ui/typography";
@@ -35,7 +35,7 @@ export function HeroSection() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Github
+                <GithubIcon
                   size={20}
                   className="transition-transform group-hover:scale-110"
                 />
@@ -52,7 +52,7 @@ export function HeroSection() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Linkedin
+                <LinkedinIcon
                   size={20}
                   className="transition-transform group-hover:scale-110"
                 />

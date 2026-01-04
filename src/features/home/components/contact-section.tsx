@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { GithubIcon, LinkedinIcon, MailIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -30,7 +30,7 @@ export function ContactSection() {
           <div className="flex flex-col gap-2 sm:flex-row sm:gap-4">
             <Button asChild className="flex-1">
               <a href={`mailto:${personalInfo.email}`}>
-                <Mail size={20} className="mr-2" />
+                <MailIcon size={20} className="mr-2" />
                 Send Email
               </a>
             </Button>
@@ -40,7 +40,7 @@ export function ContactSection() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Linkedin size={20} className="mr-2" />
+                <LinkedinIcon size={20} className="mr-2" />
                 LinkedIn
               </a>
             </Button>
@@ -50,7 +50,7 @@ export function ContactSection() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Github size={20} className="mr-2" />
+                <GithubIcon size={20} className="mr-2" />
                 GitHub
               </a>
             </Button>

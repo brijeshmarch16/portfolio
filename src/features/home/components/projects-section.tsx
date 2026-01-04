@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLinkIcon, GithubIcon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -47,7 +47,7 @@ export function ProjectsSection() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Github size={16} className="mr-1.5" />
+                    <GithubIcon size={16} className="mr-1.5" />
                     GitHub
                   </a>
                 </Button>
@@ -62,7 +62,7 @@ export function ProjectsSection() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <ExternalLink size={16} className="mr-1.5" />
+                    <ExternalLinkIcon size={16} className="mr-1.5" />
                     Website
                   </a>
                 </Button>

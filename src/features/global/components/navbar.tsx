@@ -1,6 +1,6 @@
 "use client";
 
-import { Menu, Moon, Sun, X } from "lucide-react";
+import { MenuIcon, MoonIcon, SunIcon, XIcon } from "lucide-react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import * as React from "react";
@@ -62,9 +62,9 @@ const Navbar = React.forwardRef<HTMLElement, NavbarProps>(
                   aria-label="Toggle menu"
                 >
                   {isMenuOpen ? (
-                    <X size={20} className="text-foreground" />
+                    <XIcon size={20} className="text-foreground" />
                   ) : (
-                    <Menu size={20} className="text-foreground" />
+                    <MenuIcon size={20} className="text-foreground" />
                   )}
                 </Button>
               </div>
@@ -193,7 +193,7 @@ function ThemeToggle() {
         className="border-2 border-border"
         aria-label="Toggle theme"
       >
-        <Sun size={20} className="text-foreground" />
+        <SunIcon size={20} className="text-foreground" />
       </Button>
     );
   }
@@ -209,9 +209,9 @@ function ThemeToggle() {
       aria-label="Toggle theme"
     >
       {isDark ? (
-        <Sun size={20} className="text-foreground" />
+        <SunIcon size={20} className="text-foreground" />
       ) : (
-        <Moon size={20} className="text-foreground" />
+        <MoonIcon size={20} className="text-foreground" />
       )}
     </Button>
   );
