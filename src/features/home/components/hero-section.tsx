@@ -10,18 +10,6 @@ export function HeroSection() {
       id="hero"
       className="relative flex overflow-hidden p-4 py-6 sm:py-8"
     >
-      {/* Animated dot pattern background */}
-      <div className="pointer-events-none absolute inset-0 opacity-30">
-        <div
-          className="h-full w-full animate-pulse"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle, rgba(0, 0, 0, 0.15) 1px, transparent 1px)",
-            backgroundSize: "20px 20px",
-          }}
-        />
-      </div>
-
       <div className="relative z-10 flex w-full justify-between gap-6 sm:gap-8">
         <div className="flex flex-col">
           <H1 className="mb-2 sm:mb-3">
