@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 import { Archivo_Black, Space_Grotesk } from "next/font/google";
 import { Navbar } from "@/features/global/components/navbar";
 import { ThemeProvider } from "@/features/global/components/theme-provider";
@@ -42,6 +43,7 @@ export default function RootLayout({
         >
           <Navbar items={navItems} />
           {children}
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
