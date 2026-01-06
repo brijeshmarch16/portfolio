@@ -1,3 +1,5 @@
+import type { Stack } from "../types";
+
 export const personalInfo = {
   shortName: "Brijesh",
   fullName: "Brijeshkumar Yadav",
@@ -14,29 +16,23 @@ export const aboutMe = [
   "Today, I work with technologies like Next.js, React, TypeScript, Tailwind CSS, and shadcn/ui to create efficient and user-friendly applications. I'm currently available for freelance projects and always open to new opportunities.",
 ];
 
-export const skillCategories = [
-  {
-    name: "Frontend",
-    variant: "default" as const,
-    skills: [
-      "React.js",
-      "Next.js",
-      "TypeScript",
-      "Zustand",
-      "TanStack Query",
-      "React Hook Form",
-      "Tailwind CSS",
-      "shadcn/ui",
-      "Redux Toolkit",
-      "JavaScript",
-      "HTML/CSS",
-    ],
-  },
-  {
-    name: "Tools & Others",
-    variant: "outline" as const,
-    skills: ["Git", "Github", "Vercel", "pnpm", "Biome", "Cursor"],
-  },
+export const stack: Array<Omit<Stack, "iconPath">> = [
+  { name: "JavaScript", key: "javascript" },
+  { name: "TypeScript", key: "typescript" },
+  { name: "Node.js", key: "nodejs" },
+  { name: "React.js", key: "react" },
+  { name: "React Router", key: "react-router", hasThemedIcon: true },
+  { name: "Next.js", key: "nextjs", hasThemedIcon: true },
+  { name: "Tailwind CSS", key: "tailwindcss" },
+  { name: "shadcn/ui", key: "shadcn-ui", hasThemedIcon: true },
+  { name: "Zustand", key: "zustand" },
+  { name: "Redux Toolkit", key: "redux" },
+  { name: "TanStack Query", key: "tanstack-query", hasThemedIcon: true },
+  { name: "HTML5", key: "html5" },
+  { name: "CSS3", key: "css3" },
+  { name: "Git", key: "git" },
+  { name: "Vercel", key: "vercel", hasThemedIcon: true },
+  { name: "Docker", key: "docker" },
 ];
 
 export const workExperience = [
