@@ -4,14 +4,14 @@ import { ContactSection } from "@/features/home/components/contact-section";
 import { ExperienceSection } from "@/features/home/components/experience-section";
 import { HeroSection } from "@/features/home/components/hero-section";
 import { ProjectsSection } from "@/features/home/components/projects-section";
-import { SkillsSection } from "@/features/home/components/skills-section";
+import { StackSection } from "@/features/home/components/stack-section";
 
 export default function Home() {
   return (
     <main className="mx-auto max-w-2xl pt-20 sm:pt-24">
       <HeroSection />
       <AboutSection />
-      <SkillsSection />
+      <StackSection />
       <ExperienceSection />
       <ProjectsSection />
       <BlogSection />
