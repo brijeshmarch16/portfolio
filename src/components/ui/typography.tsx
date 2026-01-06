@@ -122,3 +122,24 @@ export const Small = React.forwardRef<HTMLElement, TypographyProps>(
   },
 );
 Small.displayName = "Small";
+
+export const Muted = React.forwardRef<HTMLParagraphElement, TypographyProps>(
+  ({ children, className, ...props }, ref) => {
+    return (
+      <p
+        ref={ref}
+        className={cn(
+          "font-sans",
+          "text-sm md:text-base",
+          "leading-relaxed",
+          "text-muted-foreground",
+          className,
+        )}
+        {...props}
+      >
+        {children}
+      </p>
+    );
+  },
+);
+Muted.displayName = "Muted";
