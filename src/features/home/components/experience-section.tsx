@@ -19,7 +19,10 @@ export function ExperienceSection() {
               <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
                 <div className="flex gap-3">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded border-2 border-border bg-accent">
-                    <BriefcaseIcon size={20} className="text-accent-foreground" />
+                    <BriefcaseIcon
+                      size={20}
+                      className="text-accent-foreground"
+                    />
                   </div>
                   <div>
                     <CardTitle className="text-lg sm:text-xl">

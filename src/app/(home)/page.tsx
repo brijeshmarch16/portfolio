@@ -6,7 +6,7 @@ import { HeroSection } from "@/features/home/components/hero-section";
 import { ProjectsSection } from "@/features/home/components/projects-section";
 import { StackSection } from "@/features/home/components/stack-section";
 
-export default function Home() {
+export default async function Home() {
   return (
     <main className="mx-auto max-w-2xl pt-20 sm:pt-24">
       <HeroSection />

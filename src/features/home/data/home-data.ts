@@ -1,13 +1,15 @@
+import { author, socialLinks } from "@/lib/site-config";
 import type { Stack } from "../types";
 
 export const personalInfo = {
-  shortName: "Brijesh",
-  fullName: "Brijeshkumar Yadav",
-  title: "Frontend Engineer | React, Next.js & TypeScript",
-  email: "brijeshkumaryadav@gmail.com",
-  github: "https://github.com/brijeshmarch16",
-  linkedin: "https://linkedin.com/in/brijeshmarch16",
-  heroImage: "/images/hero/profile.jpg",
+  shortName: author.shortName,
+  fullName: author.fullName,
+  title: author.title,
+  role: author.role,
+  email: author.email,
+  github: socialLinks.github,
+  linkedin: socialLinks.linkedin,
+  heroImage: author.heroImage,
 };
 
 export const aboutMe = [

@@ -1,26 +1,35 @@
+import type { Route } from "next";
 import Link from "next/link";
 import { BlogCard } from "@/components/ui/blog-card";
 import { Button } from "@/components/ui/button";
 import { Section, SectionTitle } from "@/components/ui/section";
-import { blogPosts } from "../data/home-data";
+import { blog } from "@/lib/source";
 
-export function BlogSection() {
-  const displayedPosts = blogPosts.slice(0, 4);
-  const hasMorePosts = blogPosts.length > 4;
+export async function BlogSection() {
+  const posts = await blog.getPages();
+  const displayedPosts = posts.slice(0, 4);
+  const hasMorePosts = posts.length > 4;
 
   return (
     <Section id="blog" className="p-4">
       <SectionTitle>Latest Articles</SectionTitle>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
-        {displayedPosts.map((post) => (
-          <BlogCard
-            key={post.id}
-            image={post.image}
-            title={post.title}
-            description={post.description}
-            date={post.date}
-          />
-        ))}
+        {displayedPosts.map((post) => {
+          const slug = post.slugs?.[0];
+          return (
+            <Link
+              key={slug}
+              href={`/blog/${slug}` as Route<"/blog/[slug]">}
+              className="block"
+            >
+              <BlogCard
+                image={post.data.image ?? ""}
+                title={post.data.title}
+                date={post.data.createdAt ?? ""}
+              />
+            </Link>
+          );
+        })}
       </div>
       {hasMorePosts && (
         <div className="mt-6 flex justify-center">
