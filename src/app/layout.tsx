@@ -2,9 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { Archivo_Black, Space_Grotesk } from "next/font/google";
+import { JsonLd } from "@/components/json-ld";
 import { Navbar } from "@/features/global/components/navbar";
 import { ThemeProvider } from "@/features/global/components/theme-provider";
 import { navItems } from "@/features/global/config/navigation";
+import { createPersonSchema, createWebSiteSchema } from "@/lib/json-ld";
+import { baseUrl, createCanonical, createMetadata } from "@/lib/metadata";
+import { author, siteMetadata } from "@/lib/site-config";
 
 const archivoBlack = Archivo_Black({
   subsets: ["latin"],
@@ -20,21 +24,33 @@ const space = Space_Grotesk({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "Brijeshkumar Yadav - Portfolio",
-  description: "",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const ogImageUrl = createCanonical("/og");
+  const canonicalUrl = createCanonical("/");
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+  return createMetadata({
+    title: {
+      default: `${author.fullName} – ${author.role}`,
+      template: `%s – ${author.fullName}`,
+    },
+    description: siteMetadata.description,
+    openGraph: {
+      url: baseUrl,
+      images: [{ url: ogImageUrl, width: 1200, height: 630 }],
+    },
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  });
+}
+
+export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${archivoBlack.variable} ${space.variable} antialiased`}
       >
+        <JsonLd schema={[createPersonSchema(), createWebSiteSchema()]} />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

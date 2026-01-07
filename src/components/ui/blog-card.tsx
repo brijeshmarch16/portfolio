@@ -1,11 +1,12 @@
+import Image from "next/image";
 import * as React from "react";
 import { cn } from "@/lib/utils";
-import { H3, Small, Text } from "./typography";
+import { Text } from "./text";
 
 export interface BlogCardProps extends React.HTMLAttributes<HTMLDivElement> {
   image: string;
   title: string;
-  description: string;
+  description?: string;
   date: string;
 }
 
@@ -26,15 +27,31 @@ const BlogCard = React.forwardRef<HTMLDivElement, BlogCardProps>(
         )}
         {...props}
       >
-        <div className="h-40 overflow-hidden bg-muted sm:h-48">
-          <div className="h-full w-full bg-linear-to-br from-primary to-accent" />
+        <div className="relative h-40 overflow-hidden bg-muted sm:h-48">
+          {image ? (
+            <Image
+              src={image}
+              alt={title}
+              fill
+              className="object-contain"
+              sizes="(max-width: 640px) 100vw, 50vw"
+            />
+          ) : (
+            <div className="h-full w-full bg-linear-to-br from-primary to-accent" />
+          )}
         </div>
         <div className="p-4 sm:p-6">
-          <Small className="mb-2 block">{formattedDate}</Small>
-          <H3 className="mb-2">{title}</H3>
-          <Text className="text-muted-foreground text-sm sm:text-base">
-            {description}
+          <Text as="small" className="mb-2 block">
+            {formattedDate}
           </Text>
+          <Text as="h3" className="mb-2">
+            {title}
+          </Text>
+          {description ? (
+            <Text className="text-muted-foreground text-sm sm:text-base">
+              {description}
+            </Text>
+          ) : null}
         </div>
       </div>
     );

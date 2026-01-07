@@ -33,7 +33,7 @@ export function CodeBlock({ className, children, ...props }: ICodeBlock) {
     <div className="relative">
       <pre
         className={cn(
-          "mt-3 mb-6 overflow-x-auto rounded-sm bg-[#282A36] p-4",
+          "mt-6 mb-8 overflow-x-auto rounded-sm bg-[#282A36] p-4",
           className,
         )}
         {...props}

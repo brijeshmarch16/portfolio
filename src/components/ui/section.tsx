@@ -1,6 +1,6 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
-import { H2, Text } from "./typography";
+import { Text } from "./text";
 
 export interface SectionProps extends React.HTMLAttributes<HTMLElement> {
   id?: string;
@@ -22,7 +22,7 @@ const SectionTitle = React.forwardRef<
   HTMLHeadingElement,
   React.HTMLAttributes<HTMLHeadingElement>
 >(({ className, ...props }, ref) => (
-  <H2 ref={ref} className={cn("mb-4 sm:mb-6", className)} {...props} />
+  <Text as="h2" ref={ref} className={cn("mb-4 sm:mb-6", className)} {...props} />
 ));
 SectionTitle.displayName = "SectionTitle";
 

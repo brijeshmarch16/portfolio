@@ -1,5 +1,5 @@
 import { Section, SectionTitle } from "@/components/ui/section";
-import { Text } from "@/components/ui/typography";
+import { Text } from "@/components/ui/text";
 import { aboutMe } from "../data/home-data";
 
 export function AboutSection() {

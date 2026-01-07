@@ -1,4 +1,5 @@
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
+import type { MDXContent } from "mdx/types";
 import Image from "next/image";
 import Link from "next/link";
 import type React from "react";
@@ -14,39 +15,73 @@ import { Alert } from "./ui/alert";
 import { Table } from "./ui/table";
 
 const components = (type: "doc" | "blog") => ({
-  h1: (props: HTMLAttributes<HTMLHeadingElement>) => (
-    <Text as="h1" {...props} />
-  ),
+  h1: (props: HTMLAttributes<HTMLHeadingElement>) =>
+    type === "blog" ? (
+      <Text as="h1" className="mt-0 mb-6" {...props} />
+    ) : (
+      <Text as="h1" className="mt-0 mb-8" {...props} />
+    ),
   h2: (props: HTMLAttributes<HTMLHeadingElement>) =>
     type === "blog" ? (
       <Text as="h2" className="mt-8 mb-4" {...props} />
     ) : (
-      <Text as="h2" className="mb-6 border-b pb-1" {...props} />
+      <Text as="h2" className="mt-8 mb-6 border-b pb-1" {...props} />
     ),
   h3: (props: HTMLAttributes<HTMLHeadingElement>) => (
-    <Text as="h3" className="mb-4" {...props} />
+    <Text as="h3" className="mt-6 mb-4" {...props} />
   ),
   h4: (props: HTMLAttributes<HTMLHeadingElement>) => (
-    <Text as="h4" className="mb-2" {...props} />
+    <Text as="h4" className="mt-4 mb-3" {...props} />
   ),
-  h5: (props: HTMLAttributes<HTMLHeadElement>) => <Text as="h5" {...props} />,
-  h6: (props: HTMLAttributes<HTMLHeadElement>) => <Text as="h6" {...props} />,
+  h5: (props: HTMLAttributes<HTMLHeadElement>) => (
+    <Text as="h5" className="mt-4 mb-2" {...props} />
+  ),
+  h6: (props: HTMLAttributes<HTMLHeadElement>) => (
+    <Text as="h6" className="mt-3 mb-2" {...props} />
+  ),
   p: (props: HTMLAttributes<HTMLHeadElement>) =>
     type === "blog" ? (
-      <Text {...props} className="text-foreground text-lg" />
+      <Text {...props} className="mb-4 text-foreground text-lg" />
     ) : (
-      <Text {...props} />
+      <Text {...props} className="mb-4" />
     ),
+  ul: (props: HTMLAttributes<HTMLUListElement>) => (
+    <ul
+      className={cn(type === "blog" ? "mb-6" : "mb-4", "list-none pl-0")}
+      {...props}
+    />
+  ),
+  ol: (props: HTMLAttributes<HTMLOListElement>) => (
+    <ol
+      className={cn(type === "blog" ? "mb-6" : "mb-4", "list-none pl-0")}
+      {...props}
+    />
+  ),
   li: (props: HTMLAttributes<HTMLHeadElement>) =>
     type === "blog" ? (
       <Text
         as="li"
         {...props}
-        className="mb-2 ml-4 text-foreground text-lg lg:ml-8"
+        className="mb-2 ml-4 list-disc text-foreground text-lg lg:ml-8"
       />
     ) : (
-      <Text as="li" className="mb-2" {...props} />
+      <Text as="li" className="mb-2 ml-4" {...props} />
     ),
+  blockquote: (props: HTMLAttributes<HTMLQuoteElement>) => (
+    <blockquote
+      className="my-6 ml-4 border-primary border-l-4 pl-4 italic"
+      {...props}
+    />
+  ),
+  hr: (props: HTMLAttributes<HTMLHRElement>) => (
+    <hr className="my-8 border-border border-t" {...props} />
+  ),
+  strong: (props: HTMLAttributes<HTMLElement>) => (
+    <strong className="font-bold" {...props} />
+  ),
+  em: (props: HTMLAttributes<HTMLElement>) => (
+    <em className="italic" {...props} />
+  ),
   img: (props: HTMLAttributes<HTMLImageElement>) => (
     // biome-ignore lint/a11y/useAltText: alt text is not required for images in mdx
     // biome-ignore lint/performance/noImgElement: image is not required for images in mdx
@@ -108,22 +143,14 @@ const components = (type: "doc" | "blog") => ({
   CliCommand,
 });
 
-export default function MDX({
+export default function MDXComponents({
   body,
   type = "doc",
 }: {
-  // biome-ignore lint/suspicious/noExplicitAny: MDX components require flexible typing
-  body: React.ComponentType<{
-    components?: Record<string, React.ComponentType<any>>;
-  }>;
+  body: MDXContent;
   type?: "doc" | "blog";
 }) {
   const Body = body;
 
-  // biome-ignore lint/suspicious/noExplicitAny: MDX components require flexible typing
-  return (
-    <Body
-      components={components(type) as Record<string, React.ComponentType<any>>}
-    />
-  );
+  return <Body components={components(type)} />;
 }

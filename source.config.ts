@@ -23,17 +23,9 @@ export const blogPosts = defineCollections({
   type: "doc",
   dir: "src/content/blog",
   schema: frontmatterSchema.extend({
-    coverImage: z.string().optional(),
-    publishedAt: z.string().optional(),
-    status: z.enum(["published", "draft"]).optional(),
-    author: z
-      .object({
-        name: z.string(),
-        avatar: z.string(),
-        x: z.string(),
-        linkedin: z.string(),
-      })
-      .optional(),
+    image: z.string().optional(),
+    createdAt: z.string().optional(),
+    updatedAt: z.string().optional(),
   }),
 });
 
