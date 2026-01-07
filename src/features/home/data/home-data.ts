@@ -1,5 +1,5 @@
-import type { Stack } from "../types";
 import { author, socialLinks } from "@/lib/site-config";
+import type { Stack } from "../types";
 
 export const personalInfo = {
   shortName: author.shortName,

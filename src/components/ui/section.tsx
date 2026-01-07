@@ -22,7 +22,12 @@ const SectionTitle = React.forwardRef<
   HTMLHeadingElement,
   React.HTMLAttributes<HTMLHeadingElement>
 >(({ className, ...props }, ref) => (
-  <Text as="h2" ref={ref} className={cn("mb-4 sm:mb-6", className)} {...props} />
+  <Text
+    as="h2"
+    ref={ref}
+    className={cn("mb-4 sm:mb-6", className)}
+    {...props}
+  />
 ));
 SectionTitle.displayName = "SectionTitle";
 

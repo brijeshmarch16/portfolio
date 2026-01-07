@@ -1,5 +1,6 @@
 import { cva, type VariantProps } from "class-variance-authority";
-import type { ElementType, HTMLAttributes } from "react";
+import type { ElementType, HTMLAttributes, Ref } from "react";
+import * as React from "react";
 import { cn } from "@/lib/utils";
 
 const textVariants = cva("font-head", {
@@ -31,11 +32,18 @@ interface TextProps
   className?: string;
 }
 
-export const Text = (props: TextProps) => {
-  const { className, as, ...otherProps } = props;
-  const Tag: ElementType = as === "muted" ? "p" : as || "p";
+export const Text = React.forwardRef<HTMLElement, TextProps>(
+  function Text(props, ref) {
+    const { className, as, ...otherProps } = props;
+    const Tag: ElementType = as === "muted" ? "p" : as || "p";
 
-  return (
-    <Tag className={cn(textVariants({ as }), className)} {...otherProps} />
-  );
-};
+    return (
+      <Tag
+        // biome-ignore lint/suspicious/noExplicitAny: ref is any type
+        ref={ref as Ref<any>}
+        className={cn(textVariants({ as }), className)}
+        {...otherProps}
+      />
+    );
+  },
+);
