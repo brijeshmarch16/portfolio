@@ -3,37 +3,62 @@ import { siteMetadata, socialLinks } from "./site-config";
 
 export const baseUrl = siteMetadata.baseUrl;
 
-export function createMetadata(override: Metadata): Metadata {
-  const title =
-    typeof override.title === "string"
-      ? override.title
-      : typeof override.title === "object" &&
-          override.title !== null &&
-          "absolute" in override.title
-        ? override.title.absolute
-        : typeof override.title === "object" &&
-            override.title !== null &&
-            "template" in override.title
-          ? override.title.template
-          : undefined;
+function getBaseTitle(override: Metadata): string | undefined {
+  const title = override.title;
 
-  const openGraphUrlValue = override.openGraph?.url;
-  const openGraphUrl =
-    typeof openGraphUrlValue === "string"
-      ? openGraphUrlValue
-      : openGraphUrlValue instanceof URL
-        ? openGraphUrlValue.toString()
-        : baseUrl.toString();
+  if (typeof title === "string") {
+    return title;
+  }
+
+  if (title && typeof title === "object") {
+    if ("absolute" in title && typeof title.absolute === "string") {
+      return title.absolute;
+    }
+
+    if ("default" in title && typeof title.default === "string") {
+      return title.default;
+    }
+  }
+
+  return undefined;
+}
+
+function getOpenGraphUrl(override: Metadata): string {
+  const url = override.openGraph?.url;
+
+  if (typeof url === "string") {
+    return url;
+  }
+
+  if (url instanceof URL) {
+    return url.toString();
+  }
+
+  return baseUrl.toString();
+}
+
+function getOpenGraphTitle(
+  override: Metadata,
+  fallbackTitle: string | undefined,
+) {
+  const ogTitle = override.openGraph?.title;
+  return typeof ogTitle === "string" ? ogTitle : fallbackTitle;
+}
+
+export function createMetadata(override: Metadata): Metadata {
+  const title = getBaseTitle(override);
+  const openGraphUrl = getOpenGraphUrl(override);
+  const openGraphTitle = getOpenGraphTitle(override, title);
 
   return {
     ...override,
     openGraph: {
-      title: override.openGraph?.title ?? title,
+      ...override.openGraph,
+      title: openGraphTitle,
       description: override.description ?? undefined,
       url: openGraphUrl,
       images: override.openGraph?.images,
       siteName: siteMetadata.name,
-      ...override.openGraph,
     },
     twitter: {
       card: "summary_large_image",
