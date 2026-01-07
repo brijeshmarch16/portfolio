@@ -5,6 +5,7 @@ import MDXComponents from "@/components/mdx-component";
 import { Text } from "@/components/ui/text";
 import { createBlogPostingSchema } from "@/lib/json-ld";
 import { createCanonical, createMetadata } from "@/lib/metadata";
+import { author } from "@/lib/site-config";
 import { blog } from "@/lib/source";
 
 export async function generateStaticParams() {
@@ -32,6 +33,7 @@ export async function generateMetadata(
     title: page.data.title,
     description: page.data.description ?? "",
     openGraph: {
+      title: `${page.data.title} – ${author.fullName}`,
       url: createCanonical(page.url),
       images: [{ url: ogImageUrl, width: 1200, height: 630 }],
     },

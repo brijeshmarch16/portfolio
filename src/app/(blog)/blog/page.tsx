@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BlogCard } from "@/components/ui/blog-card";
 import { Text } from "@/components/ui/text";
 import { createCanonical, createMetadata } from "@/lib/metadata";
+import { author } from "@/lib/site-config";
 import { blog } from "@/lib/source";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -16,6 +17,7 @@ export async function generateMetadata(): Promise<Metadata> {
       canonical: blogUrl,
     },
     openGraph: {
+      title: `Blog – ${author.fullName}`,
       url: blogUrl,
       images: [{ url: ogImageUrl, width: 1200, height: 630 }],
     },
