@@ -4,3 +4,12 @@ export interface Stack {
   hasThemedIcon?: boolean;
   iconPath: string;
 }
+
+export interface Project {
+  title: string;
+  description: string;
+  image: string;
+  techStack: string[];
+  githubUrl: string;
+  liveUrl: string;
+}

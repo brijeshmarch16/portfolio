@@ -1,47 +1,46 @@
 import { ExternalLinkIcon, GithubIcon } from "lucide-react";
+import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Section, SectionTitle } from "@/components/ui/section";
 import { projects } from "../data/home-data";
 
 export function ProjectsSection() {
   return (
-    <Section id="projects" className="p-4">
-      <SectionTitle>Featured Projects</SectionTitle>
+    <Section>
+      <SectionTitle>Projects</SectionTitle>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
         {projects.map((project) => (
           <Card
             key={project.title}
-            className="group flex flex-col overflow-hidden shadow-md transition-all hover:translate-y-1 hover:shadow-hard-lg"
+            className="group flex flex-col overflow-hidden transition-all duration-200 hover:translate-y-1"
           >
-            <div className="h-40 overflow-hidden bg-muted sm:h-48">
-              <div className="h-full w-full bg-linear-to-br from-accent to-primary transition-transform duration-300 group-hover:scale-110" />
+            <div className="relative h-40 overflow-hidden bg-muted sm:h-48">
+              <Image
+                src={project.image}
+                alt={project.title}
+                fill
+                className="object-cover"
+              />
             </div>
-            <CardHeader>
-              <CardTitle className="text-lg sm:text-xl">
-                {project.title}
-              </CardTitle>
-              <CardDescription className="text-xs sm:text-sm">
-                {project.description}
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="flex flex-1 flex-col">
+
+            <Card.Header>
+              <Card.Title>{project.title}</Card.Title>
+              <Card.Description>{project.description}</Card.Description>
+            </Card.Header>
+
+            <Card.Content className="flex flex-1 flex-col">
               <div className="mb-4 flex flex-wrap gap-1.5 sm:gap-2">
                 {project.techStack.map((tech) => (
-                  <Badge key={tech} variant="secondary" className="text-xs">
+                  <Badge key={tech} variant="solid" className="text-xs">
                     {tech}
                   </Badge>
                 ))}
               </div>
+
               <div className="mt-auto flex flex-col gap-2 sm:flex-row sm:gap-3">
-                <Button size="sm" asChild className="text-xs sm:text-sm">
+                <Button size="sm" asChild>
                   <a
                     href={project.githubUrl}
                     target="_blank"
@@ -51,12 +50,7 @@ export function ProjectsSection() {
                     GitHub
                   </a>
                 </Button>
-                <Button
-                  size="sm"
-                  variant="outline"
-                  asChild
-                  className="text-xs sm:text-sm"
-                >
+                <Button size="sm" variant="outline" asChild>
                   <a
                     href={project.liveUrl}
                     target="_blank"
@@ -67,7 +61,7 @@ export function ProjectsSection() {
                   </a>
                 </Button>
               </div>
-            </CardContent>
+            </Card.Content>
           </Card>
         ))}
       </div>

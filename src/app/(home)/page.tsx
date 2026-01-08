@@ -8,7 +8,7 @@ import { StackSection } from "@/features/home/components/stack-section";
 
 export default async function Home() {
   return (
-    <main className="mx-auto max-w-2xl pt-20 sm:pt-24">
+    <main className="mx-auto max-w-2xl pt-24 sm:pt-28">
       <HeroSection />
       <AboutSection />
       <StackSection />

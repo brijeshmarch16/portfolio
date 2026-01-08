@@ -1,7 +1,7 @@
 import { cva, type VariantProps } from "class-variance-authority";
 import type { HtmlHTMLAttributes } from "react";
-import { Text } from "@/components/ui/text";
 import { cn } from "@/lib/utils";
+import { Text } from "./text";
 
 const alertVariants = cva("relative w-full rounded border-2 p-4", {
   variants: {
@@ -43,7 +43,7 @@ AlertTitle.displayName = "AlertTitle";
 interface IAlertDescriptionProps
   extends HtmlHTMLAttributes<HTMLParagraphElement> {}
 const AlertDescription = ({ className, ...props }: IAlertDescriptionProps) => (
-  <div className={cn("text-muted-foreground", className)} {...props} />
+  <Text as="muted" className={cn(className)} {...props} />
 );
 
 AlertDescription.displayName = "AlertDescription";

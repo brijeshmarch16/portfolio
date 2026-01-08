@@ -29,7 +29,7 @@ export function StackSection() {
   }, [resolvedTheme]);
 
   return (
-    <Section id="stack" className="p-4">
+    <Section>
       <SectionTitle>Stack</SectionTitle>
       <div className="inline-flex flex-wrap gap-4">
         {mappedStack.map((stack) => (
