@@ -1,12 +1,12 @@
 import { ImageResponse } from "next/og";
+import { author } from "@/lib/site-config";
 
 export interface OgImageProps {
   title: string;
   description?: string;
-  site?: string;
 }
 
-export function generateOgImage({ title, description, site }: OgImageProps) {
+export function generateOgImage({ title, description }: OgImageProps) {
   return new ImageResponse(
     <div
       style={{
@@ -15,7 +15,7 @@ export function generateOgImage({ title, description, site }: OgImageProps) {
         display: "flex",
         flexDirection: "column",
         alignItems: "flex-start",
-        justifyContent: "center",
+        justifyContent: "space-between",
         background: "linear-gradient(135deg, #ffdb33 0%, #ffcc00 100%)",
         padding: "80px",
         fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
@@ -29,18 +29,6 @@ export function generateOgImage({ title, description, site }: OgImageProps) {
           width: "100%",
         }}
       >
-        {site && (
-          <div
-            style={{
-              fontSize: "24px",
-              fontWeight: 600,
-              color: "#000",
-              opacity: 0.7,
-            }}
-          >
-            {site}
-          </div>
-        )}
         <h1
           style={{
             fontSize: "72px",
@@ -66,6 +54,16 @@ export function generateOgImage({ title, description, site }: OgImageProps) {
             {description}
           </p>
         )}
+      </div>
+      <div
+        style={{
+          fontSize: "24px",
+          fontWeight: 600,
+          color: "#000",
+          opacity: 0.7,
+        }}
+      >
+        {author.fullName}
       </div>
     </div>,
     {

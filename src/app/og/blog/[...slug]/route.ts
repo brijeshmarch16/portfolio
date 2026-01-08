@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation";
 import { generateOgImage } from "@/components/og-image";
-import { siteMetadata } from "@/lib/site-config";
 import { blog } from "@/lib/source";
 
 export const revalidate = false;
@@ -20,7 +19,6 @@ export async function GET(
   return generateOgImage({
     title: page.data.title,
     description: page.data.description ?? undefined,
-    site: siteMetadata.name,
   });
 }
 
