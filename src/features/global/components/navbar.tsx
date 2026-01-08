@@ -1,13 +1,12 @@
 "use client";
 
 import { MenuIcon, MoonIcon, SunIcon, XIcon } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import * as React from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { logo } from "../config/navigation";
-import { Logo } from "./logo";
 
 export interface NavbarProps extends React.HTMLAttributes<HTMLElement> {
   items?: NavItem[];
@@ -36,13 +35,16 @@ const Navbar = React.forwardRef<HTMLElement, NavbarProps>(
         <nav
           ref={ref}
           className={cn(
-            "-translate-x-1/2 fixed top-5 left-1/2 z-50 w-[95%] max-w-2xl border-3 border-border bg-background px-2 py-2 shadow sm:px-4 sm:py-3",
+            "-translate-x-1/2 fixed top-5 left-1/2 z-50 w-[95%] max-w-2xl rounded border-3 border-border bg-background px-2 py-2 shadow sm:px-4 sm:py-3",
             className,
           )}
           {...props}
         >
           <div className="flex items-center justify-between gap-2 sm:gap-4">
-            <Logo text={logo.text} />
+            <Link href="/" className="group inline-block">
+              <Image src="/logo.svg" alt="Logo" width={40} height={40} />
+            </Link>
+
             <div className="flex items-center gap-2">
               {/* Desktop Navigation */}
               <div className="hidden flex-wrap items-center justify-end gap-1 sm:flex sm:gap-4">
