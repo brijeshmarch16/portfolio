@@ -4,7 +4,7 @@ import { aboutMe } from "../data/home-data";
 
 export function AboutSection() {
   return (
-    <Section id="about" className="p-4">
+    <Section>
       <SectionTitle>About Me</SectionTitle>
       <div className="space-y-4">
         {aboutMe.map((paragraph, index) => (

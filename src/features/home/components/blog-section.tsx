@@ -11,7 +11,7 @@ export async function BlogSection() {
   const hasMorePosts = posts.length > 4;
 
   return (
-    <Section id="blog" className="p-4">
+    <Section>
       <SectionTitle>Latest Articles</SectionTitle>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
         {displayedPosts.map((post) => {
@@ -20,7 +20,7 @@ export async function BlogSection() {
             <Link
               key={slug}
               href={`/blog/${slug}` as Route<"/blog/[slug]">}
-              className="block"
+              className="block transition-all duration-200 hover:translate-y-1"
             >
               <BlogCard
                 image={post.data.image ?? ""}

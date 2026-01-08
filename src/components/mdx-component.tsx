@@ -85,7 +85,7 @@ const components = (type: "doc" | "blog") => ({
   img: (props: HTMLAttributes<HTMLImageElement>) => (
     // biome-ignore lint/a11y/useAltText: alt text is not required for images in mdx
     // biome-ignore lint/performance/noImgElement: image is not required for images in mdx
-    <img className="mx-auto my-8 w-full max-w-[600px]" {...props} />
+    <img className="my-8 block w-full" {...props} />
   ),
   a: (props: AnchorHTMLAttributes<HTMLAnchorElement>) => {
     const { href, target, rel, ...rest } = props;

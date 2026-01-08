@@ -1,5 +1,5 @@
 import { author, socialLinks } from "@/lib/site-config";
-import type { Stack } from "../types";
+import type { Project, Stack } from "../types";
 
 export const personalInfo = {
   shortName: author.shortName,
@@ -61,24 +61,14 @@ export const workExperience = [
   },
 ];
 
-export const projects = [
+export const projects: Project[] = [
   {
-    title: "Project One",
-    description: "A modern web application for managing tasks",
-    image: "/images/projects/project-one.jpg",
-    techStack: ["Next.js", "TypeScript", "Prisma"],
-    githubUrl: "https://github.com/yourusername/project-one",
-    liveUrl: "https://project-one.demo.com",
-    metrics: { users: "10K+", performance: "95" },
-  },
-  {
-    title: "Project Two",
-    description: "An AI-powered content generator",
-    image: "/images/projects/project-two.jpg",
-    techStack: ["React", "Python", "OpenAI"],
-    githubUrl: "https://github.com/yourusername/project-two",
-    liveUrl: "https://project-two.demo.com",
-    metrics: { stars: "500+", performance: "98" },
+    title: "My Portfolio",
+    description: "A minimal, pixel-perfect dev portfolio and blog.",
+    image: "/projects/portfolio-v2.png",
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui"],
+    githubUrl: "https://github.com/brijeshmarch16/portfolio",
+    liveUrl: "https://brijeshmarch16.vercel.app",
   },
 ];
 
@@ -89,44 +79,3 @@ export const contactInfo = {
   message:
     "Feel free to reach out if you want to collaborate on a project, need help with something, or just want to connect. I'll do my best to respond promptly!",
 };
-
-export const blogPosts = [
-  {
-    id: "blog-one",
-    title: "Getting Started with Next.js 15",
-    description: "Learn the basics of Next.js and build your first project",
-    image: "/images/blog/blog-one.jpg",
-    date: "2024-01-15",
-  },
-  {
-    id: "blog-two",
-    title: "React Performance Optimization Tips",
-    description: "Best practices for optimizing your React applications",
-    image: "/images/blog/blog-two.jpg",
-    date: "2024-01-10",
-  },
-  {
-    id: "blog-three",
-    title: "Building Scalable Web Applications",
-    description:
-      "Strategies for creating applications that grow with your users",
-    image: "/images/blog/blog-three.jpg",
-    date: "2024-01-05",
-  },
-  {
-    id: "blog-four",
-    title: "Building Scalable Web Applications",
-    description:
-      "Strategies for creating applications that grow with your users",
-    image: "/images/blog/blog-three.jpg",
-    date: "2024-01-05",
-  },
-  {
-    id: "blog-five",
-    title: "Building Scalable Web Applications",
-    description:
-      "Strategies for creating applications that grow with your users",
-    image: "/images/blog/blog-three.jpg",
-    date: "2024-01-05",
-  },
-];

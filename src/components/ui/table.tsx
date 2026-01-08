@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import { cn } from "@/lib/utils";
+import { Text } from "./text";
 
 const Table = React.forwardRef<
   HTMLTableElement,
@@ -53,7 +54,7 @@ const TableFooter = React.forwardRef<
   <tfoot
     ref={ref}
     className={cn(
-      "border-t bg-accent font-medium [&>tr]:last:border-b-0",
+      "border-t bg-accent font-medium text-accent-foreground [&>tr]:last:border-b-0",
       className,
     )}
     {...props}
@@ -110,9 +111,10 @@ const TableCaption = React.forwardRef<
   HTMLTableCaptionElement,
   React.HTMLAttributes<HTMLTableCaptionElement>
 >(({ className, ...props }, ref) => (
-  <caption
+  <Text
+    as="small"
     ref={ref}
-    className={cn("my-2 text-muted-foreground text-sm", className)}
+    className={cn("my-2", className)}
     {...props}
   />
 ));

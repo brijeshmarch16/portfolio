@@ -1,32 +1,22 @@
 import { GithubIcon, LinkedinIcon, MailIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Section, SectionTitle } from "@/components/ui/section";
 import { contactInfo, personalInfo } from "../data/home-data";
 
 export function ContactSection() {
   return (
-    <Section id="contact" className="p-4 pb-8 sm:pb-12">
+    <Section>
       <SectionTitle>Get in Touch</SectionTitle>
-      <Card className="shadow-md hover:translate-y-1">
-        <CardHeader>
-          <CardTitle className="text-lg sm:text-xl">
-            {contactInfo.title}
-          </CardTitle>
-          <CardDescription className="text-xs sm:text-sm">
-            {contactInfo.description}
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <p className="mb-4 text-sm leading-relaxed sm:mb-6 sm:text-base">
+      <Card>
+        <Card.Header>
+          <Card.Title>{contactInfo.title}</Card.Title>
+          <Card.Description>{contactInfo.description}</Card.Description>
+        </Card.Header>
+        <Card.Content>
+          <Card.Description className="mb-4 leading-relaxed sm:mb-6">
             {contactInfo.message}
-          </p>
+          </Card.Description>
           <div className="flex flex-col gap-2 sm:flex-row sm:gap-4">
             <Button asChild className="flex-1">
               <a href={`mailto:${personalInfo.email}`}>
@@ -55,7 +45,7 @@ export function ContactSection() {
               </a>
             </Button>
           </div>
-        </CardContent>
+        </Card.Content>
       </Card>
     </Section>
   );

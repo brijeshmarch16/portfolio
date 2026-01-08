@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/json-ld";
 import MDXComponents from "@/components/mdx-component";
@@ -73,14 +74,23 @@ export default async function BlogPostPage(props: PageProps<"/blog/[slug]">) {
   return (
     <>
       <JsonLd schema={blogPostingSchema} />
-      <header className="space-y-3 px-4">
+
+      <header className="space-y-2 border-b px-4 pb-4">
         <Text as="h1">{post.data.title}</Text>
+        {post.data.image ? (
+          <Image
+            src={post.data.image}
+            alt={post.data.title}
+            width={1000}
+            height={1000}
+          />
+        ) : null}
         {post.data.description ? (
           <Text as="muted">{post.data.description}</Text>
         ) : null}
       </header>
 
-      <article className="mt-4 px-4">
+      <article className="mt-4 px-4 sm:mt-8">
         <MDXComponents body={post.data.body} type="blog" />
       </article>
     </>
