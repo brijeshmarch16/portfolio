@@ -41,6 +41,9 @@ export async function generateMetadata(): Promise<Metadata> {
     alternates: {
       canonical: canonicalUrl,
     },
+    verification: {
+      google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+    },
   });
 }
 
