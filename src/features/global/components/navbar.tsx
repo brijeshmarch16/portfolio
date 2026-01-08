@@ -42,7 +42,7 @@ const Navbar = React.forwardRef<HTMLElement, NavbarProps>(
         >
           <div className="flex items-center justify-between gap-2 sm:gap-4">
             <Link href="/" className="group inline-block">
-              <Image src="/logo.svg" alt="Logo" width={40} height={40} />
+              <Image src="/logo.png" alt="Logo" width={40} height={40} />
             </Link>
 
             <div className="flex items-center gap-2">
