@@ -1,5 +1,5 @@
 import { generateOgImage } from "@/components/og-image";
-import { author, siteMetadata } from "@/lib/site-config";
+import { author } from "@/lib/site-config";
 
 export const revalidate = false;
 
@@ -11,6 +11,5 @@ export async function GET() {
   return generateOgImage({
     title: author.fullName,
     description: author.title,
-    site: siteMetadata.name,
   });
 }
