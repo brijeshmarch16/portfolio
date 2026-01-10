@@ -65,7 +65,7 @@ export const projects: Project[] = [
   {
     title: "My Portfolio",
     description: "A minimal, pixel-perfect dev portfolio and blog.",
-    image: "/projects/portfolio-v2.png",
+    image: "/projects/portfolio.png",
     techStack: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui"],
     githubUrl: "https://github.com/brijeshmarch16/portfolio",
     liveUrl: "https://brijeshmarch16.vercel.app",
