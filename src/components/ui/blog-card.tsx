@@ -7,12 +7,12 @@ import { Text } from "./text";
 export interface BlogCardProps extends React.HTMLAttributes<HTMLDivElement> {
   image: string;
   title: string;
-  description?: string;
+  description: string;
   date: string;
 }
 
 const BlogCard = React.forwardRef<HTMLDivElement, BlogCardProps>(
-  ({ className, image, title, description, date, ...props }, ref) => {
+  ({ className, image, title, description = "", date, ...props }, ref) => {
     const formattedDate = new Date(date).toLocaleDateString("en-US", {
       year: "numeric",
       month: "short",
@@ -33,6 +33,7 @@ const BlogCard = React.forwardRef<HTMLDivElement, BlogCardProps>(
             {formattedDate}
           </Text>
           <Card.Title>{title}</Card.Title>
+          <Card.Description>{description}</Card.Description>
         </Card.Header>
       </Card>
     );
