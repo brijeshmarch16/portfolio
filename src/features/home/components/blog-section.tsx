@@ -26,6 +26,7 @@ export async function BlogSection() {
                 image={post.data.image ?? ""}
                 title={post.data.title}
                 date={post.data.createdAt ?? ""}
+                description={post.data.description ?? ""}
               />
             </Link>
           );

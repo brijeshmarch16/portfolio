@@ -49,6 +49,7 @@ export default async function BlogPage() {
                 image={post.data.image ?? ""}
                 title={post.data.title}
                 date={post.data.createdAt ?? ""}
+                description={post.data.description ?? ""}
               />
             </Link>
           );
