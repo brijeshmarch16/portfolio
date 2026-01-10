@@ -41,7 +41,7 @@ export function StackSection() {
                   alt={`${stack.name} icon`}
                   width={40}
                   height={40}
-                  className="size-10"
+                  className="size-10 transition-all duration-200 hover:translate-y-1"
                 />
               </Tooltip.Trigger>
               <Tooltip.Content variant="default">{stack.name}</Tooltip.Content>
