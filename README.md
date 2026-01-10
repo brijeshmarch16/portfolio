@@ -8,22 +8,24 @@ A minimal, pixel-perfect dev portfolio, and blog to showcase my work as a Fronte
 - React 19
 - TypeScript
 - Tailwind CSS v4
-- retroui
+- RetroUI
 - Fumadocs
 
 ## Features
 
 - Clean & modern design
-- Light & Dark theme support
-- SEO optimization: JSON-LD schema, sitemap, robots
-- Installable PWA
+- Light & Dark theme support with system preference detection
+- Blog built with MDX (Fumadocs)
+- Dynamic OG images for blog posts
+- SEO optimized (JSON-LD, sitemap, robots.txt)
+- Vercel Analytics integration
 
-## Blog
+## Running the project
 
-- Built with Fumadocs
-- Access markdown by adding a new file in the `src/content/blog` directory
-- Syntax highlighting for code blocks
-- Dynamic OG images for each blog post
+1. Clone the repository
+2. Install dependencies `pnpm install`
+3. Run the development server `pnpm dev`
+4. Open `http://localhost:3000` in your browser
 
 ## License
 
