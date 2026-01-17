@@ -31,4 +31,12 @@ export const blogPosts = defineCollections({
 
 export default defineConfig({
   plugins: [lastModified()],
+  mdxOptions: {
+    rehypeCodeOptions: {
+      themes: {
+        light: "github-light",
+        dark: "github-dark",
+      },
+    },
+  },
 });

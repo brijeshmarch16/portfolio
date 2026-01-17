@@ -176,6 +176,30 @@
       transparent 1px
     );
   }
+  /* Light mode: use Shiki's light theme colors */
+  .shiki:not(.not-fumadocs-codeblock *) {
+    background-color: #f6f8fa !important;
+  }
+
+  .shiki:not(.not-fumadocs-codeblock *) code span {
+    color: var(--shiki-light);
+    background-color: transparent !important;
+  }
+
+  /* Dark mode: use Shiki's dark theme colors */
+  .dark .shiki:not(.not-fumadocs-codeblock *) {
+    background-color: var(--shiki-dark-bg) !important;
+  }
+
+  .dark .shiki:not(.not-fumadocs-codeblock *) code span {
+    color: var(--shiki-dark);
+    background-color: transparent !important;
+  }
+
+  /* Ensure code element has no background */
+  .shiki:not(.not-fumadocs-codeblock *) code {
+    background-color: transparent !important;
+  }
 }
 
 @keyframes wave {

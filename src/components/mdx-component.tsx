@@ -115,18 +115,32 @@ const components = (type: "doc" | "blog") => ({
   code: ({
     className,
     children,
+    style,
     ...props
-  }: React.HTMLAttributes<HTMLElement>) => (
-    <code
-      className={cn(
-        "relative rounded-sm bg-[#282A36] p-1 text-primary text-sm",
-        className,
-      )}
-      {...props}
-    >
-      {children}
-    </code>
-  ),
+  }: React.HTMLAttributes<HTMLElement>) => {
+    const isBlockCode = className?.includes("language-");
+
+    if (isBlockCode) {
+      return (
+        <code className={className} style={style} {...props}>
+          {children}
+        </code>
+      );
+    }
+
+    return (
+      <code
+        className={cn(
+          "relative rounded-sm bg-muted px-1 py-0.5 text-sm",
+          className,
+        )}
+        style={style}
+        {...props}
+      >
+        {children}
+      </code>
+    );
+  },
   TabGroup,
   TabList,
   Tab,
