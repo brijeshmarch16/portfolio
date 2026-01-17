@@ -13,7 +13,12 @@ export async function copyToClipboardWithMeta(value: string, event?: Event) {
   }
 }
 
-export function CodeBlock({ className, children, ...props }: ICodeBlock) {
+export function CodeBlock({
+  className,
+  children,
+  style,
+  ...props
+}: ICodeBlock) {
   const [hasCopied, setHasCopied] = React.useState(false);
   const preRef = React.useRef<HTMLPreElement>(null);
 
@@ -32,10 +37,9 @@ export function CodeBlock({ className, children, ...props }: ICodeBlock) {
   return (
     <div className="relative">
       <pre
-        className={cn(
-          "mt-6 mb-8 overflow-x-auto rounded-sm bg-[#282A36] p-4",
-          className,
-        )}
+        ref={preRef}
+        className={cn("mt-6 mb-8 overflow-x-auto rounded-sm p-4", className)}
+        style={style}
         {...props}
       >
         <Button
@@ -48,7 +52,7 @@ export function CodeBlock({ className, children, ...props }: ICodeBlock) {
         >
           {hasCopied ? "Copied" : "Copy"}
         </Button>
-        <span ref={preRef}>{children}</span>
+        {children}
       </pre>
     </div>
   );
