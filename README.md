@@ -2,6 +2,8 @@
 
 A minimal, pixel-perfect dev portfolio, and blog to showcase my work as a Frontend Engineer.
 
+![Portfolio Preview](public/preview.png)
+
 ## Tech Stack
 
 - Next.js 16
