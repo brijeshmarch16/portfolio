@@ -1,5 +1,5 @@
 import { author, socialLinks } from "@/lib/site-config";
-import type { Project, Stack } from "../types";
+import type { Project, Stack, Testimonial } from "../types";
 
 export const personalInfo = {
   shortName: author.shortName,
@@ -79,3 +79,34 @@ export const contactInfo = {
   message:
     "Feel free to reach out if you want to collaborate on a project, need help with something, or just want to connect. I'll do my best to respond promptly!",
 };
+
+export const testimonials: Testimonial[] = [
+  {
+    name: "Ven Vadlamani, CFA",
+    role: "Solutions Architect",
+    company: "LinkedIn",
+    content:
+      "Brijesh has a deep mastery of front-end development, with specific expertise in Next.js. His ability to build highly performant, scalable, and maintainable applications was nothing short of impressive. He consistently delivered clean and efficient code.",
+  },
+  {
+    name: "Chetan Mahajan",
+    role: "Founder & CEO @ ThingsLinker",
+    company: "ThingsLinker",
+    content:
+      "I highly recommend Brijeshkumar for his excellent skills in HTML to React and NextJS. He consistently transforms static HTML into dynamic, responsive React applications with precision. His deep understanding of NextJS ensures highly performant and SEO-friendly web applications.",
+  },
+  {
+    name: "Shreyaa Prajapati",
+    role: "Tech Co-Founder",
+    company: "LinkedIn",
+    content:
+      "We highly recommend Brijesh for his exceptional skills in software development. His proficiency in understanding complex problems and swiftly proposing effective solutions sets him apart. He is not only a talented developer but also a quick learner.",
+  },
+  {
+    name: "Balaji M",
+    role: "Manager @ NEWERO Techspot",
+    company: "NEWERO Techspot",
+    content:
+      "I can confidently say that Brijesh is an exceptional front end developer. What sets him apart is his dedication to delivering high-quality code and solutions. He consistently demonstrates a strong commitment to best practices and project timelines.",
+  },
+];
