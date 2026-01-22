@@ -13,3 +13,12 @@ export interface Project {
   githubUrl: string;
   liveUrl: string;
 }
+
+export interface Testimonial {
+  name: string;
+  role: string;
+  company: string;
+  image?: string;
+  content: string;
+  linkedinUrl?: string;
+}
