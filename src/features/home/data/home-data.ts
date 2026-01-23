@@ -40,7 +40,7 @@ export const stack: Array<Omit<Stack, "iconPath">> = [
 export const workExperience = [
   {
     title: "Frontend Engineer",
-    company: "Self Employed",
+    company: "Freelance",
     period: "May 2023 - Present",
     current: true,
     description: [],
