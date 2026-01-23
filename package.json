@@ -16,7 +16,7 @@
     "@vercel/analytics": "^1.6.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "fumadocs-core": "^16.4.3",
+    "fumadocs-core": "^16.4.7",
     "fumadocs-mdx": "^14.2.4",
     "lucide-react": "^0.562.0",
     "next": "16.1.1",
