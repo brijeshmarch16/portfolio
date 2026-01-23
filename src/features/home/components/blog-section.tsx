@@ -13,14 +13,14 @@ export async function BlogSection() {
   return (
     <Section>
       <SectionTitle>Latest Articles</SectionTitle>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
+      <div className="grid auto-rows-fr grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
         {displayedPosts.map((post) => {
           const slug = post.slugs?.[0];
           return (
             <Link
               key={slug}
               href={`/blog/${slug}` as Route<"/blog/[slug]">}
-              className="block transition-all duration-200 hover:translate-y-1"
+              className="block h-full transition-all duration-200 hover:translate-y-1"
             >
               <BlogCard
                 image={post.data.image ?? ""}

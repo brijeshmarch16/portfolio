@@ -36,14 +36,14 @@ export default async function BlogPage() {
         </Text>
       </section>
 
-      <section className="grid grid-cols-1 gap-4 px-4 py-6 sm:grid-cols-2 sm:gap-6">
+      <section className="grid auto-rows-fr grid-cols-1 gap-4 px-4 py-6 sm:grid-cols-2 sm:gap-6">
         {posts.map((post) => {
           const slug = post.slugs?.[0];
           return (
             <Link
               key={slug}
               href={`/blog/${slug}` as Route<"/blog/[slug]">}
-              className="block"
+              className="block h-full"
             >
               <BlogCard
                 image={post.data.image ?? ""}
