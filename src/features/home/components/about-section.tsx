@@ -27,7 +27,7 @@ export function AboutSection() {
             {testimonials.map((testimonial) => (
               <Card
                 key={testimonial.name}
-                className="flex flex-col transition-all duration-200 hover:translate-y-1"
+                className="flex flex-col transition-all duration-200 hover:-translate-y-1"
               >
                 <Card.Content className="flex flex-1 flex-col pt-4">
                   <QuoteIcon className="mb-4 h-8 w-8 fill-primary text-primary" />

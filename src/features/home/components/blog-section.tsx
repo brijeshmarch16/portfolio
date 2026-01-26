@@ -20,7 +20,7 @@ export async function BlogSection() {
             <Link
               key={slug}
               href={`/blog/${slug}` as Route<"/blog/[slug]">}
-              className="block h-full transition-all duration-200 hover:translate-y-1"
+              className="block h-full transition-all duration-200 hover:-translate-y-1"
             >
               <BlogCard
                 image={post.data.image ?? ""}
