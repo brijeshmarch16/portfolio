@@ -14,7 +14,7 @@ export function ProjectsSection() {
         {projects.map((project) => (
           <Card
             key={project.title}
-            className="group flex flex-col overflow-hidden transition-all duration-200 hover:translate-y-1"
+            className="group flex flex-col overflow-hidden transition-all duration-200 hover:-translate-y-1"
           >
             <div className="relative h-40 overflow-hidden bg-muted sm:h-48">
               <Image

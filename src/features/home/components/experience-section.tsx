@@ -11,7 +11,7 @@ export function ExperienceSection() {
         {workExperience.map((job) => (
           <Card
             key={job.company}
-            className="transition-all duration-200 hover:translate-y-1"
+            className="transition-all duration-200 hover:-translate-y-1"
           >
             <Card.Header>
               <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">

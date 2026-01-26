@@ -13,7 +13,7 @@ const Card = React.forwardRef<HTMLDivElement, ICardProps>(
       <div
         ref={ref}
         className={cn(
-          "flex h-full w-full flex-col rounded border-2 bg-card shadow-md transition-all hover:shadow-none",
+          "flex h-full w-full flex-col rounded border-2 bg-card shadow-sm transition-all hover:shadow-md",
           className,
         )}
         {...props}

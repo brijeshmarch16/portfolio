@@ -5,7 +5,6 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
 import { Section, SectionTitle } from "@/components/ui/section";
-import { Tooltip } from "@/components/ui/tooltip";
 import { stack } from "../data/home-data";
 import type { Stack } from "../types";
 
@@ -31,22 +30,21 @@ export function StackSection() {
   return (
     <Section>
       <SectionTitle>Stack</SectionTitle>
-      <div className="inline-flex flex-wrap gap-4">
-        {mappedStack.map((stack) => (
-          <Tooltip.Provider key={stack.key}>
-            <Tooltip>
-              <Tooltip.Trigger asChild>
-                <Image
-                  src={stack.iconPath}
-                  alt={`${stack.name} icon`}
-                  width={40}
-                  height={40}
-                  className="size-10 transition-all duration-200 hover:translate-y-1"
-                />
-              </Tooltip.Trigger>
-              <Tooltip.Content variant="default">{stack.name}</Tooltip.Content>
-            </Tooltip>
-          </Tooltip.Provider>
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+        {mappedStack.map((skill) => (
+          <div
+            key={skill.key}
+            className="flex items-center gap-2 rounded border-2 border-border bg-card p-3 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+          >
+            <Image
+              src={skill.iconPath}
+              alt={`${skill.name} icon`}
+              width={24}
+              height={24}
+              className="size-6 shrink-0"
+            />
+            <span className="text-xs font-medium">{skill.name}</span>
+          </div>
         ))}
       </div>
     </Section>
