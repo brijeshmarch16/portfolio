@@ -50,9 +50,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${archivoBlack.variable} ${space.variable} antialiased`}
-      >
+      <body className={`${archivoBlack.variable} ${space.variable} antialiased`}>
         <JsonLd schema={[createPersonSchema(), createWebSiteSchema()]} />
         <ThemeProvider
           attribute="class"

@@ -31,9 +31,7 @@ export function AboutSection() {
               >
                 <Card.Content className="flex flex-1 flex-col pt-4">
                   <QuoteIcon className="mb-4 h-8 w-8 fill-primary text-primary" />
-                  <p className="mb-6 flex-1 leading-relaxed">
-                    {testimonial.content}
-                  </p>
+                  <p className="mb-6 flex-1 leading-relaxed">{testimonial.content}</p>
                   <div className="flex items-center gap-3">
                     {testimonial.image ? (
                       <Image
@@ -50,9 +48,7 @@ export function AboutSection() {
                     )}
                     <div>
                       <p className="font-bold">{testimonial.name}</p>
-                      <p className="text-muted-foreground text-sm">
-                        {testimonial.role}
-                      </p>
+                      <p className="text-muted-foreground text-sm">{testimonial.role}</p>
                     </div>
                   </div>
                 </Card.Content>

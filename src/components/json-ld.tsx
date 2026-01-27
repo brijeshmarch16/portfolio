@@ -1,8 +1,4 @@
-import type {
-  BlogPostingSchema,
-  PersonSchema,
-  WebSiteSchema,
-} from "@/lib/json-ld";
+import type { BlogPostingSchema, PersonSchema, WebSiteSchema } from "@/lib/json-ld";
 
 type JsonLdSchema = PersonSchema | WebSiteSchema | BlogPostingSchema;
 

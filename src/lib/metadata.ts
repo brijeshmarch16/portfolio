@@ -37,10 +37,7 @@ function getOpenGraphUrl(override: Metadata): string {
   return baseUrl.toString();
 }
 
-function getOpenGraphTitle(
-  override: Metadata,
-  fallbackTitle: string | undefined,
-) {
+function getOpenGraphTitle(override: Metadata, fallbackTitle: string | undefined) {
   const ogTitle = override.openGraph?.title;
   return typeof ogTitle === "string" ? ogTitle : fallbackTitle;
 }

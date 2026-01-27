@@ -15,10 +15,8 @@ const textVariants = cva("font-head", {
       h4: "font-normal text-xl",
       h5: "font-normal text-lg",
       h6: "font-normal text-base",
-      small:
-        "font-sans text-muted-foreground text-xs leading-normal md:text-sm",
-      muted:
-        "font-sans text-muted-foreground text-sm leading-relaxed md:text-base",
+      small: "font-sans text-muted-foreground text-xs leading-normal md:text-sm",
+      muted: "font-sans text-muted-foreground text-sm leading-relaxed md:text-base",
     },
   },
   defaultVariants: {
@@ -32,18 +30,16 @@ interface TextProps
   className?: string;
 }
 
-export const Text = React.forwardRef<HTMLElement, TextProps>(
-  function Text(props, ref) {
-    const { className, as, ...otherProps } = props;
-    const Tag: ElementType = as === "muted" ? "p" : as || "p";
+export const Text = React.forwardRef<HTMLElement, TextProps>(function Text(props, ref) {
+  const { className, as, ...otherProps } = props;
+  const Tag: ElementType = as === "muted" ? "p" : as || "p";
 
-    return (
-      <Tag
-        // biome-ignore lint/suspicious/noExplicitAny: ref is any type
-        ref={ref as Ref<any>}
-        className={cn(textVariants({ as }), className)}
-        {...otherProps}
-      />
-    );
-  },
-);
+  return (
+    <Tag
+      // biome-ignore lint/suspicious/noExplicitAny: ref is any type
+      ref={ref as Ref<any>}
+      className={cn(textVariants({ as }), className)}
+      {...otherProps}
+    />
+  );
+});

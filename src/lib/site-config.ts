@@ -34,8 +34,7 @@ function createBaseUrl(): URL {
 
 export const siteMetadata: SiteMetadata = {
   name: "Portfolio",
-  description:
-    "Brijeshkumar Yadav – Frontend Engineer | React, Next.js & TypeScript",
+  description: "Brijeshkumar Yadav – Frontend Engineer | React, Next.js & TypeScript",
   baseUrl: createBaseUrl(),
 };
 

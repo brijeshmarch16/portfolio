@@ -9,11 +9,7 @@ export interface SectionProps extends React.HTMLAttributes<HTMLElement> {
 const Section = React.forwardRef<HTMLElement, SectionProps>(
   ({ className, children, ...props }, ref) => {
     return (
-      <section
-        ref={ref}
-        className={cn("px-4 py-4 sm:py-8", className)}
-        {...props}
-      >
+      <section ref={ref} className={cn("px-4 py-4 sm:py-8", className)} {...props}>
         {children}
       </section>
     );
@@ -22,28 +18,18 @@ const Section = React.forwardRef<HTMLElement, SectionProps>(
 
 Section.displayName = "Section";
 
-const SectionTitle = React.forwardRef<
-  HTMLHeadingElement,
-  React.HTMLAttributes<HTMLHeadingElement>
->(({ className, ...props }, ref) => (
-  <Text
-    as="h2"
-    ref={ref}
-    className={cn("mb-4 sm:mb-6", className)}
-    {...props}
-  />
-));
+const SectionTitle = React.forwardRef<HTMLHeadingElement, React.HTMLAttributes<HTMLHeadingElement>>(
+  ({ className, ...props }, ref) => (
+    <Text as="h2" ref={ref} className={cn("mb-4 sm:mb-6", className)} {...props} />
+  ),
+);
 SectionTitle.displayName = "SectionTitle";
 
 const SectionDescription = React.forwardRef<
   HTMLParagraphElement,
   React.HTMLAttributes<HTMLParagraphElement>
 >(({ className, ...props }, ref) => (
-  <Text
-    ref={ref}
-    className={cn("mb-6 text-muted-foreground", className)}
-    {...props}
-  />
+  <Text ref={ref} className={cn("mb-6 text-muted-foreground", className)} {...props} />
 ));
 SectionDescription.displayName = "SectionDescription";
 

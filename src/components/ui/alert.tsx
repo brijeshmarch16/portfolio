@@ -26,11 +26,7 @@ interface IAlertProps
     VariantProps<typeof alertVariants> {}
 
 const Alert = ({ className, variant, status, ...props }: IAlertProps) => (
-  <div
-    role="alert"
-    className={cn(alertVariants({ variant, status }), className)}
-    {...props}
-  />
+  <div role="alert" className={cn(alertVariants({ variant, status }), className)} {...props} />
 );
 Alert.displayName = "Alert";
 
@@ -40,8 +36,7 @@ const AlertTitle = ({ className, ...props }: IAlertTitleProps) => (
 );
 AlertTitle.displayName = "AlertTitle";
 
-interface IAlertDescriptionProps
-  extends HtmlHTMLAttributes<HTMLParagraphElement> {}
+interface IAlertDescriptionProps extends HtmlHTMLAttributes<HTMLParagraphElement> {}
 const AlertDescription = ({ className, ...props }: IAlertDescriptionProps) => (
   <Text as="muted" className={cn(className)} {...props} />
 );
