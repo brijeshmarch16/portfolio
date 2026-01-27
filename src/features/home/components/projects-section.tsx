@@ -10,13 +10,10 @@ export function ProjectsSection() {
   return (
     <Section>
       <SectionTitle>Projects</SectionTitle>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
+      <div className="grid grid-cols-1 gap-6">
         {projects.map((project) => (
-          <Card
-            key={project.title}
-            className="group flex flex-col overflow-hidden transition-all duration-200 hover:-translate-y-1"
-          >
-            <div className="relative h-40 overflow-hidden bg-muted sm:h-48">
+          <Card key={project.title} className="group flex flex-col overflow-hidden">
+            <div className="relative aspect-video overflow-hidden bg-muted">
               <Image src={project.image} alt={project.title} fill className="object-cover" />
             </div>
 

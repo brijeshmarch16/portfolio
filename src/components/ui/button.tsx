@@ -9,11 +9,11 @@ export const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "border-2 border-black bg-primary text-primary-foreground shadow-md transition hover:translate-y-1 hover:bg-primary-hover hover:shadow active:translate-x-1 active:translate-y-2 active:shadow-none",
+          "border-2 border-black bg-primary text-primary-foreground shadow-md transition-all duration-200 hover:translate-y-1 hover:bg-primary-hover hover:shadow active:translate-x-1 active:translate-y-2 active:shadow-none",
         secondary:
-          "border-2 border-black bg-secondary text-secondary-foreground shadow-md shadow-primary transition hover:translate-y-1 hover:bg-secondary-hover hover:shadow active:translate-x-1 active:translate-y-2 active:shadow-none",
+          "border-2 border-black bg-secondary text-secondary-foreground shadow-md shadow-primary transition-all duration-200 hover:translate-y-1 hover:bg-secondary-hover hover:shadow active:translate-x-1 active:translate-y-2 active:shadow-none",
         outline:
-          "border-2 bg-transparent shadow-md transition hover:translate-y-1 hover:shadow active:translate-x-1 active:translate-y-2 active:shadow-none",
+          "border-2 bg-transparent shadow-md transition-all duration-200 hover:translate-y-1 hover:shadow active:translate-x-1 active:translate-y-2 active:shadow-none",
         link: "bg-transparent hover:underline",
         ghost: "bg-transparent hover:bg-accent",
       },
