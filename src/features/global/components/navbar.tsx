@@ -35,7 +35,7 @@ const Navbar = React.forwardRef<HTMLElement, NavbarProps>(
         <nav
           ref={ref}
           className={cn(
-            "fixed top-5 left-1/2 z-50 w-[95%] max-w-2xl -translate-x-1/2 rounded border-3 border-border bg-background px-2 py-2 shadow sm:px-4 sm:py-3",
+            "fixed top-5 left-1/2 z-50 w-[95%] max-w-2xl -translate-x-1/2 rounded border-3 border-border bg-background px-2 py-2 shadow-sm sm:px-4 sm:py-3",
             className,
           )}
           {...props}

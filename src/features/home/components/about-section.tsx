@@ -25,10 +25,7 @@ export function AboutSection() {
           <h3 className="font-semibold text-foreground">What People Say</h3>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
             {testimonials.map((testimonial) => (
-              <Card
-                key={testimonial.name}
-                className="flex flex-col transition-all duration-200 hover:-translate-y-1"
-              >
+              <Card key={testimonial.name} className="flex flex-col">
                 <Card.Content className="flex flex-1 flex-col pt-4">
                   <QuoteIcon className="mb-4 h-8 w-8 fill-primary text-primary" />
                   <p className="mb-6 flex-1 leading-relaxed">{testimonial.content}</p>

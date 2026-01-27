@@ -34,7 +34,7 @@ export function StackSection() {
         {mappedStack.map((skill) => (
           <div
             key={skill.key}
-            className="flex items-center gap-2 rounded border-2 border-border bg-card p-3 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+            className="flex items-center gap-2 rounded border-2 border-border bg-card p-3 shadow-sm"
           >
             <Image
               src={skill.iconPath}

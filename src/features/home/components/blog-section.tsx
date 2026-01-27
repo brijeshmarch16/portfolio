@@ -17,12 +17,9 @@ export async function BlogSection() {
         {displayedPosts.map((post) => {
           const slug = post.slugs?.[0];
           return (
-            <Link
-              key={slug}
-              href={`/blog/${slug}` as Route<"/blog/[slug]">}
-              className="block h-full transition-all duration-200 hover:-translate-y-1"
-            >
+            <Link key={slug} href={`/blog/${slug}` as Route<"/blog/[slug]">}>
               <BlogCard
+                className="block h-full transition-all duration-200 hover:translate-y-1 active:translate-x-1 active:translate-y-2 active:shadow-none"
                 image={post.data.image ?? ""}
                 title={post.data.title}
                 date={post.data.createdAt ?? ""}
