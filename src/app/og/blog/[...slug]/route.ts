@@ -8,10 +8,7 @@ export const revalidate = false;
  * Generates an Open Graph image for an individual blog post.
  * The route expects the last slug segment to be the image filename.
  */
-export async function GET(
-  _req: Request,
-  { params }: RouteContext<"/og/blog/[...slug]">,
-) {
+export async function GET(_req: Request, { params }: RouteContext<"/og/blog/[...slug]">) {
   const { slug } = await params;
   const page = blog.getPage(slug.slice(0, -1));
   if (!page) notFound();

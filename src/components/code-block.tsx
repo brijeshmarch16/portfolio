@@ -13,12 +13,7 @@ export async function copyToClipboardWithMeta(value: string, event?: Event) {
   }
 }
 
-export function CodeBlock({
-  className,
-  children,
-  style,
-  ...props
-}: ICodeBlock) {
+export function CodeBlock({ className, children, style, ...props }: ICodeBlock) {
   const [hasCopied, setHasCopied] = React.useState(false);
   const preRef = React.useRef<HTMLPreElement>(null);
 

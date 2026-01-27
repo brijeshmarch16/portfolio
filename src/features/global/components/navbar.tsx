@@ -35,7 +35,7 @@ const Navbar = React.forwardRef<HTMLElement, NavbarProps>(
         <nav
           ref={ref}
           className={cn(
-            "-translate-x-1/2 fixed top-5 left-1/2 z-50 w-[95%] max-w-2xl rounded border-3 border-border bg-background px-2 py-2 shadow sm:px-4 sm:py-3",
+            "fixed top-5 left-1/2 z-50 w-[95%] max-w-2xl -translate-x-1/2 rounded border-3 border-border bg-background px-2 py-2 shadow sm:px-4 sm:py-3",
             className,
           )}
           {...props}
@@ -75,12 +75,7 @@ const Navbar = React.forwardRef<HTMLElement, NavbarProps>(
         </nav>
 
         {/* Mobile Menu Overlay */}
-        {isMenuOpen && (
-          <MobileMenuOverlay
-            items={items}
-            onClose={() => setIsMenuOpen(false)}
-          />
-        )}
+        {isMenuOpen && <MobileMenuOverlay items={items} onClose={() => setIsMenuOpen(false)} />}
       </>
     );
   },
@@ -95,7 +90,7 @@ interface MobileMenuOverlayProps {
 
 const MobileMenuOverlay = ({ items, onClose }: MobileMenuOverlayProps) => {
   return (
-    <div className="-translate-x-1/2 fixed top-24 left-1/2 z-40 w-[95%] max-w-2xl border-3 border-border bg-card shadow">
+    <div className="fixed top-24 left-1/2 z-40 w-[95%] max-w-2xl -translate-x-1/2 border-3 border-border bg-card shadow">
       <div className="overflow-y-auto px-4 py-6">
         <div className="space-y-1">
           {items.map((item) => (
@@ -111,12 +106,7 @@ interface MobileNavLinkProps extends NavItem {
   onClose: () => void;
 }
 
-const MobileNavLink = ({
-  href,
-  label,
-  external,
-  onClose,
-}: MobileNavLinkProps) => {
+const MobileNavLink = ({ href, label, external, onClose }: MobileNavLinkProps) => {
   const handleClick = () => {
     if (!external) {
       onClose();
@@ -131,22 +121,14 @@ const MobileNavLink = ({
 
   if (external) {
     return (
-      <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        onClick={handleClick}
-      >
+      <a href={href} target="_blank" rel="noopener noreferrer" onClick={handleClick}>
         {linkContent}
       </a>
     );
   }
 
   return (
-    <Link
-      href={href as React.ComponentProps<typeof Link>["href"]}
-      onClick={handleClick}
-    >
+    <Link href={href as React.ComponentProps<typeof Link>["href"]} onClick={handleClick}>
       {linkContent}
     </Link>
   );
@@ -161,22 +143,13 @@ const NavLink = ({ href, label, external }: NavItem) => {
 
   if (external) {
     return (
-      <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block"
-      >
+      <a href={href} target="_blank" rel="noopener noreferrer" className="inline-block">
         {linkContent}
       </a>
     );
   }
 
-  return (
-    <Link href={href as React.ComponentProps<typeof Link>["href"]}>
-      {linkContent}
-    </Link>
-  );
+  return <Link href={href as React.ComponentProps<typeof Link>["href"]}>{linkContent}</Link>;
 };
 
 function ThemeToggle() {

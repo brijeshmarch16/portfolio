@@ -17,18 +17,14 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata(
-  props: PageProps<"/blog/[slug]">,
-): Promise<Metadata> {
+export async function generateMetadata(props: PageProps<"/blog/[slug]">): Promise<Metadata> {
   const { slug } = await props.params;
 
   const page = await blog.getPage([slug] as string[]);
 
   if (!page) notFound();
 
-  const ogImageUrl = createCanonical(
-    `/og/blog/${[...page.slugs, "image.png"].join("/")}`,
-  );
+  const ogImageUrl = createCanonical(`/og/blog/${[...page.slugs, "image.png"].join("/")}`);
 
   return createMetadata({
     title: page.data.title,
@@ -52,16 +48,12 @@ export default async function BlogPostPage(props: PageProps<"/blog/[slug]">) {
   }
 
   const postUrl = createCanonical(post.url);
-  const ogImageUrl = createCanonical(
-    `/og/blog/${[...post.slugs, "image.png"].join("/")}`,
-  );
+  const ogImageUrl = createCanonical(`/og/blog/${[...post.slugs, "image.png"].join("/")}`);
 
   const blogPostingSchema = createBlogPostingSchema(
     post.data.title,
     post.data.description ?? undefined,
-    post.data.createdAt
-      ? new Date(post.data.createdAt).toISOString()
-      : undefined,
+    post.data.createdAt ? new Date(post.data.createdAt).toISOString() : undefined,
     post.data.updatedAt
       ? new Date(post.data.updatedAt).toISOString()
       : post.data.createdAt
@@ -78,16 +70,9 @@ export default async function BlogPostPage(props: PageProps<"/blog/[slug]">) {
       <header className="space-y-2 border-b px-4 pb-4">
         <Text as="h1">{post.data.title}</Text>
         {post.data.image ? (
-          <Image
-            src={post.data.image}
-            alt={post.data.title}
-            width={1000}
-            height={1000}
-          />
+          <Image src={post.data.image} alt={post.data.title} width={1000} height={1000} />
         ) : null}
-        {post.data.description ? (
-          <Text as="muted">{post.data.description}</Text>
-        ) : null}
+        {post.data.description ? <Text as="muted">{post.data.description}</Text> : null}
       </header>
 
       <article className="mt-4 px-4 sm:mt-8">

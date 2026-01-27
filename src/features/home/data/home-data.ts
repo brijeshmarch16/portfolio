@@ -74,8 +74,7 @@ export const projects: Project[] = [
 
 export const contactInfo = {
   title: "Let's work together",
-  description:
-    "I'm always open to discussing new projects, creative ideas, or opportunities.",
+  description: "I'm always open to discussing new projects, creative ideas, or opportunities.",
   message:
     "Feel free to reach out if you want to collaborate on a project, need help with something, or just want to connect. I'll do my best to respond promptly!",
 };

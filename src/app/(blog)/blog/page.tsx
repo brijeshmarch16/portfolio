@@ -31,9 +31,7 @@ export default async function BlogPage() {
     <>
       <section className="px-4 text-center">
         <Text as="h1">Blog</Text>
-        <Text as="muted">
-          A collection of articles on development, and ideas.
-        </Text>
+        <Text as="muted">A collection of articles on development, and ideas.</Text>
       </section>
 
       <section className="grid auto-rows-fr grid-cols-1 gap-4 px-4 py-6 sm:grid-cols-2 sm:gap-6">

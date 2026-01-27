@@ -48,9 +48,7 @@ export interface BlogPostingSchema {
   image?: string;
 }
 
-export function createPersonSchema(
-  override?: Partial<PersonSchema>,
-): PersonSchema {
+export function createPersonSchema(override?: Partial<PersonSchema>): PersonSchema {
   return {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -58,17 +56,13 @@ export function createPersonSchema(
     jobTitle: author.title,
     email: author.email,
     url: siteMetadata.baseUrl.toString(),
-    sameAs: [socialLinks.github, socialLinks.linkedin].filter(
-      Boolean,
-    ) as Array<string>,
+    sameAs: [socialLinks.github, socialLinks.linkedin].filter(Boolean) as Array<string>,
     image: createAbsoluteUrl(author.heroImage),
     ...override,
   };
 }
 
-export function createWebSiteSchema(
-  override?: Partial<WebSiteSchema>,
-): WebSiteSchema {
+export function createWebSiteSchema(override?: Partial<WebSiteSchema>): WebSiteSchema {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",

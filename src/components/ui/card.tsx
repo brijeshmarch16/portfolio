@@ -7,30 +7,23 @@ interface ICardProps extends HTMLAttributes<HTMLDivElement> {
   className?: string;
 }
 
-const Card = React.forwardRef<HTMLDivElement, ICardProps>(
-  ({ className, ...props }, ref) => {
-    return (
-      <div
-        ref={ref}
-        className={cn(
-          "flex h-full w-full flex-col rounded border-2 bg-card shadow-sm transition-all hover:shadow-md",
-          className,
-        )}
-        {...props}
-      />
-    );
-  },
-);
+const Card = React.forwardRef<HTMLDivElement, ICardProps>(({ className, ...props }, ref) => {
+  return (
+    <div
+      ref={ref}
+      className={cn(
+        "flex h-full w-full flex-col rounded border-2 bg-card shadow-sm transition-all hover:shadow-md",
+        className,
+      )}
+      {...props}
+    />
+  );
+});
 
 Card.displayName = "Card";
 
 const CardHeader = ({ className, ...props }: ICardProps) => {
-  return (
-    <div
-      className={cn("flex flex-col justify-start p-4", className)}
-      {...props}
-    />
-  );
+  return <div className={cn("flex flex-col justify-start p-4", className)} {...props} />;
 };
 
 const CardTitle = ({ className, ...props }: ICardProps) => {
@@ -39,10 +32,7 @@ const CardTitle = ({ className, ...props }: ICardProps) => {
 
 const CardDescription = ({ className, ...props }: ICardProps) => (
   <p
-    className={cn(
-      "font-sans text-base text-muted-foreground leading-normal",
-      className,
-    )}
+    className={cn("font-sans text-base text-muted-foreground leading-normal", className)}
     {...props}
   />
 );

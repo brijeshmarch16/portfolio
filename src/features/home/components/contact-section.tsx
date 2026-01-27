@@ -25,21 +25,13 @@ export function ContactSection() {
               </a>
             </Button>
             <Button variant="secondary" asChild className="flex-1">
-              <a
-                href={personalInfo.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer">
                 <LinkedinIcon size={20} className="mr-2" />
                 LinkedIn
               </a>
             </Button>
             <Button variant="secondary" asChild className="flex-1">
-              <a
-                href={personalInfo.github}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={personalInfo.github} target="_blank" rel="noopener noreferrer">
                 <GithubIcon size={20} className="mr-2" />
                 GitHub
               </a>

@@ -30,11 +30,7 @@ export function ComponentShowcase({ name, children }: IComponentShowcase) {
               href={`https://v0.dev/chat/api/open?url=https://retroui.dev/r/${name}.json`}
               target="_blank"
             >
-              <Button
-                variant="secondary"
-                size="sm"
-                className="absolute top-4 right-4 font-sans"
-              >
+              <Button variant="secondary" size="sm" className="absolute top-4 right-4 font-sans">
                 Open in
                 <svg
                   viewBox="0 0 40 20"

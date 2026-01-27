@@ -33,12 +33,8 @@ const components = (type: "doc" | "blog") => ({
   h4: (props: HTMLAttributes<HTMLHeadingElement>) => (
     <Text as="h4" className="mt-4 mb-3" {...props} />
   ),
-  h5: (props: HTMLAttributes<HTMLHeadElement>) => (
-    <Text as="h5" className="mt-4 mb-2" {...props} />
-  ),
-  h6: (props: HTMLAttributes<HTMLHeadElement>) => (
-    <Text as="h6" className="mt-3 mb-2" {...props} />
-  ),
+  h5: (props: HTMLAttributes<HTMLHeadElement>) => <Text as="h5" className="mt-4 mb-2" {...props} />,
+  h6: (props: HTMLAttributes<HTMLHeadElement>) => <Text as="h6" className="mt-3 mb-2" {...props} />,
   p: (props: HTMLAttributes<HTMLHeadElement>) =>
     type === "blog" ? (
       <Text {...props} className="mb-4 text-foreground text-lg" />
@@ -46,42 +42,25 @@ const components = (type: "doc" | "blog") => ({
       <Text {...props} className="mb-4" />
     ),
   ul: (props: HTMLAttributes<HTMLUListElement>) => (
-    <ul
-      className={cn(type === "blog" ? "mb-6" : "mb-4", "list-none pl-0")}
-      {...props}
-    />
+    <ul className={cn(type === "blog" ? "mb-6" : "mb-4", "list-none pl-0")} {...props} />
   ),
   ol: (props: HTMLAttributes<HTMLOListElement>) => (
-    <ol
-      className={cn(type === "blog" ? "mb-6" : "mb-4", "list-none pl-0")}
-      {...props}
-    />
+    <ol className={cn(type === "blog" ? "mb-6" : "mb-4", "list-none pl-0")} {...props} />
   ),
   li: (props: HTMLAttributes<HTMLHeadElement>) =>
     type === "blog" ? (
-      <Text
-        as="li"
-        {...props}
-        className="mb-2 ml-4 list-disc text-foreground text-lg lg:ml-8"
-      />
+      <Text as="li" {...props} className="mb-2 ml-4 list-disc text-foreground text-lg lg:ml-8" />
     ) : (
       <Text as="li" className="mb-2 ml-4" {...props} />
     ),
   blockquote: (props: HTMLAttributes<HTMLQuoteElement>) => (
-    <blockquote
-      className="my-6 ml-4 border-primary border-l-4 pl-4 italic"
-      {...props}
-    />
+    <blockquote className="my-6 ml-4 border-primary border-l-4 pl-4 italic" {...props} />
   ),
   hr: (props: HTMLAttributes<HTMLHRElement>) => (
     <hr className="my-8 border-border border-t" {...props} />
   ),
-  strong: (props: HTMLAttributes<HTMLElement>) => (
-    <strong className="font-bold" {...props} />
-  ),
-  em: (props: HTMLAttributes<HTMLElement>) => (
-    <em className="italic" {...props} />
-  ),
+  strong: (props: HTMLAttributes<HTMLElement>) => <strong className="font-bold" {...props} />,
+  em: (props: HTMLAttributes<HTMLElement>) => <em className="italic" {...props} />,
   img: (props: HTMLAttributes<HTMLImageElement>) => (
     // biome-ignore lint/a11y/useAltText: alt text is not required for images in mdx
     // biome-ignore lint/performance/noImgElement: image is not required for images in mdx
@@ -105,19 +84,11 @@ const components = (type: "doc" | "blog") => ({
         {...rest}
       />
     ) : (
-      <a
-        className="underline underline-offset-4 hover:decoration-primary"
-        {...rest}
-      />
+      <a className="underline underline-offset-4 hover:decoration-primary" {...rest} />
     );
   },
   pre: CodeBlock,
-  code: ({
-    className,
-    children,
-    style,
-    ...props
-  }: React.HTMLAttributes<HTMLElement>) => {
+  code: ({ className, children, style, ...props }: React.HTMLAttributes<HTMLElement>) => {
     const isBlockCode = className?.includes("language-");
 
     if (isBlockCode) {
@@ -130,10 +101,7 @@ const components = (type: "doc" | "blog") => ({
 
     return (
       <code
-        className={cn(
-          "relative rounded-sm bg-muted px-1 py-0.5 text-sm",
-          className,
-        )}
+        className={cn("relative rounded-sm bg-muted px-1 py-0.5 text-sm", className)}
         style={style}
         {...props}
       >

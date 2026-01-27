@@ -43,7 +43,7 @@ export function StackSection() {
               height={24}
               className="size-6 shrink-0"
             />
-            <span className="text-xs font-medium">{skill.name}</span>
+            <span className="font-medium text-xs">{skill.name}</span>
           </div>
         ))}
       </div>

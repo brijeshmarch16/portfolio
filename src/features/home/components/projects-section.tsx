@@ -17,12 +17,7 @@ export function ProjectsSection() {
             className="group flex flex-col overflow-hidden transition-all duration-200 hover:-translate-y-1"
           >
             <div className="relative h-40 overflow-hidden bg-muted sm:h-48">
-              <Image
-                src={project.image}
-                alt={project.title}
-                fill
-                className="object-cover"
-              />
+              <Image src={project.image} alt={project.title} fill className="object-cover" />
             </div>
 
             <Card.Header>
@@ -41,21 +36,13 @@ export function ProjectsSection() {
 
               <div className="mt-auto flex flex-col gap-2 sm:flex-row sm:gap-3">
                 <Button size="sm" asChild>
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                     <GithubIcon size={16} className="mr-1.5" />
                     GitHub
                   </a>
                 </Button>
                 <Button size="sm" variant="outline" asChild>
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                     <ExternalLinkIcon size={16} className="mr-1.5" />
                     Website
                   </a>
