@@ -19,22 +19,22 @@ export const aboutMe = [
 ];
 
 export const stack: Array<Omit<Stack, "iconPath">> = [
-  { name: "JavaScript", key: "javascript" },
-  { name: "TypeScript", key: "typescript" },
-  { name: "Node.js", key: "nodejs" },
-  { name: "React.js", key: "react" },
-  { name: "React Router", key: "react-router", hasThemedIcon: true },
   { name: "Next.js", key: "nextjs", hasThemedIcon: true },
-  { name: "Tailwind CSS", key: "tailwindcss" },
-  { name: "shadcn/ui", key: "shadcn-ui", hasThemedIcon: true },
+  { name: "React.js", key: "react" },
+  { name: "TypeScript", key: "typescript" },
+  { name: "JavaScript", key: "javascript" },
+  { name: "React Router", key: "react-router", hasThemedIcon: true },
+  { name: "TanStack Query", key: "tanstack-query", hasThemedIcon: true },
   { name: "Zustand", key: "zustand" },
   { name: "Redux Toolkit", key: "redux" },
-  { name: "TanStack Query", key: "tanstack-query", hasThemedIcon: true },
+  { name: "Tailwind CSS", key: "tailwindcss" },
+  { name: "shadcn/ui", key: "shadcn-ui", hasThemedIcon: true },
+  { name: "Node.js", key: "nodejs" },
   { name: "HTML5", key: "html5" },
   { name: "CSS3", key: "css3" },
   { name: "Git", key: "git" },
-  { name: "Vercel", key: "vercel", hasThemedIcon: true },
   { name: "Docker", key: "docker" },
+  { name: "Vercel", key: "vercel", hasThemedIcon: true },
 ];
 
 export const workExperience = [
