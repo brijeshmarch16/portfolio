@@ -7,7 +7,7 @@ export interface SiteMetadata {
 export interface Author {
   shortName: string;
   fullName: string;
-  title: string;
+  description: string;
   role: string;
   email: string;
   heroImage: string;
@@ -16,6 +16,7 @@ export interface Author {
 export interface SocialLinks {
   github: string;
   linkedin: string;
+  twitter: string;
   twitterHandle: string;
 }
 
@@ -41,7 +42,8 @@ export const siteMetadata: SiteMetadata = {
 export const author: Author = {
   shortName: "Brijesh",
   fullName: "Brijeshkumar Yadav",
-  title: "Frontend Engineer – React, Next.js & TypeScript",
+  description:
+    "Frontend Engineer. I love building things and helping people. Very active on Twitter and LinkedIn.",
   role: "Frontend Engineer",
   email: "brijeshkumaryadav@gmail.com",
   heroImage: "/images/hero/profile.jpg",
@@ -50,5 +52,6 @@ export const author: Author = {
 export const socialLinks: SocialLinks = {
   github: "https://github.com/brijeshmarch16",
   linkedin: "https://linkedin.com/in/brijeshmarch16",
-  twitterHandle: "@brijeshmarch16",
+  twitter: "https://x.com/brijeshmarch",
+  twitterHandle: "@brijeshmarch",
 };

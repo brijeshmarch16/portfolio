@@ -10,6 +10,6 @@ export const revalidate = false;
 export async function GET() {
   return generateOgImage({
     title: author.fullName,
-    description: author.title,
+    description: author.description,
   });
 }

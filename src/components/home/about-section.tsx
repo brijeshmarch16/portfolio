@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Card } from "@/components/ui/card";
 import { Section, SectionTitle } from "@/components/ui/section";
 import { Text } from "@/components/ui/text";
-import { aboutMe, testimonials } from "../data/home-data";
+import { aboutMe, testimonials } from "@/lib/home-data";
 
 export function AboutSection() {
   return (

@@ -17,6 +17,7 @@ const textVariants = cva("font-head", {
       h6: "font-normal text-base",
       small: "font-sans text-muted-foreground text-xs leading-normal md:text-sm",
       muted: "font-sans text-muted-foreground text-sm leading-relaxed md:text-base",
+      large: "font-sans text-lg text-muted-foreground md:text-xl",
     },
   },
   defaultVariants: {
@@ -32,7 +33,7 @@ interface TextProps
 
 export const Text = React.forwardRef<HTMLElement, TextProps>(function Text(props, ref) {
   const { className, as, ...otherProps } = props;
-  const Tag: ElementType = as === "muted" ? "p" : as || "p";
+  const Tag: ElementType = as === "muted" || as === "large" ? "p" : as || "p";
 
   return (
     <Tag

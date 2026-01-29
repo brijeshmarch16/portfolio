@@ -2,10 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { Archivo_Black, Space_Grotesk } from "next/font/google";
+import Dock from "@/components/dock";
 import { JsonLd } from "@/components/json-ld";
-import { Navbar } from "@/features/global/components/navbar";
-import { ThemeProvider } from "@/features/global/components/theme-provider";
-import { navItems } from "@/features/global/config/navigation";
+import { ThemeProvider } from "@/components/theme-provider";
 import { createPersonSchema, createWebSiteSchema } from "@/lib/json-ld";
 import { baseUrl, createCanonical, createMetadata } from "@/lib/metadata";
 import { author, siteMetadata } from "@/lib/site-config";
@@ -50,7 +49,9 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${archivoBlack.variable} ${space.variable} antialiased`}>
+      <body
+        className={`${archivoBlack.variable} ${space.variable} mx-auto max-w-2xl pt-12 pb-20 antialiased`}
+      >
         <JsonLd schema={[createPersonSchema(), createWebSiteSchema()]} />
         <ThemeProvider
           attribute="class"
@@ -58,8 +59,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar items={navItems} />
           {children}
+          <Dock />
           <Analytics />
         </ThemeProvider>
       </body>

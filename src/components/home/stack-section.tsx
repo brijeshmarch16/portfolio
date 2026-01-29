@@ -3,10 +3,9 @@
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-
 import { Section, SectionTitle } from "@/components/ui/section";
-import { stack } from "../data/home-data";
-import type { Stack } from "../types";
+import { stack } from "@/lib/home-data";
+import type { Stack } from "../../types";
 
 export function StackSection() {
   const { resolvedTheme } = useTheme();
