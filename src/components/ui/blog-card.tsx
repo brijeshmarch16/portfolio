@@ -21,7 +21,7 @@ const BlogCard = React.forwardRef<HTMLDivElement, BlogCardProps>(
 
     return (
       <Card ref={ref} className={cn("h-full overflow-hidden", className)} {...props}>
-        <div className="relative h-40 overflow-hidden bg-muted sm:h-48">
+        <div className="relative aspect-video overflow-hidden bg-muted">
           {image ? (
             <Image src={image} alt={title} fill className="object-cover" />
           ) : (
