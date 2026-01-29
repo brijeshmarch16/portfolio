@@ -1,10 +1,10 @@
 import { author, socialLinks } from "@/lib/site-config";
-import type { Project, Stack, Testimonial } from "../types";
+import type { Project, Stack, Testimonial } from "@/types";
 
 export const personalInfo = {
   shortName: author.shortName,
   fullName: author.fullName,
-  title: author.title,
+  description: author.description,
   role: author.role,
   email: author.email,
   github: socialLinks.github,
@@ -71,13 +71,6 @@ export const projects: Project[] = [
     liveUrl: "https://brijeshmarch16.vercel.app",
   },
 ];
-
-export const contactInfo = {
-  title: "Let's work together",
-  description: "I'm always open to discussing new projects, creative ideas, or opportunities.",
-  message:
-    "Feel free to reach out if you want to collaborate on a project, need help with something, or just want to connect. I'll do my best to respond promptly!",
-};
 
 export const testimonials: Testimonial[] = [
   {

@@ -1,7 +1,7 @@
 import { BriefcaseIcon } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Section, SectionTitle } from "@/components/ui/section";
-import { workExperience } from "../data/home-data";
+import { workExperience } from "@/lib/home-data";
 
 export function ExperienceSection() {
   return (

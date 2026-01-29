@@ -1,6 +1,6 @@
 import type { Metadata, Route } from "next";
 import Link from "next/link";
-import { BlogCard } from "@/components/ui/blog-card";
+import { BlogCard } from "@/components/blog-card";
 import { Text } from "@/components/ui/text";
 import { createCanonical, createMetadata } from "@/lib/metadata";
 import { author } from "@/lib/site-config";
@@ -34,7 +34,7 @@ export default async function BlogPage() {
         <Text as="muted">A collection of articles on development, and ideas.</Text>
       </section>
 
-      <section className="grid auto-rows-fr grid-cols-1 gap-4 px-4 py-6 sm:grid-cols-2 sm:gap-6">
+      <section className="flex gap-4 px-4 py-6 sm:gap-6">
         {posts.map((post) => {
           const slug = post.slugs?.[0];
           return (
@@ -43,12 +43,7 @@ export default async function BlogPage() {
               href={`/blog/${slug}` as Route<"/blog/[slug]">}
               className="block h-full"
             >
-              <BlogCard
-                image={post.data.image ?? ""}
-                title={post.data.title}
-                date={post.data.createdAt ?? ""}
-                description={post.data.description ?? ""}
-              />
+              <BlogCard title={post.data.title} description={post.data.description ?? ""} />
             </Link>
           );
         })}

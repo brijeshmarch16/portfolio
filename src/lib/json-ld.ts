@@ -53,7 +53,7 @@ export function createPersonSchema(override?: Partial<PersonSchema>): PersonSche
     "@context": "https://schema.org",
     "@type": "Person",
     name: author.fullName,
-    jobTitle: author.title,
+    description: author.description,
     email: author.email,
     url: siteMetadata.baseUrl.toString(),
     sameAs: [socialLinks.github, socialLinks.linkedin].filter(Boolean) as Array<string>,

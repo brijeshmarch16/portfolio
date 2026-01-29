@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Section, SectionTitle } from "@/components/ui/section";
-import { projects } from "../data/home-data";
+import { projects } from "@/lib/home-data";
 
 export function ProjectsSection() {
   return (
