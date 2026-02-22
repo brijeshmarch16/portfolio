@@ -2,7 +2,16 @@
 
 A minimal, pixel-perfect dev portfolio, and blog to showcase my work as a Frontend Engineer.
 
-![Portfolio Preview](public/preview.png)
+![Portfolio Preview – Dark](.github/screenshot-dark.png#gh-dark-mode-only)
+![Portfolio Preview – Light](.github/screenshot-light.png#gh-light-mode-only)
+
+## Features
+- Clean & modern design
+- Light & Dark theme support with system preference detection
+- Blog built with MDX (Fumadocs)
+- Dynamic OG images for blog posts
+- SEO optimized (JSON-LD, sitemap, robots.txt)
+- Vercel Analytics integration
 
 ## Tech Stack
 
@@ -12,15 +21,6 @@ A minimal, pixel-perfect dev portfolio, and blog to showcase my work as a Fronte
 - Tailwind CSS v4
 - RetroUI
 - Fumadocs
-
-## Features
-
-- Clean & modern design
-- Light & Dark theme support with system preference detection
-- Blog built with MDX (Fumadocs)
-- Dynamic OG images for blog posts
-- SEO optimized (JSON-LD, sitemap, robots.txt)
-- Vercel Analytics integration
 
 ## Running the project
 
