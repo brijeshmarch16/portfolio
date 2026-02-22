@@ -4,6 +4,14 @@ A minimal, pixel-perfect dev portfolio, and blog to showcase my work as a Fronte
 
 ![Portfolio Preview](public/preview.png)
 
+## Features
+- Clean & modern design
+- Light & Dark theme support with system preference detection
+- Blog built with MDX (Fumadocs)
+- Dynamic OG images for blog posts
+- SEO optimized (JSON-LD, sitemap, robots.txt)
+- Vercel Analytics integration
+
 ## Tech Stack
 
 - Next.js 16
@@ -12,15 +20,6 @@ A minimal, pixel-perfect dev portfolio, and blog to showcase my work as a Fronte
 - Tailwind CSS v4
 - RetroUI
 - Fumadocs
-
-## Features
-
-- Clean & modern design
-- Light & Dark theme support with system preference detection
-- Blog built with MDX (Fumadocs)
-- Dynamic OG images for blog posts
-- SEO optimized (JSON-LD, sitemap, robots.txt)
-- Vercel Analytics integration
 
 ## Running the project
 
