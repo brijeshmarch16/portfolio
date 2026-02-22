@@ -2,7 +2,8 @@
 
 A minimal, pixel-perfect dev portfolio, and blog to showcase my work as a Frontend Engineer.
 
-![Portfolio Preview](public/preview.png)
+![Portfolio Preview – Dark](.github/screenshot-dark.png#gh-dark-mode-only)
+![Portfolio Preview – Light](.github/screenshot-light.png#gh-light-mode-only)
 
 ## Features
 - Clean & modern design
