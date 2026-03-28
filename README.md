@@ -1,4 +1,4 @@
-# Portfolio
+# Portfolio &middot; [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![GitHub Repo Views](https://gitviews.com/repo/brijeshmarch16/portfolio.svg?label=views&style=flat&label-color=%23555&color=%234c1)
 
 A minimal, pixel-perfect dev portfolio, and blog to showcase my work as a Frontend Engineer.
 
