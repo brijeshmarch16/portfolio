@@ -9,8 +9,6 @@ import { Card } from "@/components/ui/card";
 import { Text } from "@/components/ui/text";
 import { cn } from "@/lib/utils";
 import { CodeBlock } from "./code-block";
-import { CliCommand, ComponentInstall } from "./component-install";
-import { ComponentShowcase } from "./component-showcase";
 import { Alert } from "./ui/alert";
 import { Table } from "./ui/table";
 
@@ -120,9 +118,6 @@ const components = (type: "doc" | "blog") => ({
   Image,
   Card,
   Alert,
-  ComponentShowcase,
-  ComponentInstall,
-  CliCommand,
 });
 
 export default function MDXComponents({
