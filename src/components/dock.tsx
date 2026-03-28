@@ -1,10 +1,11 @@
 "use client";
 
-import { GithubIcon, HomeIcon, LinkedinIcon, MoonIcon, NewspaperIcon, SunIcon } from "lucide-react";
+import { HomeIcon, MoonIcon, NewspaperIcon, SunIcon } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import { GithubIcon, LinkedinIcon } from "@/components/icons";
 import { socialLinks } from "@/lib/site-config";
 
 export default function Dock() {

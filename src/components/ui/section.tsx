@@ -33,4 +33,4 @@ const SectionDescription = React.forwardRef<
 ));
 SectionDescription.displayName = "SectionDescription";
 
-export { Section, SectionTitle, SectionDescription };
+export { Section, SectionDescription, SectionTitle };

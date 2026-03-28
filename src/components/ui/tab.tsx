@@ -52,4 +52,4 @@ const TabsContent = ({ children, className, ...props }: ITabsContent) => {
   );
 };
 
-export { Tabs, TabsPanels, TabsTrigger, TabsContent, TabsTriggerList };
+export { Tabs, TabsContent, TabsPanels, TabsTrigger, TabsTriggerList };
