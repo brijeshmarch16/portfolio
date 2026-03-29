@@ -31,4 +31,4 @@ A minimal, pixel-perfect dev portfolio, and blog to showcase my work as a Fronte
 
 ## License
 
-Licensed under the [MIT license](https://github.com/brijeshmarch16/portfolio/blob/main/LICENSE).
+Licensed under the [MIT license](LICENSE).
