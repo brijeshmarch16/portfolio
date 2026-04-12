@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#0f0f0f"/>
+
+  <!-- Top bar -->
+  <rect x="0" y="0" width="800" height="48" fill="#161616"/>
+  <rect x="20" y="18" width="80" height="12" rx="2" fill="#2a2a2a"/>
+  <rect x="120" y="18" width="60" height="12" rx="2" fill="#2a2a2a"/>
+  <rect x="200" y="18" width="60" height="12" rx="2" fill="#2a2a2a"/>
+  <circle cx="760" cy="24" r="14" fill="#222"/>
+
+  <!-- Sidebar -->
+  <rect x="0" y="48" width="200" height="452" fill="#111"/>
+  <rect x="16" y="72" width="168" height="12" rx="2" fill="#1e1e1e"/>
+  <rect x="16" y="100" width="140" height="10" rx="2" fill="#262626"/>
+  <rect x="16" y="120" width="120" height="10" rx="2" fill="#1e1e1e"/>
+  <rect x="16" y="140" width="150" height="10" rx="2" fill="#1e1e1e"/>
+  <rect x="16" y="160" width="130" height="10" rx="2" fill="#1e1e1e"/>
+
+  <!-- Stat cards row -->
+  <rect x="220" y="68" width="130" height="80" rx="4" fill="#161616" stroke="#222" stroke-width="1"/>
+  <rect x="234" y="82" width="60" height="8" rx="2" fill="#2a2a2a"/>
+  <rect x="234" y="100" width="80" height="18" rx="2" fill="#333"/>
+
+  <rect x="366" y="68" width="130" height="80" rx="4" fill="#161616" stroke="#222" stroke-width="1"/>
+  <rect x="380" y="82" width="60" height="8" rx="2" fill="#2a2a2a"/>
+  <rect x="380" y="100" width="80" height="18" rx="2" fill="#333"/>
+
+  <rect x="512" y="68" width="130" height="80" rx="4" fill="#161616" stroke="#222" stroke-width="1"/>
+  <rect x="526" y="82" width="60" height="8" rx="2" fill="#2a2a2a"/>
+  <rect x="526" y="100" width="80" height="18" rx="2" fill="#333"/>
+
+  <rect x="658" y="68" width="122" height="80" rx="4" fill="#161616" stroke="#222" stroke-width="1"/>
+  <rect x="672" y="82" width="60" height="8" rx="2" fill="#2a2a2a"/>
+  <rect x="672" y="100" width="80" height="18" rx="2" fill="#333"/>
+
+  <!-- Chart area -->
+  <rect x="220" y="164" width="420" height="180" rx="4" fill="#161616" stroke="#222" stroke-width="1"/>
+  <rect x="234" y="178" width="80" height="10" rx="2" fill="#2a2a2a"/>
+  <!-- Bar chart bars -->
+  <rect x="248" y="280" width="24" height="44" rx="2" fill="#2a2a2a"/>
+  <rect x="284" y="254" width="24" height="70" rx="2" fill="#333"/>
+  <rect x="320" y="268" width="24" height="56" rx="2" fill="#2a2a2a"/>
+  <rect x="356" y="236" width="24" height="88" rx="2" fill="#3a3a3a"/>
+  <rect x="392" y="250" width="24" height="74" rx="2" fill="#333"/>
+  <rect x="428" y="220" width="24" height="104" rx="2" fill="#444"/>
+  <rect x="464" y="244" width="24" height="80" rx="2" fill="#333"/>
+  <rect x="500" y="258" width="24" height="66" rx="2" fill="#2a2a2a"/>
+  <rect x="536" y="232" width="24" height="92" rx="2" fill="#3a3a3a"/>
+  <rect x="572" y="210" width="24" height="114" rx="2" fill="#555"/>
+
+  <!-- Table -->
+  <rect x="220" y="356" width="558" height="140" rx="4" fill="#161616" stroke="#222" stroke-width="1"/>
+  <rect x="234" y="370" width="80" height="10" rx="2" fill="#2a2a2a"/>
+  <!-- Table header -->
+  <rect x="234" y="392" width="530" height="1" fill="#222"/>
+  <!-- Table rows -->
+  <rect x="234" y="404" width="120" height="8" rx="2" fill="#242424"/>
+  <rect x="420" y="404" width="80" height="8" rx="2" fill="#242424"/>
+  <rect x="580" y="404" width="60" height="8" rx="2" fill="#242424"/>
+
+  <rect x="234" y="424" width="100" height="8" rx="2" fill="#1e1e1e"/>
+  <rect x="420" y="424" width="90" height="8" rx="2" fill="#1e1e1e"/>
+  <rect x="580" y="424" width="50" height="8" rx="2" fill="#1e1e1e"/>
+
+  <rect x="234" y="444" width="110" height="8" rx="2" fill="#1e1e1e"/>
+  <rect x="420" y="444" width="70" height="8" rx="2" fill="#1e1e1e"/>
+  <rect x="580" y="444" width="65" height="8" rx="2" fill="#1e1e1e"/>
+
+  <!-- Right panel -->
+  <rect x="652" y="164" width="126" height="180" rx="4" fill="#161616" stroke="#222" stroke-width="1"/>
+  <rect x="666" y="178" width="70" height="8" rx="2" fill="#2a2a2a"/>
+  <rect x="666" y="200" width="98" height="8" rx="2" fill="#1e1e1e"/>
+  <rect x="666" y="218" width="80" height="8" rx="2" fill="#1e1e1e"/>
+  <rect x="666" y="236" width="90" height="8" rx="2" fill="#1e1e1e"/>
+  <rect x="666" y="254" width="70" height="8" rx="2" fill="#1e1e1e"/>
+  <rect x="666" y="272" width="85" height="8" rx="2" fill="#1e1e1e"/>
+  <!-- Donut placeholder -->
+  <circle cx="714" cy="318" r="22" fill="none" stroke="#333" stroke-width="10"/>
+  <circle cx="714" cy="318" r="22" fill="none" stroke="#555" stroke-width="10" stroke-dasharray="60 80" stroke-dashoffset="20"/>
+</svg>
