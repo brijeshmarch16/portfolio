@@ -5,7 +5,7 @@ export const portfolio = {
     name: "brijeshkumaryadav",
     title: "Brijeshkumar Yadav - Frontend Engineer",
     description:
-      "I build fast, pixel-perfect web apps with React, Next.js, and TypeScript.",
+      "I'm a freelance frontend engineer based in India. I build fast, pixel-perfect web apps and care deeply about performance, clean code, and thoughtful user experience.",
     url: "https://brijeshkumaryadav.com",
   },
   about: {

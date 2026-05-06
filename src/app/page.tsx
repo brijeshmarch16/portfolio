@@ -6,12 +6,19 @@ import { SiteFooter } from "@/components/home/site-footer"
 import { TechStackSection } from "@/components/home/tech-stack-section"
 import { portfolio } from "@/lib/data"
 import { getPublishedBlogSummaries } from "@/lib/blog"
+import { createSiteJsonLd } from "@/lib/metadata"
 
 export default function Home() {
   const blogPosts = getPublishedBlogSummaries()
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-14 sm:px-6 sm:py-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(createSiteJsonLd()),
+        }}
+      />
       <IntroSection
         aboutMe={portfolio.about}
         socialMedia={portfolio.socialMedia}

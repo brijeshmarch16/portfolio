@@ -26,6 +26,38 @@ type BlogPostJsonLd = {
   }
 }
 
+type SiteJsonLd = {
+  "@context": "https://schema.org"
+  "@graph": [
+    {
+      "@type": "Person"
+      "@id": string
+      name: string
+      url: string
+      jobTitle: string
+      description: string
+      email: string
+      sameAs: string[]
+      knowsAbout: string[]
+      worksFor: {
+        "@type": "Organization"
+        name: string
+      }
+    },
+    {
+      "@type": "WebSite"
+      "@id": string
+      url: string
+      name: string
+      description: string
+      publisher: {
+        "@id": string
+      }
+      inLanguage: string
+    },
+  ]
+}
+
 function createMetadata(override: Metadata): Metadata {
   return {
     ...override,
@@ -45,6 +77,19 @@ function createMetadata(override: Metadata): Metadata {
       description: override.description ?? undefined,
       images: override.twitter?.images ?? override.openGraph?.images,
     },
+    authors: [{ name: portfolio.about.name, url: portfolio.site.url }],
+    creator: portfolio.about.name,
+    publisher: portfolio.about.name,
+    keywords: [
+      portfolio.about.name,
+      "Brijeshkumar Yadav",
+      "Frontend Engineer",
+      "Frontend Developer India",
+      "React Developer",
+      "Next.js Developer",
+      "TypeScript Developer",
+      "Freelance Frontend Engineer",
+    ],
     alternates: {
       ...override.alternates,
     },
@@ -132,6 +177,46 @@ export function createBlogPostJsonLd(post: BlogPostSummary): BlogPostJsonLd {
       "@type": "Person",
       name: portfolio.about.name,
     },
+  }
+}
+
+export function createSiteJsonLd(): SiteJsonLd {
+  const siteUrl = createCanonical("/")
+  const personId = createCanonical("/#person")
+  const websiteId = createCanonical("/#website")
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": personId,
+        name: portfolio.about.name,
+        url: siteUrl,
+        jobTitle: portfolio.about.role,
+        description: portfolio.about.bio,
+        email: "mailto:brijeshkumaryadav2026@gmail.com",
+        sameAs: portfolio.socialMedia
+          .filter(({ icon }) => icon !== "email")
+          .map(({ href }) => href),
+        knowsAbout: portfolio.techStack.map(({ label }) => label),
+        worksFor: {
+          "@type": "Organization",
+          name: "Freelance",
+        },
+      },
+      {
+        "@type": "WebSite",
+        "@id": websiteId,
+        url: siteUrl,
+        name: portfolio.site.title,
+        description: portfolio.site.description,
+        publisher: {
+          "@id": personId,
+        },
+        inLanguage: "en",
+      },
+    ],
   }
 }
 
