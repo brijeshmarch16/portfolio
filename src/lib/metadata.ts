@@ -142,7 +142,22 @@ export function createRobots(): MetadataRoute.Robots {
         userAgent: "*",
         allow: "/",
       },
+      {
+        userAgent: [
+          "GPTBot",
+          "Google-Extended",
+          "CCBot",
+          "FacebookBot",
+          "Anthropic-AI",
+          "Bytespider",
+          "ClaudeBot",
+          "Applebot-Extended",
+          "Diffbot",
+        ],
+        disallow: "/",
+      },
     ],
+    host: baseUrl.hostname,
     sitemap: createCanonical("/sitemap.xml"),
   }
 }

@@ -8,10 +8,11 @@ A minimal, pixel-perfect portfolio and blog showcasing my work as a Frontend Eng
 ## Features
 
 - Minimal and pixel-perfect design
-- Blog powered by MDX
+- MDX-powered blog
 - Light and dark mode
-- SEO optimized
-- Analytics with Vercel
+- SEO, sitemap, and robots support
+- AI-readable `llms.txt` profile
+- Vercel Analytics
 
 ## Tech Stack
 
@@ -30,6 +31,9 @@ Short explanation of:
 - `src/lib/data.ts` = portfolio content
 - `src/lib/blog.ts` = blog loading/parsing
 - `src/lib/metadata.ts` = SEO helpers
+- `src/app/robots.ts` = robots.txt generation
+- `src/app/sitemap.ts` = sitemap.xml generation
+- `public/llms.txt` = AI-readable site profile
 - `src/types/home.ts` and `src/types/blog.ts` = domain types
 - `src/app/blog/posts` = MDX blog posts
 
