@@ -16,7 +16,7 @@ export function BlogSection({ posts }: { posts: BlogPostSummary[] }) {
   }
 
   return (
-    <section className="flex flex-col gap-4 pt-8">
+    <section id="blog" className="flex flex-col gap-4 pt-8">
       <p className="text-sm font-medium text-muted-foreground uppercase">
         Blog
       </p>
