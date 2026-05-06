@@ -60,11 +60,7 @@ function TechStackIconGraphic({ icon }: { icon: TechStackIcon }) {
   }
 }
 
-export function TechStackSection({
-  items,
-}: {
-  items: TechStackItem[]
-}) {
+export function TechStackSection({ items }: { items: TechStackItem[] }) {
   return (
     <section className="flex flex-col gap-4 pt-8">
       <p className="text-sm font-medium text-muted-foreground uppercase">

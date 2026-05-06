@@ -5,14 +5,8 @@ import Script from "next/script"
 import { ArrowLeftIcon, CalendarDaysIcon, ClockIcon } from "lucide-react"
 import { MdxContent } from "@/components/blog/mdx-content"
 import { Button } from "@/components/ui/button"
-import {
-  getPublishedBlogPost,
-  getPublishedBlogStaticParams,
-} from "@/lib/blog"
-import {
-  createBlogPostJsonLd,
-  createBlogPostMetadata,
-} from "@/lib/metadata"
+import { getPublishedBlogPost, getPublishedBlogStaticParams } from "@/lib/blog"
+import { createBlogPostJsonLd, createBlogPostMetadata } from "@/lib/metadata"
 
 type BlogDetailPageProps = {
   params: Promise<{
@@ -77,7 +71,9 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
           <div className="flex flex-wrap gap-3 text-xs/relaxed text-muted-foreground">
             <span className="inline-flex items-center gap-1.5">
               <CalendarDaysIcon className="size-3.5" aria-hidden="true" />
-              <time dateTime={post.publishedAt}>{post.formattedPublishedAt}</time>
+              <time dateTime={post.publishedAt}>
+                {post.formattedPublishedAt}
+              </time>
             </span>
             <span className="inline-flex items-center gap-1.5">
               <ClockIcon className="size-3.5" aria-hidden="true" />

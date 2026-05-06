@@ -5,10 +5,7 @@ import Link from "next/link"
 import { MDXRemote } from "next-mdx-remote/rsc"
 import { highlight } from "sugar-high"
 
-function MdxLink({
-  href = "",
-  ...props
-}: ComponentPropsWithoutRef<"a">) {
+function MdxLink({ href = "", ...props }: ComponentPropsWithoutRef<"a">) {
   if (href.startsWith("/")) {
     return <Link href={href as Route} {...props} />
   }

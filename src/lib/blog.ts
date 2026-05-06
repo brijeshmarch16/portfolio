@@ -28,7 +28,10 @@ function parseFrontmatter(fileContent: string): {
 
   for (const line of frontmatter.trim().split("\n")) {
     const [key, ...valueParts] = line.split(":")
-    const value = valueParts.join(":").trim().replace(/^['"](.*)['"]$/, "$1")
+    const value = valueParts
+      .join(":")
+      .trim()
+      .replace(/^['"](.*)['"]$/, "$1")
     const metadataKey = key.trim()
 
     if (metadataKey === "published") {
