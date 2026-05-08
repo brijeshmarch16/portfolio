@@ -1,28 +1,35 @@
-"use client";
+"use client"
 
-import { MoonIcon, SunIcon } from "lucide-react";
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
+import { MoonIcon, SunIcon } from "lucide-react"
+import { useSyncExternalStore } from "react"
+import { useTheme } from "@/components/theme-provider"
+import { Button } from "@/components/ui/button"
+
+const emptySubscribe = () => () => {}
+
+function useMounted() {
+  return useSyncExternalStore(
+    emptySubscribe,
+    () => true,
+    () => false
+  )
+}
 
 export function ThemeToggle() {
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => setMounted(true), []);
+  const { resolvedTheme, setTheme } = useTheme()
+  const mounted = useMounted()
+  const nextTheme = mounted && resolvedTheme === "dark" ? "light" : "dark"
 
   return (
     <Button
-      size="sm"
+      type="button"
       variant="ghost"
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      aria-label="Toggle theme"
+      size="icon-sm"
+      onClick={() => setTheme(nextTheme)}
+      aria-label={`Switch to ${nextTheme} theme`}
     >
-      <SunIcon size={14} className="dark:hidden" />
-      <MoonIcon size={14} className="hidden dark:block" />
-      {mounted && (
-        <span className="ml-1.5 text-xs">{theme === "dark" ? "Light" : "Dark"}</span>
-      )}
+      <SunIcon data-icon="inline-start" className="dark:hidden" />
+      <MoonIcon data-icon="inline-start" className="hidden dark:block" />
     </Button>
-  );
+  )
 }

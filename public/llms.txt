@@ -1,0 +1,38 @@
+# Brijeshkumar Yadav
+
+> Frontend Engineer.
+
+I'm a freelance frontend engineer based in India. I build fast, pixel-perfect web apps and care deeply about performance, clean code, and thoughtful user experience. Outside client work, I'm building open-source projects.
+
+This file follows the [llms.txt specification](https://llmstxt.org), a proposed standard that helps AI language models and agents understand a website's content and structure.
+
+## Core
+
+- [Home](https://brijeshkumaryadav.com): Portfolio homepage with bio, tech stack, work experience, blog posts, projects, and contact links.
+- [Blog](https://brijeshkumaryadav.com/#blog): Technical writing by Brijeshkumar Yadav.
+- [Projects](https://brijeshkumaryadav.com/#projects): Featured projects by Brijeshkumar Yadav.
+
+## Projects
+
+- [AI Interview](https://ai-interview.brijeshkumaryadav.com): Open-source AI voice interview platform. Paste a job description, send candidates a link, and get back a full scorecard automatically. Built with Next.js, TypeScript, Tailwind CSS, shadcn/ui, Better Auth, ChatGPT AI, Retell AI, Drizzle, and PostgreSQL. Source: [GitHub](https://github.com/brijeshmarch16/ai-interview).
+- [ReactUseKit](https://reactusekit.vercel.app): React hooks and helpers collection to copy, paste, or install with the shadcn CLI. Built with Next.js, TypeScript, Tailwind CSS, fumadocs, and shadcn CLI. Source: [GitHub](https://github.com/brijeshmarch16/reactusekit).
+
+## Blog
+
+- [Building AI Interview: Self-Hosted AI Voice Interviews](https://brijeshkumaryadav.com/blog/building-ai-interview-self-hosted-ai-voice-interviews): Why I built AI Interview as a simple, open-source voice interview platform using Better Auth, PostgreSQL, and self-hosted deployment.
+
+## Skills & Expertise
+
+**Languages:** TypeScript, JavaScript
+**Frameworks:** Next.js, React.js
+**Styling:** Tailwind CSS, shadcn/ui
+**Frontend Tools:** TanStack Query
+**Runtime & Tools:** Node.js, Git, Docker
+**AI Tools:** ChatGPT, Claude
+
+## Contact
+
+- [GitHub](https://github.com/brijeshmarch16): Source code and open-source projects.
+- [LinkedIn](https://linkedin.com/in/brijeshmarch16): Professional profile.
+- [X / Twitter](https://x.com/brijeshmarch): Social profile.
+- [Email](mailto:brijeshkumaryadav2026@gmail.com): Direct email contact.

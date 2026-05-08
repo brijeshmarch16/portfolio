@@ -1,31 +1,48 @@
-# Portfolio &middot; [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![GitHub Repo Views](https://gitviews.com/repo/brijeshmarch16/portfolio.svg?label=views&style=flat&label-color=%23555&color=%234c1)
+# [brijeshkumaryadav.com](https://brijeshkumaryadav.com) &middot; [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![GitHub Repo Views](https://gitviews.com/repo/brijeshmarch16/brijeshkumaryadav.com.svg?label=views&style=flat&label-color=%23555&color=%234c1)
 
-A minimal, pixel-perfect dev portfolio to showcase my work as a Frontend Engineer.
+A minimal, pixel-perfect portfolio and blog showcasing my work as a Frontend Engineer.
 
 ![Portfolio Preview – Dark](.github/screenshot-dark.png#gh-dark-mode-only)
 ![Portfolio Preview – Light](.github/screenshot-light.png#gh-light-mode-only)
 
 ## Features
 
-- Clean & minimal single-page design
-- Light & Dark theme support with system preference detection
-- Fully static — no API calls, instant load
-- Vercel Analytics integration
+- Minimal and pixel-perfect design
+- MDX-powered blog
+- Light and dark mode
+- SEO, sitemap, and robots support
+- AI-readable `llms.txt` profile
+- Vercel Analytics
 
 ## Tech Stack
 
 - Next.js 16
-- React 19
+- React.js 19
 - TypeScript
 - Tailwind CSS v4
 - shadcn/ui
+- next-mdx-remote
+- Vercel Analytics
 
-## Running the project
+## Project Structure
 
-1. Clone the repository
-2. Install dependencies `pnpm install`
-3. Run the development server `pnpm dev`
-4. Open `http://localhost:3000` in your browser
+Short explanation of:
+
+- `src/lib/data.ts` = portfolio content
+- `src/lib/blog.ts` = blog loading/parsing
+- `src/lib/metadata.ts` = SEO helpers
+- `src/app/robots.ts` = robots.txt generation
+- `src/app/sitemap.ts` = sitemap.xml generation
+- `public/llms.txt` = AI-readable site profile
+- `src/types/home.ts` and `src/types/blog.ts` = domain types
+- `src/app/blog/posts` = MDX blog posts
+
+## Running the Project
+
+1. Clone the repository.
+2. Install dependencies with `pnpm install`.
+3. Start the development server with `pnpm dev`.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## License
 

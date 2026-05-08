@@ -1,16 +1,9 @@
-import type { MetadataRoute } from "next";
-import { createCanonical } from "@/lib/metadata";
+import type { MetadataRoute } from "next"
+import { getPublishedBlogSummaries } from "@/lib/blog"
+import { createSitemap } from "@/lib/metadata"
 
-export const revalidate = false;
+export const revalidate = false
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const url = (path: string): string => createCanonical(path);
-
-  return [
-    {
-      url: url("/"),
-      changeFrequency: "monthly",
-      priority: 1,
-    },
-  ];
+  return createSitemap(getPublishedBlogSummaries())
 }

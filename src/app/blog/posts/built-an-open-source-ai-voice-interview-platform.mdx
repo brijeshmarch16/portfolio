@@ -1,0 +1,31 @@
+---
+title: "Built an Open-Source AI Voice Interview Platform"
+published: true
+publishedAt: "2026-04-26"
+summary: "Why I built AI Interview after trying FoloUp, and how you can try the open-source version."
+readingTime: "1 min read"
+---
+
+I recently came across [FoloUp](https://github.com/foloup/foloup), an open-source AI voice interview project on GitHub.
+
+I liked the idea: send a candidate a link, let them complete a voice interview in the browser, and get back a scorecard with feedback.
+
+But when I tried to run it myself, the setup depended on **Clerk** for auth and **Supabase** for the database. Those tools are great, but I wanted something I could fully self-host with my own auth, database, and deployment.
+
+So I built **AI Interview**, an open-source AI voice interview platform using **Better Auth**, **PostgreSQL**, and deployable with **Vercel** or **Docker**.
+
+I wanted the setup to stay simple and easy to own:
+
+- **Better Auth** for authentication
+- **PostgreSQL** for the database
+- **Vercel or Docker** for deployment
+- **MIT license** so anyone can use and self-host it
+
+The workflow is simple:
+
+- Create an interview from a job description
+- Send the candidate link
+- Let the AI run the voice interview
+- Review the scorecard, transcript, and analytics
+
+Check it out on GitHub: [View the repository](https://github.com/brijeshmarch16/ai-interview)

@@ -1,84 +1,172 @@
-import type { AboutMe, Project, SiteMetadata, Skill, SocialMedia, WorkExperience } from "@/types";
+import type { Portfolio } from "@/types/home"
 
-function createBaseUrl(): URL {
-  return process.env.NODE_ENV === "development"
-    ? new URL("http://localhost:3000")
-    : new URL("https://brijeshkumaryadav.com/");
-}
-
-export const siteMetadata: SiteMetadata = {
-  name: "Portfolio of Brijeshkumar Yadav",
-  title: "Brijeshkumar Yadav",
-  description: "Brijeshkumar Yadav – Frontend Engineer | React, Next.js & TypeScript",
-  baseUrl: createBaseUrl(),
-};
-
-export const aboutMe: AboutMe = {
-  name: "Brijeshkumar Yadav",
-  bio: "I'm a freelance frontend engineer based in India. I build fast, pixel-perfect web apps and care deeply about **performance**, **clean code**, and **great user experience**. Outside client work, building open source **AI Interview** platform.",
-  role: "Frontend Engineer",
-  email: "brijeshkumaryadav2026@gmail.com",
-};
-
-export const skills: Skill[] = [
-  { name: "Next.js", url: "https://nextjs.org" },
-  { name: "React.js", url: "https://react.dev" },
-  { name: "TypeScript", url: "https://www.typescriptlang.org" },
-  { name: "Tailwind CSS", url: "https://tailwindcss.com" },
-  { name: "shadcn/ui", url: "https://ui.shadcn.com" },
-  { name: "Zustand", url: "https://zustand.docs.pmnd.rs" },
-  { name: "TanStack Query", url: "https://tanstack.com/query" },
-  { name: "Git", url: "https://git-scm.com" },
-  { name: "Docker", url: "https://www.docker.com" },
-  { name: "Claude", url: "https://claude.ai" },
-];
-
-export const workExperience: WorkExperience[] = [
-  {
-    title: "Frontend Engineer",
+export const portfolio = {
+  site: {
+    name: "brijeshkumaryadav",
+    title: "Brijeshkumar Yadav - Frontend Engineer",
+    description:
+      "I'm a freelance frontend engineer based in India. I build fast, pixel-perfect web apps and care deeply about performance, clean code, and thoughtful user experience.",
+    ogDescription: "Frontend Engineer / React / Next.js / TypeScript",
+    keywords: [
+      "Brijeshkumar Yadav",
+      "Frontend Engineer",
+      "Frontend Developer India",
+      "React Developer",
+      "Next.js Developer",
+      "TypeScript Developer",
+      "Freelance Frontend Engineer",
+    ],
+    url: "https://brijeshkumaryadav.com",
+  },
+  profile: {
+    name: "Brijeshkumar Yadav",
+    role: "Frontend Engineer",
     company: "Freelance",
-    period: "May 2023 - Present",
-    current: true,
+    location: "India",
+    bio: "I'm a self-taught frontend engineer with 5 years of experience, from learning during lockdown to working with companies and freelance clients. I build clean, responsive, and practical web experiences with React, Next.js, and TypeScript.",
   },
-  {
-    title: "Full Stack Engineer",
-    company: "SolGuruz®",
-    period: "Mar 2022 - Apr 2023",
-    current: false,
+  experience: [
+    {
+      title: "Frontend Engineer",
+      company: "Freelance",
+      period: "May 2023 - Present",
+      current: true,
+    },
+    {
+      title: "Full Stack Engineer",
+      company: "SolGuruz®",
+      period: "Mar 2022 - Apr 2023",
+      current: false,
+    },
+    {
+      title: "Frontend Engineer",
+      company: "Emperor Brains",
+      period: "May 2021 - Feb 2022",
+      current: false,
+    },
+  ],
+  techStack: [
+    {
+      label: "Next.js",
+      href: "https://nextjs.org/",
+      icon: "nextjs",
+    },
+    {
+      label: "React.js",
+      href: "https://react.dev/",
+      icon: "react",
+    },
+    {
+      label: "TypeScript",
+      href: "https://www.typescriptlang.org/",
+      icon: "typescript",
+    },
+    {
+      label: "JavaScript",
+      href: "https://developer.mozilla.org/docs/Web/JavaScript",
+      icon: "javascript",
+    },
+    {
+      label: "Tailwind CSS",
+      href: "https://tailwindcss.com/",
+      icon: "tailwind",
+    },
+    {
+      label: "shadcn/ui",
+      href: "https://ui.shadcn.com/",
+      icon: "shadcn",
+    },
+    {
+      label: "TanStack Query",
+      href: "https://tanstack.com/query/latest",
+      icon: "tanstack-query",
+    },
+    {
+      label: "Git",
+      href: "https://git-scm.com/",
+      icon: "git",
+    },
+    {
+      label: "Node.js",
+      href: "https://nodejs.org/",
+      icon: "nodejs",
+    },
+    {
+      label: "Docker",
+      href: "https://www.docker.com/",
+      icon: "docker",
+    },
+    {
+      label: "ChatGPT",
+      href: "https://chatgpt.com/",
+      icon: "chatgpt",
+    },
+    {
+      label: "Claude",
+      href: "https://claude.ai/",
+      icon: "claude",
+    },
+  ],
+  social: {
+    email: {
+      label: "Email",
+      href: "mailto:brijeshkumaryadav2026@gmail.com",
+    },
+    github: {
+      label: "GitHub",
+      href: "https://github.com/brijeshmarch16",
+    },
+    linkedin: {
+      label: "LinkedIn",
+      href: "https://linkedin.com/in/brijeshmarch16",
+    },
+    x: {
+      label: "X",
+      href: "https://x.com/brijeshmarch",
+      handle: "@brijeshmarch",
+    },
   },
-  {
-    title: "Frontend Engineer",
-    company: "Emperor Brains",
-    period: "May 2021 - Feb 2022",
-    current: false,
-  },
-];
-
-export const projects: Project[] = [
-  {
-    title: "AI Interview",
-    description: "AI voice interviews, open source and self-hosted.",
-    techStack: ["Next.js", "Tailwind CSS", "shadcn/ui", "better-auth", "AI", "Voice AI"],
-    githubUrl: "https://github.com/brijeshmarch16/ai-interview",
-    liveUrl: "https://ai-interview.brijeshkumaryadav.com",
-  },
-  {
-    title: "ReactUseKit",
-    description: "React Hooks & Helpers Collection — copy, paste, or install with the shadcn CLI.",
-    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui"],
-    githubUrl: "https://github.com/brijeshmarch16/reactusekit",
-    liveUrl: "https://reactusekit.vercel.app",
-  },
-  // {
-  //   title: "Demo Dashboard",
-  //   description: "Internal analytics dashboard built for a fintech startup",
-  //   techStack: ["React", "TypeScript", "Recharts", "Tailwind CSS"],
-  //   imageUrl: "/projects/demo-dashboard.svg",
-  // },
-];
-
-export const socialMedia: SocialMedia[] = [
-  { label: "GitHub", href: "https://github.com/brijeshmarch16" },
-  { label: "LinkedIn", href: "https://linkedin.com/in/brijeshmarch16" },
-  { label: "X / Twitter", href: "https://x.com/brijeshmarch" },
-];
+  projects: [
+    {
+      kind: "live",
+      title: "AI Interview",
+      description:
+        "Open-source AI voice interview platform. Paste a job description, send candidates a link, and get back a full scorecard automatically.",
+      techStack: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "better-auth",
+        "ChatGPT AI",
+        "Retell AI",
+        "Drizzle",
+        "PostgreSQL",
+      ],
+      githubUrl: "https://github.com/brijeshmarch16/ai-interview",
+      liveUrl: "https://ai-interview.brijeshkumaryadav.com",
+    },
+    {
+      kind: "live",
+      title: "ReactUseKit",
+      description:
+        "React Hooks & Helpers Collection — copy, paste, or install with the shadcn CLI.",
+      techStack: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "fumadocs",
+        "shadcn CLI",
+      ],
+      githubUrl: "https://github.com/brijeshmarch16/reactusekit",
+      liveUrl: "https://reactusekit.vercel.app",
+    },
+    // {
+    //   kind: "preview",
+    //   title: "Demo Dashboard",
+    //   description: "Internal analytics dashboard built for a fintech startup",
+    //   techStack: ["React", "TypeScript", "Recharts", "Tailwind CSS"],
+    //   imageUrl: "/projects/demo-dashboard.svg",
+    // },
+  ],
+} satisfies Portfolio
