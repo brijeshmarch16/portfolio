@@ -66,10 +66,15 @@ export function SkillSection({ items }: { items: SkillItem[] }) {
       <p className="text-xs/4 font-medium text-muted-foreground uppercase">
         Skills
       </p>
-      <ul className="flex flex-wrap gap-x-4 gap-y-3">
+      <ul className="flex flex-wrap gap-2">
         {items.map(({ label, href, icon }) => (
           <li key={label}>
-            <Button asChild variant="link" className="p-0 text-sm/5" size="sm">
+            <Button
+              asChild
+              variant="link"
+              className="p-0 text-sm/5 font-normal"
+              size="sm"
+            >
               <a href={href} target="_blank" rel="noopener noreferrer">
                 <SkillIconGraphic icon={icon} />
                 <span>{label}</span>

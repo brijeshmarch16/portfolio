@@ -7,9 +7,9 @@ export function IntroSection({ profile }: { profile: Profile }) {
   return (
     <section className="flex flex-col gap-4">
       <div className="flex flex-col gap-4 text-muted-foreground">
-        <p className="text-sm/6 font-medium">{profile.bio}</p>
-        <p className="text-sm/6 font-medium">{profile.journey}</p>
-        <p className="text-sm/6 font-medium">
+        <p className="text-justify text-sm/6 font-medium">{profile.bio}</p>
+        <p className="text-justify text-sm/6 font-medium">{profile.journey}</p>
+        <p className="text-justify text-sm/6 font-medium">
           Available for freelance projects and new opportunities.{" "}
           <a
             href={social.email.href}

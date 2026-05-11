@@ -23,10 +23,10 @@ export function ProjectsSection({ projects }: { projects: ProjectItem[] }) {
           {projects.map((project) => (
             <article className="flex flex-col gap-3" key={project.title}>
               <div className="flex flex-col gap-1">
-                <h3 className="text-sm/5 font-semibold text-foreground">
+                <h3 className="text text-sm/5 font-semibold text-foreground">
                   {project.title}
                 </h3>
-                <p className="text-sm/6 text-muted-foreground">
+                <p className="text-justify text-sm/6 text-muted-foreground">
                   {project.description}
                 </p>
               </div>

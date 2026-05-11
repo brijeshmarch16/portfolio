@@ -39,7 +39,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           enableSystem
           disableTransitionOnChange
         >
-          <div className="mx-auto flex max-w-2xl flex-col gap-6 px-4 py-10">
+          <div className="mx-auto flex max-w-xl flex-col gap-6 px-4 py-10">
             <Header />
             {children}
           </div>
