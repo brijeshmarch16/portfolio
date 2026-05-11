@@ -24,19 +24,6 @@ A minimal, pixel-perfect portfolio and blog showcasing my work as a Frontend Eng
 - next-mdx-remote
 - Vercel Analytics
 
-## Project Structure
-
-Short explanation of:
-
-- `src/lib/data.ts` = portfolio content
-- `src/lib/blog.ts` = blog loading/parsing
-- `src/lib/metadata.ts` = SEO helpers
-- `src/app/robots.ts` = robots.txt generation
-- `src/app/sitemap.ts` = sitemap.xml generation
-- `public/llms.txt` = AI-readable site profile
-- `src/types/home.ts` and `src/types/blog.ts` = domain types
-- `src/app/blog/posts` = MDX blog posts
-
 ## Running the Project
 
 1. Clone the repository.
