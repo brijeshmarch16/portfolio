@@ -54,7 +54,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
           {post.title}
         </h1>
 
-        <article className="mdx-content">
+        <article className="mdx-content text-justify">
           <MdxContent source={post.content} />
         </article>
       </section>

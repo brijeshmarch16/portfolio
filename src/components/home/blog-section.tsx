@@ -18,7 +18,7 @@ export function BlogSection({ posts }: { posts: BlogPostSummary[] }) {
           <article key={post.slug}>
             <Link
               href={post.href as Route}
-              className="group inline-flex w-full min-w-0 flex-col items-start gap-1 text-sm/5 outline-none transition-colors duration-150 hover:text-foreground focus-visible:text-foreground focus-visible:ring-1 focus-visible:ring-ring/50 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4"
+              className="group inline-flex w-full min-w-0 flex-col items-start gap-1 text-sm/5 transition-colors duration-150 outline-none hover:text-foreground focus-visible:text-foreground focus-visible:ring-1 focus-visible:ring-ring/50 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4"
             >
               <span className="min-w-0 text-foreground underline-offset-4 group-hover:underline">
                 {post.title}
