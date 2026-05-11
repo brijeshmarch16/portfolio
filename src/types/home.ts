@@ -13,9 +13,11 @@ export interface Profile {
   company: string
   location: string
   bio: string
+  journey: string
+  social: SocialLinks
 }
 
-export type TechStackIcon =
+export type SkillIcon =
   | "nextjs"
   | "react"
   | "typescript"
@@ -59,17 +61,16 @@ export interface SocialLinks {
   x: SocialLink & { handle: string }
 }
 
-export interface TechStackItem {
+export interface SkillItem {
   label: string
   href: string
-  icon: TechStackIcon
+  icon: SkillIcon
 }
 
 export interface Portfolio {
   site: SiteMetadata
   profile: Profile
-  experience: WorkExperience[]
+  skills: SkillItem[]
   projects: ProjectItem[]
-  techStack: TechStackItem[]
-  social: SocialLinks
+  experience: WorkExperience[]
 }

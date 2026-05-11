@@ -72,7 +72,7 @@ function createMetadata(override: Metadata): Metadata {
     twitter: {
       ...override.twitter,
       card: "summary_large_image",
-      creator: portfolio.social.x.handle,
+      creator: portfolio.profile.social.x.handle,
       title: override.twitter?.title ?? override.title ?? undefined,
       description: override.description ?? undefined,
       images: override.twitter?.images ?? override.openGraph?.images,
@@ -186,13 +186,13 @@ export function createSiteJsonLd(): SiteJsonLd {
         url: siteUrl,
         jobTitle: portfolio.profile.role,
         description: portfolio.profile.bio,
-        email: portfolio.social.email.href,
+        email: portfolio.profile.social.email.href,
         sameAs: [
-          portfolio.social.github.href,
-          portfolio.social.linkedin.href,
-          portfolio.social.x.href,
+          portfolio.profile.social.github.href,
+          portfolio.profile.social.linkedin.href,
+          portfolio.profile.social.x.href,
         ],
-        knowsAbout: portfolio.techStack.map(({ label }) => label),
+        knowsAbout: portfolio.skills.map(({ label }) => label),
         worksFor: {
           "@type": "Organization",
           name: portfolio.profile.company,

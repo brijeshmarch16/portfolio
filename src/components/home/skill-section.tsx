@@ -13,10 +13,10 @@ import { ShadcnUi } from "@/components/ui/svgs/shadcnUi"
 import { ShadcnUiDark } from "@/components/ui/svgs/shadcnUiDark"
 import { Tailwindcss } from "@/components/ui/svgs/tailwindcss"
 import { Typescript } from "@/components/ui/svgs/typescript"
-import type { TechStackIcon, TechStackItem } from "@/types/home"
+import type { SkillIcon, SkillItem } from "@/types/home"
 import { Button } from "../ui/button"
 
-function TechStackIconGraphic({ icon }: { icon: TechStackIcon }) {
+function SkillIconGraphic({ icon }: { icon: SkillIcon }) {
   switch (icon) {
     case "nextjs":
       return <NextjsIconDark aria-hidden className="size-4" />
@@ -60,7 +60,7 @@ function TechStackIconGraphic({ icon }: { icon: TechStackIcon }) {
   }
 }
 
-export function TechStackSection({ items }: { items: TechStackItem[] }) {
+export function SkillSection({ items }: { items: SkillItem[] }) {
   return (
     <section className="flex flex-col gap-4">
       <p className="text-xs/4 font-medium text-muted-foreground uppercase">
@@ -71,7 +71,7 @@ export function TechStackSection({ items }: { items: TechStackItem[] }) {
           <li key={label}>
             <Button asChild variant="link" className="p-0 text-sm/5" size="sm">
               <a href={href} target="_blank" rel="noopener noreferrer">
-                <TechStackIconGraphic icon={icon} />
+                <SkillIconGraphic icon={icon} />
                 <span>{label}</span>
               </a>
             </Button>

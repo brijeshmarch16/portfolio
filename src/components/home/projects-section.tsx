@@ -33,11 +33,7 @@ export function ProjectsSection({ projects }: { projects: ProjectItem[] }) {
 
               <div className="flex flex-wrap items-center gap-4">
                 {project.liveUrl && (
-                  <Button
-                    asChild
-                    variant="ghost"
-                    className="text-xs/4 font-medium"
-                  >
+                  <Button asChild className="text-xs/4 font-medium">
                     <a
                       href={project.liveUrl}
                       target="_blank"
@@ -52,7 +48,7 @@ export function ProjectsSection({ projects }: { projects: ProjectItem[] }) {
                 {project.githubUrl && (
                   <Button
                     asChild
-                    variant="ghost"
+                    variant="outline"
                     className="text-xs/4 font-medium"
                   >
                     <a
@@ -68,7 +64,7 @@ export function ProjectsSection({ projects }: { projects: ProjectItem[] }) {
 
                 {project.imageUrl && (
                   <Button
-                    variant="ghost"
+                    variant="outline"
                     size="sm"
                     className="text-xs/4 font-medium"
                     onClick={() => {

@@ -4,10 +4,10 @@ import { IntroSection } from "@/components/home/intro-section"
 import { ProjectsSection } from "@/components/home/projects-section"
 import { SectionDivider } from "@/components/home/section-divider"
 import { SiteFooter } from "@/components/home/site-footer"
-import { TechStackSection } from "@/components/home/tech-stack-section"
 import { portfolio } from "@/lib/data"
 import { getPublishedBlogSummaries } from "@/lib/blog"
 import { createSiteJsonLd } from "@/lib/metadata"
+import { SkillSection } from "@/components/home/skill-section"
 
 export default function Home() {
   const blogPosts = getPublishedBlogSummaries()
@@ -20,12 +20,9 @@ export default function Home() {
           __html: JSON.stringify(createSiteJsonLd()),
         }}
       />
-      <IntroSection
-        profile={portfolio.profile}
-        social={portfolio.social}
-      />
+      <IntroSection profile={portfolio.profile} />
       <SectionDivider />
-      <TechStackSection items={portfolio.techStack} />
+      <SkillSection items={portfolio.skills} />
       <SectionDivider />
       <ProjectsSection projects={portfolio.projects} />
       <SectionDivider />

@@ -5,8 +5,8 @@ export const portfolio = {
     name: "brijeshkumaryadav",
     title: "Brijeshkumar Yadav - Frontend Engineer",
     description:
-      "I'm a freelance frontend engineer based in India. I build fast, pixel-perfect web apps and care deeply about performance, clean code, and thoughtful user experience.",
-    ogDescription: "Frontend Engineer / React / Next.js / TypeScript",
+      "I'm Brijeshkumar Yadav, a self-taught frontend engineer based in India with 5 years of experience. I specialize in building modern web applications using Next.js, React, TypeScript, Tailwind CSS, and shadcn/ui.",
+    ogDescription: "Frontend Engineer",
     keywords: [
       "Brijeshkumar Yadav",
       "Frontend Engineer",
@@ -23,29 +23,30 @@ export const portfolio = {
     role: "Frontend Engineer",
     company: "Freelance",
     location: "India",
-    bio: "I'm a self-taught frontend engineer with 5 years of experience, from learning during lockdown to working with companies and freelance clients. I build clean, responsive, and practical web experiences with React, Next.js, and TypeScript.",
+    bio: "I'm Brijeshkumar Yadav, a self-taught frontend engineer based in India with 5 years of experience. I specialize in building modern web applications using Next.js, React, TypeScript, Tailwind CSS, and shadcn/ui.",
+    journey:
+      "My journey began during COVID, when I started learning on my own. With consistent practice, hard work, and real projects, I landed my first developer role in 2021, even before completing 12th grade.",
+    social: {
+      email: {
+        label: "Email",
+        href: "mailto:brijeshkumaryadav2026@gmail.com",
+      },
+      github: {
+        label: "GitHub",
+        href: "https://github.com/brijeshmarch16",
+      },
+      linkedin: {
+        label: "LinkedIn",
+        href: "https://linkedin.com/in/brijeshmarch16",
+      },
+      x: {
+        label: "X",
+        href: "https://x.com/brijeshmarch",
+        handle: "@brijeshmarch",
+      },
+    },
   },
-  experience: [
-    {
-      title: "Frontend Engineer",
-      company: "Freelance",
-      period: "May 2023 - Present",
-      current: true,
-    },
-    {
-      title: "Full Stack Engineer",
-      company: "SolGuruz®",
-      period: "Mar 2022 - Apr 2023",
-      current: false,
-    },
-    {
-      title: "Frontend Engineer",
-      company: "Emperor Brains",
-      period: "May 2021 - Feb 2022",
-      current: false,
-    },
-  ],
-  techStack: [
+  skills: [
     {
       label: "Next.js",
       href: "https://nextjs.org/",
@@ -107,25 +108,6 @@ export const portfolio = {
       icon: "claude",
     },
   ],
-  social: {
-    email: {
-      label: "Email",
-      href: "mailto:brijeshkumaryadav2026@gmail.com",
-    },
-    github: {
-      label: "GitHub",
-      href: "https://github.com/brijeshmarch16",
-    },
-    linkedin: {
-      label: "LinkedIn",
-      href: "https://linkedin.com/in/brijeshmarch16",
-    },
-    x: {
-      label: "X",
-      href: "https://x.com/brijeshmarch",
-      handle: "@brijeshmarch",
-    },
-  },
   projects: [
     {
       kind: "live",
@@ -168,5 +150,25 @@ export const portfolio = {
     //   techStack: ["React", "TypeScript", "Recharts", "Tailwind CSS"],
     //   imageUrl: "/projects/demo-dashboard.svg",
     // },
+  ],
+  experience: [
+    {
+      title: "Frontend Engineer",
+      company: "Freelance",
+      period: "May 2023 - Present",
+      current: true,
+    },
+    {
+      title: "Full Stack Engineer",
+      company: "SolGuruz®",
+      period: "Mar 2022 - Apr 2023",
+      current: false,
+    },
+    {
+      title: "Frontend Engineer",
+      company: "Emperor Brains",
+      period: "May 2021 - Feb 2022",
+      current: false,
+    },
   ],
 } satisfies Portfolio

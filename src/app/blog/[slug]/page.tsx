@@ -50,7 +50,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
       />
 
       <section className="flex flex-col">
-        <h1 className="font-heading text-base/6 font-semibold text-balance text-foreground">
+        <h1 className="font-heading text-sm/6 font-semibold text-balance text-foreground">
           {post.title}
         </h1>
 
