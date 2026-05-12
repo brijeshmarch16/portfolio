@@ -18,6 +18,7 @@ type BlogPostJsonLd = {
   datePublished: string
   dateModified: string
   description: string
+  keywords?: string[]
   image: string
   url: string
   author: {
@@ -80,7 +81,7 @@ function createMetadata(override: Metadata): Metadata {
     authors: [{ name: portfolio.profile.name, url: portfolio.site.url }],
     creator: portfolio.profile.name,
     publisher: portfolio.profile.name,
-    keywords: portfolio.site.keywords,
+    keywords: override.keywords ?? portfolio.site.keywords,
     alternates: {
       ...override.alternates,
     },
@@ -133,6 +134,7 @@ export function createBlogPostMetadata(post: BlogPostSummary): Metadata {
   return createMetadata({
     title: post.title,
     description: post.summary,
+    keywords: post.keywords,
     alternates: {
       canonical: canonicalUrl,
     },
@@ -162,6 +164,7 @@ export function createBlogPostJsonLd(post: BlogPostSummary): BlogPostJsonLd {
     datePublished: post.publishedAt,
     dateModified: post.publishedAt,
     description: post.summary,
+    keywords: post.keywords,
     image: createOgImageUrl(post.title, post.summary),
     url: createCanonical(post.href),
     author: {
