@@ -46,6 +46,12 @@ function parseFrontmatter(fileContent: string): {
     }
 
     switch (metadataKey) {
+      case "keywords":
+        metadata.keywords = value
+          .split(",")
+          .map((keyword) => keyword.trim())
+          .filter(Boolean)
+        break
       case "title":
       case "publishedAt":
       case "summary":
@@ -101,6 +107,7 @@ function toBlogPostSummary(post: BlogPost): BlogPostSummary {
     publishedAt: post.metadata.publishedAt,
     formattedPublishedAt: formatPostDate(post.metadata.publishedAt),
     readingTime: post.metadata.readingTime,
+    keywords: post.metadata.keywords,
     image: post.metadata.image,
   }
 }

@@ -4,6 +4,7 @@ export type BlogPostMetadata = {
   publishedAt: string
   summary: string
   readingTime: string
+  keywords?: string[]
   image?: string
 }
 
@@ -21,6 +22,7 @@ export type BlogPostSummary = {
   publishedAt: string
   formattedPublishedAt: string
   readingTime: string
+  keywords?: string[]
   image?: string
 }
 
