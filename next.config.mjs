@@ -7,14 +7,18 @@ const config = {
     return [
       {
         source: "/blog/building-ai-interview-self-hosted-ai-voice-interviews",
-        destination:
-          "/blog/building-a-self-hosted-ai-voice-interview-platform-inspired-by-foloup",
+        destination: "/blog/foloup-alternative-self-hosted-ai-interview-platform",
         permanent: true,
       },
       {
         source: "/blog/built-an-open-source-ai-voice-interview-platform",
-        destination:
+        destination: "/blog/foloup-alternative-self-hosted-ai-interview-platform",
+        permanent: true,
+      },
+      {
+        source:
           "/blog/building-a-self-hosted-ai-voice-interview-platform-inspired-by-foloup",
+        destination: "/blog/foloup-alternative-self-hosted-ai-interview-platform",
         permanent: true,
       },
     ];
