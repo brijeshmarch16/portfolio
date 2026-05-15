@@ -126,7 +126,6 @@ export const portfolio = {
         "PostgreSQL",
       ],
       githubUrl: "https://github.com/brijeshmarch16/ai-interview",
-      liveUrl: "https://ai-interview.brijeshkumaryadav.com",
     },
     {
       kind: "live",
