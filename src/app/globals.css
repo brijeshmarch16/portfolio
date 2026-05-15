@@ -153,11 +153,11 @@
   }
 
   .mdx-content h1 {
-    @apply mb-4 font-heading text-xl/7 font-semibold text-foreground;
+    @apply mb-4 font-heading text-sm/6 font-semibold text-foreground;
   }
 
   .mdx-content h2 {
-    @apply relative mt-6 mb-4 font-heading text-base/7 font-semibold text-foreground;
+    @apply relative mt-6 mb-4 font-heading text-sm/6 font-semibold text-foreground;
   }
 
   .mdx-content h3 {
