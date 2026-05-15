@@ -113,7 +113,7 @@ export const portfolio = {
       kind: "live",
       title: "AI Interview",
       description:
-        "Open-source AI voice interview platform. Paste a job description, send candidates a link, and get back a full scorecard automatically.",
+        "Open source platform for companies to conduct AI powered hiring interviews with their candidates.",
       techStack: [
         "Next.js",
         "TypeScript",
