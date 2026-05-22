@@ -59,6 +59,12 @@ type SiteJsonLd = {
   ]
 }
 
+function social(label: string) {
+  const found = portfolio.profile.social.find((s) => s.label === label)
+  if (!found) throw new Error(`Missing social link: ${label}`)
+  return found
+}
+
 function createMetadata(override: Metadata): Metadata {
   return {
     ...override,
@@ -73,7 +79,7 @@ function createMetadata(override: Metadata): Metadata {
     twitter: {
       ...override.twitter,
       card: "summary_large_image",
-      creator: portfolio.profile.social.x.handle,
+      creator: social("X").handle,
       title: override.twitter?.title ?? override.title ?? undefined,
       description: override.description ?? undefined,
       images: override.twitter?.images ?? override.openGraph?.images,
@@ -189,11 +195,11 @@ export function createSiteJsonLd(): SiteJsonLd {
         url: siteUrl,
         jobTitle: portfolio.profile.role,
         description: portfolio.profile.bio,
-        email: portfolio.profile.social.email.href,
+        email: social("Email").href,
         sameAs: [
-          portfolio.profile.social.github.href,
-          portfolio.profile.social.linkedin.href,
-          portfolio.profile.social.x.href,
+          social("GitHub").href,
+          social("LinkedIn").href,
+          social("X").href,
         ],
         knowsAbout: portfolio.skills.map(({ label }) => label),
         worksFor: {
