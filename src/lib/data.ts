@@ -20,31 +20,31 @@ export const portfolio = {
   },
   profile: {
     name: "Brijeshkumar Yadav",
-    role: "Frontend Engineer",
+    role: "Senior Frontend Engineer",
     company: "Freelance",
     location: "India",
-    bio: "I'm Brijeshkumar Yadav, a self-taught frontend engineer based in India with 5 years of experience. I specialize in building modern web applications using Next.js, React, TypeScript, Tailwind CSS, and shadcn/ui.",
+    bio: "I’m a senior frontend engineer based in India. I build fast, scalable web apps that don’t just work, but feel smooth and intuitive to use.",
     journey:
-      "My journey began during COVID, when I started learning on my own. With consistent practice, hard work, and real projects, I landed my first developer role in 2021, even before completing 12th grade.",
-    social: {
-      email: {
+      "I started my coding journey during the COVID-19 pandemic, and I landed my first developer role without a degree.",
+    social: [
+      {
         label: "Email",
         href: "mailto:brijeshkumaryadav2026@gmail.com",
       },
-      github: {
+      {
         label: "GitHub",
         href: "https://github.com/brijeshmarch16",
       },
-      linkedin: {
+      {
         label: "LinkedIn",
         href: "https://linkedin.com/in/brijeshmarch16",
       },
-      x: {
+      {
         label: "X",
         href: "https://x.com/brijeshmarch",
         handle: "@brijeshmarch",
       },
-    },
+    ],
   },
   skills: [
     {
@@ -152,7 +152,7 @@ export const portfolio = {
   ],
   experience: [
     {
-      title: "Frontend Engineer",
+      title: "Senior Frontend Engineer",
       company: "Freelance",
       period: "May 2023 - Present",
       current: true,

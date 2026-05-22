@@ -14,18 +14,15 @@ export function ExperienceSection({
         {experience.map((job) => (
           <li
             key={`${job.company}-${job.period}`}
-            className="grid gap-1 text-sm/5 sm:grid-cols-[1fr_auto] sm:gap-6"
+            className="flex flex-col gap-1 text-sm/5"
           >
-            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+            <div className="flex items-baseline justify-between gap-3">
               <span className="font-semibold text-foreground">{job.title}</span>
-              <span className="text-muted-foreground" aria-hidden>
-                /
+              <span className="text-xs/4 text-muted-foreground">
+                {job.period}
               </span>
-              <span className="text-muted-foreground">{job.company}</span>
             </div>
-            <span className="text-xs/4 text-muted-foreground sm:text-right">
-              {job.period}
-            </span>
+            <span className="text-muted-foreground">{job.company}</span>
           </li>
         ))}
       </ul>

@@ -14,7 +14,7 @@ export interface Profile {
   location: string
   bio: string
   journey: string
-  social: SocialLinks
+  social: SocialLink[]
 }
 
 export type SkillIcon =
@@ -52,13 +52,6 @@ export interface SocialLink {
   label: string
   href: string
   handle?: string
-}
-
-export interface SocialLinks {
-  email: SocialLink
-  github: SocialLink
-  linkedin: SocialLink
-  x: SocialLink & { handle: string }
 }
 
 export interface SkillItem {
