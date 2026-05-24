@@ -30,7 +30,7 @@ export default function Home() {
       <SectionDivider />
       <ExperienceSection experience={portfolio.experience} />
       <SectionDivider />
-      <SiteFooter name={portfolio.profile.name} />
+      <SiteFooter />
     </main>
   )
 }

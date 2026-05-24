@@ -1,36 +1,5 @@
-import { Mail } from "lucide-react"
 import type { Profile } from "@/types/home"
-import { Button } from "../ui/button"
-import { GithubDark } from "../ui/svgs/githubDark"
-import { GithubLight } from "../ui/svgs/githubLight"
-import { Linkedin } from "../ui/svgs/linkedin"
-import { X } from "../ui/svgs/x"
-import { XDark } from "../ui/svgs/xDark"
-
-function SocialIcon({ label }: { label: string }) {
-  switch (label) {
-    case "GitHub":
-      return (
-        <>
-          <GithubLight aria-hidden className="size-4 dark:hidden" />
-          <GithubDark aria-hidden className="hidden size-4 dark:block" />
-        </>
-      )
-    case "X":
-      return (
-        <>
-          <X aria-hidden className="size-4 dark:hidden" />
-          <XDark aria-hidden className="hidden size-4 dark:block" />
-        </>
-      )
-    case "LinkedIn":
-      return <Linkedin aria-hidden className="size-4" />
-    case "Email":
-      return <Mail aria-hidden className="size-4" />
-    default:
-      return null
-  }
-}
+import { SocialLinks } from "@/components/social-links"
 
 export function IntroSection({ profile }: { profile: Profile }) {
   const { social } = profile
@@ -43,20 +12,7 @@ export function IntroSection({ profile }: { profile: Profile }) {
         <p className="text-justify text-sm/6 font-medium">{profile.closing}</p>
       </div>
 
-      <div className="flex gap-2">
-        {social.map((item) => (
-          <Button key={item.label} asChild variant="outline" size="icon">
-            <a
-              href={item.href}
-              target={item.href.startsWith("mailto:") ? undefined : "_blank"}
-              rel="noopener noreferrer"
-              aria-label={item.label}
-            >
-              <SocialIcon label={item.label} />
-            </a>
-          </Button>
-        ))}
-      </div>
+      <SocialLinks social={social} />
     </section>
   )
 }
