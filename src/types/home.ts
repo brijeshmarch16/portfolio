@@ -14,6 +14,7 @@ export interface Profile {
   location: string
   bio: string
   journey: string
+  closing: string
   social: SocialLink[]
 }
 

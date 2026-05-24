@@ -26,6 +26,8 @@ export const portfolio = {
     bio: "I’m a senior frontend engineer based in India. I build fast, scalable web apps that don’t just work, but feel smooth and intuitive to use.",
     journey:
       "I started my coding journey during the COVID-19 pandemic, and I landed my first developer role without a degree.",
+    closing:
+      "Now 5 years in, I’m working as a senior frontend engineer and open to freelance work.",
     social: [
       {
         label: "Email",
