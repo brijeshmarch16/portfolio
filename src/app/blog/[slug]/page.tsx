@@ -5,7 +5,6 @@ import { MdxContent } from "@/components/blog/mdx-content"
 import { SectionDivider } from "@/components/home/section-divider"
 import { SiteFooter } from "@/components/home/site-footer"
 import { getPublishedBlogPost, getPublishedBlogStaticParams } from "@/lib/blog"
-import { portfolio } from "@/lib/data"
 import { createBlogPostJsonLd, createBlogPostMetadata } from "@/lib/metadata"
 
 type BlogDetailPageProps = {
@@ -60,7 +59,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
       </section>
 
       <SectionDivider />
-      <SiteFooter name={portfolio.profile.name} />
+      <SiteFooter />
     </main>
   )
 }
