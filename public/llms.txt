@@ -1,35 +1,50 @@
 # Brijeshkumar Yadav
 
-> Frontend Engineer.
+> Senior Frontend Engineer.
 
-I'm Brijeshkumar Yadav, a self-taught frontend engineer based in India with 5 years of experience. I specialize in building modern web applications using Next.js, React, TypeScript, Tailwind CSS, and shadcn/ui.
+I’m a senior frontend engineer based in India. I build fast, scalable web apps that don’t just work, but feel smooth and intuitive to use.
 
-My journey began during COVID, when I started learning on my own. With consistent practice, hard work, and real projects, I landed my first developer role in 2021, even before completing 12th grade.
+I started my coding journey during the COVID-19 pandemic, and I landed my first developer role without a degree.
 
-Available for freelance projects and new opportunities. Say hello by [email](mailto:brijeshkumaryadav2026@gmail.com), or connect on [LinkedIn](https://linkedin.com/in/brijeshmarch16), or [X](https://x.com/brijeshmarch).
+Now 5 years in, I’m working as a senior frontend engineer and open to freelance work.
 
 This file follows the [llms.txt specification](https://llmstxt.org), a proposed standard that helps AI language models and agents understand a website's content and structure.
 
-## Skills & Expertise
+## Social Links
 
-**Languages:** TypeScript, JavaScript
-**Frameworks:** Next.js, React.js
-**Styling:** Tailwind CSS, shadcn/ui
-**Frontend Tools:** TanStack Query
-**Runtime & Tools:** Node.js, Git, Docker
-**AI Tools:** ChatGPT, Claude
+- [Email](mailto:brijeshkumaryadav2026@gmail.com)
+- [GitHub](https://github.com/brijeshmarch16)
+- [LinkedIn](https://linkedin.com/in/brijeshmarch16)
+- [X](https://x.com/brijeshmarch)
+
+
+## Skills
+
+- [Next.js](https://nextjs.org/)
+- [React.js](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [TanStack Query](https://tanstack.com/query/latest)
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/)
+- [Docker](https://www.docker.com/)
+- [ChatGPT](https://chatgpt.com/)
+- [Claude](https://claude.ai/)
 
 ## Projects
 
-- [AI Interview](https://ai-interview.brijeshkumaryadav.com): Open source platform for companies to conduct AI powered hiring interviews with their candidates. Source: [GitHub](https://github.com/brijeshmarch16/ai-interview).
+- AI Interview: Open source platform for companies to conduct AI powered hiring interviews with their candidates. Source: [GitHub](https://github.com/brijeshmarch16/ai-interview).
+
 - [ReactUseKit](https://reactusekit.vercel.app): React hooks and helpers collection to copy, paste, or install with the shadcn CLI. Built with Next.js, TypeScript, Tailwind CSS, fumadocs, and shadcn CLI. Source: [GitHub](https://github.com/brijeshmarch16/reactusekit).
 
 ## Blog
 
-- [Building a Self-Hosted AI Voice Interview Platform Inspired by FoloUp](https://brijeshkumaryadav.com/blog/foloup-alternative-self-hosted-ai-interview-platform): An open-source, self-hosted FoloUp alternative for AI voice interviews, built with Better Auth and PostgreSQL, with source code available on GitHub.
+- [FoloUp Alternative: A Self-Hosted, Open-Source AI Interview Platform](https://brijeshkumaryadav.com/blog/foloup-alternative-self-hosted-ai-interview-platform): An open-source, self-hosted FoloUp alternative for AI voice interviews, built with Better Auth and PostgreSQL, with source code available on GitHub.
 
 ## Experience
 
-- Frontend Engineer at Freelance: May 2023 - Present.
-- Full Stack Engineer at SolGuruz: Mar 2022 - Apr 2023.
+- Senior Frontend Engineer at Freelance: May 2023 - Present.
+- Full Stack Engineer at SolGuruz®: Mar 2022 - Apr 2023.
 - Frontend Engineer at Emperor Brains: May 2021 - Feb 2022.
