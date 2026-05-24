@@ -40,21 +40,29 @@ export function IntroSection({ profile }: { profile: Profile }) {
       <div className="flex flex-col gap-4 text-muted-foreground">
         <p className="text-justify text-sm/6 font-medium">{profile.bio}</p>
         <p className="text-justify text-sm/6 font-medium">{profile.journey}</p>
+        <p className="text-justify text-sm/6 font-medium">
+          {profile.closing}
+        </p>
       </div>
 
-      <div className="flex gap-2">
-        {social.map((item) => (
-          <Button key={item.label} asChild variant="outline" size="icon">
-            <a
-              href={item.href}
-              target={item.href.startsWith("mailto:") ? undefined : "_blank"}
-              rel="noopener noreferrer"
-              aria-label={item.label}
-            >
-              <SocialIcon label={item.label} />
-            </a>
-          </Button>
-        ))}
+      <div className="flex flex-col gap-3">
+        <p className="text-xs/4 font-medium text-muted-foreground uppercase">
+          Get in touch
+        </p>
+        <div className="flex gap-2">
+          {social.map((item) => (
+            <Button key={item.label} asChild variant="outline" size="icon">
+              <a
+                href={item.href}
+                target={item.href.startsWith("mailto:") ? undefined : "_blank"}
+                rel="noopener noreferrer"
+                aria-label={item.label}
+              >
+                <SocialIcon label={item.label} />
+              </a>
+            </Button>
+          ))}
+        </div>
       </div>
     </section>
   )
