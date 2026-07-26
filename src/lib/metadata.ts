@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
 import type { MetadataRoute } from "next"
-import type { BlogPostSummary } from "@/types/blog"
 import { portfolio } from "./data"
 
 function createBaseUrl(): URL {
@@ -10,22 +9,6 @@ function createBaseUrl(): URL {
 }
 
 export const baseUrl = createBaseUrl()
-
-type BlogPostJsonLd = {
-  "@context": "https://schema.org"
-  "@type": "BlogPosting"
-  headline: string
-  datePublished: string
-  dateModified: string
-  description: string
-  keywords?: string[]
-  image: string
-  url: string
-  author: {
-    "@type": "Person"
-    name: string
-  }
-}
 
 type SiteJsonLd = {
   "@context": "https://schema.org"
@@ -133,53 +116,6 @@ export function createSiteMetadata(): Metadata {
   })
 }
 
-export function createBlogPostMetadata(post: BlogPostSummary): Metadata {
-  const canonicalUrl = createCanonical(post.href)
-  const ogImageUrl = createOgImageUrl(post.title, post.summary)
-
-  return createMetadata({
-    title: post.title,
-    description: post.summary,
-    keywords: post.keywords,
-    alternates: {
-      canonical: canonicalUrl,
-    },
-    openGraph: {
-      type: "article",
-      url: canonicalUrl,
-      title: post.title,
-      description: post.summary,
-      publishedTime: post.publishedAt,
-      images: [
-        {
-          url: ogImageUrl,
-          width: 1200,
-          height: 630,
-          alt: post.title,
-        },
-      ],
-    },
-  })
-}
-
-export function createBlogPostJsonLd(post: BlogPostSummary): BlogPostJsonLd {
-  return {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: post.title,
-    datePublished: post.publishedAt,
-    dateModified: post.publishedAt,
-    description: post.summary,
-    keywords: post.keywords,
-    image: createOgImageUrl(post.title, post.summary),
-    url: createCanonical(post.href),
-    author: {
-      "@type": "Person",
-      name: portfolio.profile.name,
-    },
-  }
-}
-
 export function createSiteJsonLd(): SiteJsonLd {
   const siteUrl = createCanonical("/")
   const personId = createCanonical("/#person")
@@ -235,20 +171,12 @@ export function createRobots(): MetadataRoute.Robots {
   }
 }
 
-export function createSitemap(
-  blogPosts: BlogPostSummary[]
-): MetadataRoute.Sitemap {
+export function createSitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: createCanonical("/"),
       changeFrequency: "monthly",
       priority: 1,
     },
-    ...blogPosts.map((post) => ({
-      url: createCanonical(post.href),
-      lastModified: post.publishedAt,
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    })),
   ]
 }
