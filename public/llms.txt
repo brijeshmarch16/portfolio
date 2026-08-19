@@ -2,8 +2,6 @@
 
 > Senior Full Stack Engineer.
 
-I'm Brijeshkumar, a developer who started with frontend development and gradually moved into the full stack. I enjoy turning ideas and problems into simple, reliable digital products.
-
 This file follows the [llms.txt specification](https://llmstxt.org), a proposed standard that helps AI language models and agents understand a website's content and structure.
 
 ## About me
