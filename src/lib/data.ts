@@ -105,12 +105,6 @@ export const portfolio = {
       githubUrl: "https://github.com/brijeshmarch16/reactusekit",
       liveUrl: "https://reactusekit.vercel.app",
     },
-    {
-      title: "AI Interview",
-      description:
-        "An open source platform for running AI voice interviews. You create an interview from a job description, send the candidate a link, and the AI conducts the conversation — then you review the transcript, scorecard, and analytics. I built it after trying FoloUp, hitting setup and dependency problems, and wanting a version I could self-host and fully control.",
-      githubUrl: "https://github.com/brijeshmarch16/ai-interview",
-    },
   ],
   experience: [
     {

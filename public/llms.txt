@@ -56,8 +56,6 @@ Today, I work directly with clients and build products end-to-end.
 
 - [ReactUseKit](https://reactusekit.vercel.app) — A collection of reusable React hooks and helpers for the small pieces you end up rewriting in every project. You can copy and paste them, or install them with the shadcn CLI so they land in your codebase as code you own rather than another dependency. Built with Next.js, TypeScript, Tailwind CSS, fumadocs, and the shadcn CLI. Source: [GitHub](https://github.com/brijeshmarch16/reactusekit).
 
-- AI Interview — An open source platform for running AI voice interviews. You create an interview from a job description, send the candidate a link, and the AI conducts the conversation — then you review the transcript, scorecard, and analytics. Built as a self-hosted alternative to FoloUp, replacing Clerk and Supabase with Better Auth and PostgreSQL. Built with Next.js, TypeScript, Tailwind CSS, shadcn/ui, Better Auth, Drizzle, PostgreSQL, OpenAI, and Retell AI. Source: [GitHub](https://github.com/brijeshmarch16/ai-interview).
-
 ## Experience
 
 - Senior Full Stack Engineer, Freelance: May 2023 - Present. Working directly with clients on production web applications: frontend architecture in React and Next.js, APIs and data handling on the backend, TypeScript across both, and performance work. Usually involved from problem definition through to release.
