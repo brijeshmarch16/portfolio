@@ -1,29 +1,24 @@
 import { ExperienceSection } from "@/components/home/experience-section"
-import { IntroSection } from "@/components/home/intro-section"
 import { ProjectsSection } from "@/components/home/projects-section"
-import { SectionDivider } from "@/components/home/section-divider"
 import { SiteFooter } from "@/components/home/site-footer"
+import { SkillSection } from "@/components/home/skill-section"
+import { StorySection } from "@/components/home/story-section"
 import { portfolio } from "@/lib/data"
 import { createSiteJsonLd } from "@/lib/metadata"
-import { SkillSection } from "@/components/home/skill-section"
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-6">
+    <main className="flex flex-col gap-16">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(createSiteJsonLd()),
         }}
       />
-      <IntroSection profile={portfolio.profile} />
-      <SectionDivider />
-      <SkillSection items={portfolio.skills} />
-      <SectionDivider />
+      <StorySection story={portfolio.profile.story} />
       <ProjectsSection projects={portfolio.projects} />
-      <SectionDivider />
+      <SkillSection groups={portfolio.skills} />
       <ExperienceSection experience={portfolio.experience} />
-      <SectionDivider />
       <SiteFooter />
     </main>
   )

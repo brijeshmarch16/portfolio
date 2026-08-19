@@ -130,14 +130,16 @@ export function createSiteJsonLd(): SiteJsonLd {
         name: portfolio.profile.name,
         url: siteUrl,
         jobTitle: portfolio.profile.role,
-        description: portfolio.profile.bio,
+        description: portfolio.profile.intro,
         email: social("Email").href,
         sameAs: [
           social("GitHub").href,
           social("LinkedIn").href,
           social("X").href,
         ],
-        knowsAbout: portfolio.skills.map(({ label }) => label),
+        knowsAbout: portfolio.skills.flatMap(({ items }) =>
+          items.map(({ label }) => label)
+        ),
         worksFor: {
           "@type": "Organization",
           name: portfolio.profile.company,

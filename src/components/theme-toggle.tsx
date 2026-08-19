@@ -23,12 +23,13 @@ export function ThemeToggle() {
   return (
     <Button
       type="button"
-      variant="ghost"
+      variant="outline"
+      size="icon"
       onClick={() => setTheme(nextTheme)}
       aria-label={`Switch to ${nextTheme} theme`}
     >
-      <SunIcon data-icon="inline-start" className="dark:hidden" />
-      <MoonIcon data-icon="inline-start" className="hidden dark:block" />
+      <SunIcon className="dark:hidden" />
+      <MoonIcon className="hidden dark:block" />
     </Button>
   )
 }

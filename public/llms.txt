@@ -1,14 +1,16 @@
 # Brijeshkumar Yadav
 
-> Senior Frontend Engineer.
+> Senior Full Stack Engineer.
 
-I’m a senior frontend engineer based in India. I build fast, scalable web apps that don’t just work, but feel smooth and intuitive to use.
-
-I started my coding journey during the COVID-19 pandemic, and I landed my first developer role without a degree.
-
-Now 5 years in, I’m working as a senior frontend engineer and open to freelance work.
+I'm Brijeshkumar, a developer who started with frontend development and gradually moved into the full stack. I enjoy turning ideas and problems into simple, reliable digital products.
 
 This file follows the [llms.txt specification](https://llmstxt.org), a proposed standard that helps AI language models and agents understand a website's content and structure.
+
+## About me
+
+I'm a full-stack developer who builds products end-to-end — from figuring out the problem and designing the experience to writing the frontend, backend, and everything in between.
+
+I started with frontend development, and working on real products pushed me beyond the interface — how APIs work, how data is stored, how authentication is handled, and what makes an application reliable. Since my first developer role in 2021, I've worked on production applications, freelance projects, developer tools, and products involving AI.
 
 ## Social Links
 
@@ -17,34 +19,47 @@ This file follows the [llms.txt specification](https://llmstxt.org), a proposed 
 - [LinkedIn](https://linkedin.com/in/brijeshmarch16)
 - [X](https://x.com/brijeshmarch)
 
-
 ## Skills
 
+### Frontend
+
 - [Next.js](https://nextjs.org/)
-- [React.js](https://react.dev/)
+- [React](https://react.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [shadcn/ui](https://ui.shadcn.com/)
 - [TanStack Query](https://tanstack.com/query/latest)
-- [Git](https://git-scm.com/)
+
+### Backend
+
 - [Node.js](https://nodejs.org/)
+- [Express.js](https://expressjs.com/)
+- [NestJS](https://nestjs.com/)
+- [REST APIs](https://developer.mozilla.org/docs/Glossary/REST)
+- [Better Auth](https://www.better-auth.com/)
+
+### Data & Infrastructure
+
+- [PostgreSQL](https://www.postgresql.org/)
+- [Drizzle ORM](https://orm.drizzle.team/)
 - [Docker](https://www.docker.com/)
-- [ChatGPT](https://chatgpt.com/)
-- [Claude](https://claude.ai/)
+
+### AI & Tools
+
+- [OpenAI](https://platform.openai.com/)
+- [Claude](https://www.anthropic.com/api)
+- [Retell AI](https://www.retellai.com/)
+- [Claude Code](https://claude.com/claude-code)
 
 ## Projects
 
-- AI Interview: Open source platform for companies to conduct AI powered hiring interviews with their candidates. Source: [GitHub](https://github.com/brijeshmarch16/ai-interview).
+- [ReactUseKit](https://reactusekit.vercel.app) — A collection of reusable React hooks and helpers for the small pieces you end up rewriting in every project. You can copy and paste them, or install them with the shadcn CLI so they land in your codebase as code you own rather than another dependency. Built with Next.js, TypeScript, Tailwind CSS, fumadocs, and the shadcn CLI. Source: [GitHub](https://github.com/brijeshmarch16/reactusekit).
 
-- [ReactUseKit](https://reactusekit.vercel.app): React hooks and helpers collection to copy, paste, or install with the shadcn CLI. Built with Next.js, TypeScript, Tailwind CSS, fumadocs, and shadcn CLI. Source: [GitHub](https://github.com/brijeshmarch16/reactusekit).
-
-## Blog
-
-- [FoloUp Alternative: A Self-Hosted, Open-Source AI Interview Platform](https://brijeshkumaryadav.com/blog/foloup-alternative-self-hosted-ai-interview-platform): An open-source, self-hosted FoloUp alternative for AI voice interviews, built with Better Auth and PostgreSQL, with source code available on GitHub.
+- AI Interview — An open source platform for running AI voice interviews. You create an interview from a job description, send the candidate a link, and the AI conducts the conversation — then you review the transcript, scorecard, and analytics. Built as a self-hosted alternative to FoloUp, replacing Clerk and Supabase with Better Auth and PostgreSQL. Built with Next.js, TypeScript, Tailwind CSS, shadcn/ui, Better Auth, Drizzle, PostgreSQL, OpenAI, and Retell AI. Source: [GitHub](https://github.com/brijeshmarch16/ai-interview).
 
 ## Experience
 
-- Senior Frontend Engineer at Freelance: May 2023 - Present.
-- Full Stack Engineer at SolGuruz®: Mar 2022 - Apr 2023.
-- Frontend Engineer at Emperor Brains: May 2021 - Feb 2022.
+- Senior Full Stack Engineer, Freelance: May 2023 - Present. Working directly with clients on production web applications: frontend architecture in React and Next.js, APIs and data handling on the backend, TypeScript across both, and performance work. Usually involved from problem definition through to release.
+- Full Stack Engineer at SolGuruz®: Mar 2022 - Apr 2023. Worked across frontend and backend on client products — building interfaces, writing APIs, and handling data and authentication. This is where I stopped treating the backend as someone else's job.
+- Frontend Engineer at Emperor Brains: May 2021 - Feb 2022. My first developer role. Shipped interfaces for real users and learned how production code, code review, and working in a team actually operate.
