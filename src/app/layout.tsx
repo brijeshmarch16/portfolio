@@ -1,12 +1,15 @@
 import type { Metadata } from "next"
 import "./globals.css"
 import { Analytics } from "@vercel/analytics/next"
-import { Inter } from "next/font/google"
+import { Space_Grotesk } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { createSiteMetadata } from "@/lib/metadata"
 import { cn } from "@/lib/utils"
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-sans",
+})
 
 export async function generateMetadata(): Promise<Metadata> {
   return createSiteMetadata()
@@ -17,7 +20,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       suppressHydrationWarning
-      className={cn("font-sans antialiased", inter.variable)}
+      className={cn("font-sans antialiased", spaceGrotesk.variable)}
     >
       <body>
         <ThemeProvider
