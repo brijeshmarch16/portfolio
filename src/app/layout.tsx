@@ -2,7 +2,6 @@ import type { Metadata } from "next"
 import "./globals.css"
 import { Analytics } from "@vercel/analytics/next"
 import { Inter } from "next/font/google"
-import { Header } from "@/components/header"
 import { ThemeProvider } from "@/components/theme-provider"
 import { createSiteMetadata } from "@/lib/metadata"
 import { cn } from "@/lib/utils"
@@ -28,7 +27,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           disableTransitionOnChange
         >
           <div className="mx-auto flex max-w-2xl flex-col gap-12 px-4 py-12 md:py-24">
-            <Header />
             {children}
           </div>
         </ThemeProvider>
