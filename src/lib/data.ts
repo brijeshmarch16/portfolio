@@ -27,7 +27,8 @@ export const portfolio = {
       "I'm Brijeshkumar, a developer who started with frontend development and gradually moved into the full stack. I enjoy turning ideas and problems into simple, reliable digital products.",
     story: [
       "I'm a full-stack engineer who builds products from idea to reality.",
-      "I started coding in 2020 while I was still in 12th class, learning on my own and building things from scratch. In 2021, I got my first developer job before finishing school. After gaining experience working with companies, I moved into freelancing. Today, I work directly with clients and build products from frontend to backend.",
+      "I started coding in 2020 while I was still in 12th class, learning on my own and building things from scratch. In 2021, I got my first developer job before finishing school. After gaining experience working with companies, I moved into freelancing.",
+      "Today, I work directly with clients and build products end-to-end.",
     ],
     social: [
       {
