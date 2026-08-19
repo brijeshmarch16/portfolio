@@ -8,7 +8,7 @@ export function SiteFooter() {
   const email = portfolio.profile.social.find((item) => item.label === "Email")
 
   return (
-    <footer className="flex flex-col gap-6">
+    <footer className="flex flex-col gap-10">
       <div className="flex flex-col gap-4">
         <h2 className="text-base/6 font-semibold tracking-tight text-foreground">
           Have something in mind?
@@ -21,7 +21,7 @@ export function SiteFooter() {
 
         {email && (
           <div className="flex">
-            <Button asChild className="text-xs/4 font-medium">
+            <Button asChild size="xs" className="text-xs/4 font-medium">
               <a href={email.href}>
                 Let&apos;s work together
                 <ArrowRightIcon className="size-3" aria-hidden="true" />
