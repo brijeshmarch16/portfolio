@@ -22,7 +22,7 @@ export function ProjectsSection({ projects }: { projects: ProjectItem[] }) {
 
             <div className="flex flex-wrap items-center gap-3">
               {project.liveUrl && (
-                <Button asChild className="text-xs/4 font-medium">
+                <Button asChild size="xs" className="text-xs/4 font-medium">
                   <a
                     href={project.liveUrl}
                     target="_blank"
@@ -38,6 +38,7 @@ export function ProjectsSection({ projects }: { projects: ProjectItem[] }) {
                 <Button
                   asChild
                   variant="outline"
+                  size="xs"
                   className="text-xs/4 font-medium"
                 >
                   <a
