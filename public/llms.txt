@@ -26,31 +26,28 @@ Today, I work directly with clients and build products end-to-end.
 - [Next.js](https://nextjs.org/)
 - [React](https://react.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [shadcn/ui](https://ui.shadcn.com/)
-- [TanStack Query](https://tanstack.com/query/latest)
 
 ### Backend
 
 - [Node.js](https://nodejs.org/)
-- [Express.js](https://expressjs.com/)
 - [NestJS](https://nestjs.com/)
-- [REST APIs](https://developer.mozilla.org/docs/Glossary/REST)
-- [Better Auth](https://www.better-auth.com/)
+- [Prisma](https://www.prisma.io/)
+- [SQL](https://developer.mozilla.org/docs/Glossary/SQL)
 
 ### Data & Infrastructure
 
 - [PostgreSQL](https://www.postgresql.org/)
-- [Drizzle ORM](https://orm.drizzle.team/)
 - [Docker](https://www.docker.com/)
+- [Vercel](https://vercel.com/)
 
-### AI & Tools
+### Tools
 
-- [OpenAI](https://platform.openai.com/)
-- [Claude](https://www.anthropic.com/api)
-- [Retell AI](https://www.retellai.com/)
+- [Codex](https://openai.com/codex)
 - [Claude Code](https://claude.com/claude-code)
+- [Git](https://git-scm.com/)
+- [GitHub](https://github.com/)
 
 ## Projects
 

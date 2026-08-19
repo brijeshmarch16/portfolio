@@ -1,4 +1,3 @@
-import { Fragment } from "react"
 import type { SkillGroup } from "@/types/home"
 
 export function SkillSection({ groups }: { groups: SkillGroup[] }) {
@@ -10,23 +9,21 @@ export function SkillSection({ groups }: { groups: SkillGroup[] }) {
 
       <dl className="flex flex-col gap-6">
         {groups.map((group) => (
-          <div key={group.label} className="flex flex-col gap-1.5">
+          <div key={group.label} className="flex flex-col gap-2.5">
             <dt className="text-base/6 font-medium text-foreground">
               {group.label}
             </dt>
-            <dd className="text-base/6 text-foreground/80">
-              {group.items.map((item, index) => (
-                <Fragment key={item.label}>
-                  {index > 0 && <span aria-hidden="true"> · </span>}
-                  <a
-                    href={item.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline-offset-4 transition-colors duration-150 hover:text-foreground hover:underline focus-visible:text-foreground focus-visible:underline"
-                  >
-                    {item.label}
-                  </a>
-                </Fragment>
+            <dd className="flex flex-wrap gap-2">
+              {group.items.map((item) => (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full border border-border px-3 py-1 text-sm/5 text-foreground/80 transition-colors duration-150 hover:border-foreground/40 hover:text-foreground focus-visible:border-foreground/40 focus-visible:text-foreground"
+                >
+                  {item.label}
+                </a>
               ))}
             </dd>
           </div>
