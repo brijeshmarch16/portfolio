@@ -15,9 +15,8 @@ export function SiteFooter() {
         </h2>
 
         <p className="text-base/7 text-foreground/80">
-          Whether you have a product idea, need help building an application,
-          or just want to talk through a project, I&apos;d like to hear from
-          you.
+          Whether you have a product idea, need help building an application, or
+          just want to talk through a project, I&apos;d like to hear from you.
         </p>
 
         {email && (
