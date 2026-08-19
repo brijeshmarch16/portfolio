@@ -4,8 +4,6 @@ Personal portfolio of Brijeshkumar Yadav, Senior Full Stack Engineer.
 
 **Live:** [brijeshkumaryadav.com](https://brijeshkumaryadav.com)
 
-![Light](.github/screenshot-light.png)
-
 ## Stack
 
 - [Next.js 16](https://nextjs.org/) (App Router, React Compiler, Turbopack)
