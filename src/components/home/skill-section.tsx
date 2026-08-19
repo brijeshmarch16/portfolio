@@ -20,7 +20,7 @@ export function SkillSection({ groups }: { groups: SkillGroup[] }) {
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full border border-border px-3 py-1 text-sm/5 text-foreground/80 transition-colors duration-150 hover:border-foreground/40 hover:text-foreground focus-visible:border-foreground/40 focus-visible:text-foreground"
+                  className="rounded-md bg-muted/60 px-2.5 py-1 text-sm/5 text-foreground/80 transition-colors duration-150 hover:bg-muted hover:text-foreground focus-visible:bg-muted focus-visible:text-foreground"
                 >
                   {item.label}
                 </a>
