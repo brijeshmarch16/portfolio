@@ -35,6 +35,7 @@ export interface PostItem {
   title: string
   description: string
   href: string
+  date: string
 }
 
 export interface SocialLink {
