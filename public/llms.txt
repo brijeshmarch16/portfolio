@@ -23,15 +23,15 @@ Today, I work directly with clients and build products end-to-end.
 
 ### Frontend
 
-- [Next.js](https://nextjs.org/)
-- [React](https://react.dev/)
+- [NextJS](https://nextjs.org/)
+- [ReactJS](https://react.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [shadcn/ui](https://ui.shadcn.com/)
 
 ### Backend
 
-- [Node.js](https://nodejs.org/)
+- [NodeJS](https://nodejs.org/)
 - [NestJS](https://nestjs.com/)
 - [Prisma](https://www.prisma.io/)
 - [SQL](https://developer.mozilla.org/docs/Glossary/SQL)

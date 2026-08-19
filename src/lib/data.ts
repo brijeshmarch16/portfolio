@@ -54,8 +54,8 @@ export const portfolio = {
     {
       label: "Frontend",
       items: [
-        { label: "Next.js", href: "https://nextjs.org/" },
-        { label: "React", href: "https://react.dev/" },
+        { label: "NextJS", href: "https://nextjs.org/" },
+        { label: "ReactJS", href: "https://react.dev/" },
         { label: "TypeScript", href: "https://www.typescriptlang.org/" },
         { label: "Tailwind CSS", href: "https://tailwindcss.com/" },
         { label: "shadcn/ui", href: "https://ui.shadcn.com/" },
@@ -64,7 +64,7 @@ export const portfolio = {
     {
       label: "Backend",
       items: [
-        { label: "Node.js", href: "https://nodejs.org/" },
+        { label: "NodeJS", href: "https://nodejs.org/" },
         { label: "NestJS", href: "https://nestjs.com/" },
         { label: "Prisma", href: "https://www.prisma.io/" },
         {
