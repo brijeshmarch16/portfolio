@@ -1,8 +1,6 @@
-# brijeshkumaryadav.com
+# Portfolio
 
-Personal portfolio of Brijeshkumar Yadav, Senior Full Stack Engineer.
-
-**Live:** [brijeshkumaryadav.com](https://brijeshkumaryadav.com)
+Personal portfolio to showcase my work as Full Stack Engineer
 
 ## Stack
 
