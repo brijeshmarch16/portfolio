@@ -31,6 +31,12 @@ export interface ProjectItem {
   liveUrl?: string
 }
 
+export interface PostItem {
+  title: string
+  description: string
+  href: string
+}
+
 export interface SocialLink {
   label: string
   href: string
@@ -53,4 +59,5 @@ export interface Portfolio {
   skills: SkillGroup[]
   projects: ProjectItem[]
   experience: WorkExperience[]
+  posts: PostItem[]
 }

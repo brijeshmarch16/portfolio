@@ -1,5 +1,6 @@
 import { Header } from "@/components/header"
 import { ExperienceSection } from "@/components/home/experience-section"
+import { PostsSection } from "@/components/home/posts-section"
 import { ProjectsSection } from "@/components/home/projects-section"
 import { SiteFooter } from "@/components/home/site-footer"
 import { SkillSection } from "@/components/home/skill-section"
@@ -20,6 +21,7 @@ export default function Home() {
         />
         <StorySection story={portfolio.profile.story} />
         <ProjectsSection projects={portfolio.projects} />
+        <PostsSection posts={portfolio.posts} />
         <SkillSection groups={portfolio.skills} />
         <ExperienceSection experience={portfolio.experience} />
         <SiteFooter />

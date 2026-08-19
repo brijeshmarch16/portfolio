@@ -53,6 +53,12 @@ Today, I work directly with clients and build products end-to-end.
 
 - [ReactUseKit](https://reactusekit.vercel.app) — A collection of reusable React hooks and helpers for the small pieces you end up rewriting in every project. You can copy and paste them, or install them with the shadcn CLI so they land in your codebase as code you own rather than another dependency. Built with Next.js, TypeScript, Tailwind CSS, fumadocs, and the shadcn CLI. Source: [GitHub](https://github.com/brijeshmarch16/reactusekit).
 
+## Posts
+
+- [5 years as an engineer](https://www.linkedin.com/posts/brijeshmarch16_5-years-as-an-engineer-today-i-started-activity-7465005685823676418-KOi2) — The journey from learning on my own during lockdown in 12th class to my first job, gaining confidence, and moving into freelancing.
+- [This made my day](https://www.linkedin.com/posts/brijeshmarch16_this-made-my-day-activity-7464511950786494464-rnpA) — A small moment of appreciation from my freelance work that meant a lot.
+- [My first freelance gift](https://www.linkedin.com/posts/brijeshmarch16_received-my-first-freelance-gift-from-snazzerra-share-7126881036826738688-QfWf) — An unexpected Diwali gift from a client, Snazzerra Apps, and a reminder that good work builds real relationships.
+
 ## Experience
 
 - Senior Full Stack Engineer, Freelance: May 2023 - Present. Working directly with clients on production web applications: frontend architecture in React and Next.js, APIs and data handling on the backend, TypeScript across both, and performance work. Usually involved from problem definition through to release.

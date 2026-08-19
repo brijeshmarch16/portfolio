@@ -100,6 +100,26 @@ export const portfolio = {
       liveUrl: "https://reactusekit.vercel.app",
     },
   ],
+  posts: [
+    {
+      title: "5 years as an engineer",
+      description:
+        "The journey from learning on my own during lockdown in 12th class to my first job, gaining confidence, and moving into freelancing.",
+      href: "https://www.linkedin.com/posts/brijeshmarch16_5-years-as-an-engineer-today-i-started-activity-7465005685823676418-KOi2",
+    },
+    {
+      title: "This made my day",
+      description:
+        "A small moment of appreciation from my freelance work that meant a lot.",
+      href: "https://www.linkedin.com/posts/brijeshmarch16_this-made-my-day-activity-7464511950786494464-rnpA",
+    },
+    {
+      title: "My first freelance gift",
+      description:
+        "An unexpected Diwali gift from a client, Snazzerra Apps, and a reminder that good work builds real relationships.",
+      href: "https://www.linkedin.com/posts/brijeshmarch16_received-my-first-freelance-gift-from-snazzerra-share-7126881036826738688-QfWf",
+    },
+  ],
   experience: [
     {
       title: "Senior Full Stack Engineer",
