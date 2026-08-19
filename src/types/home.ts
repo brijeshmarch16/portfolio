@@ -11,42 +11,24 @@ export interface Profile {
   name: string
   role: string
   company: string
-  location: string
-  bio: string
-  journey: string
-  closing: string
+  intro: string
+  story: string[]
   social: SocialLink[]
 }
-
-export type SkillIcon =
-  | "nextjs"
-  | "react"
-  | "typescript"
-  | "javascript"
-  | "tailwind"
-  | "shadcn"
-  | "tanstack-query"
-  | "git"
-  | "nodejs"
-  | "docker"
-  | "chatgpt"
-  | "claude"
 
 export interface WorkExperience {
   title: string
   company: string
   period: string
+  description: string
   current: boolean
 }
 
 export interface ProjectItem {
-  kind: "live" | "preview"
   title: string
   description: string
-  techStack: string[]
   githubUrl?: string
   liveUrl?: string
-  imageUrl?: string
 }
 
 export interface SocialLink {
@@ -55,16 +37,20 @@ export interface SocialLink {
   handle?: string
 }
 
-export interface SkillItem {
+export interface SkillTech {
   label: string
   href: string
-  icon: SkillIcon
+}
+
+export interface SkillGroup {
+  label: string
+  items: SkillTech[]
 }
 
 export interface Portfolio {
   site: SiteMetadata
   profile: Profile
-  skills: SkillItem[]
+  skills: SkillGroup[]
   projects: ProjectItem[]
   experience: WorkExperience[]
 }
