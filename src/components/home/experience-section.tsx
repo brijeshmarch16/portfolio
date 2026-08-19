@@ -27,9 +27,11 @@ export function ExperienceSection({
                 {job.period}
               </span>
             </div>
-            <p className="mt-1 text-base/7 text-foreground/80">
-              {job.description}
-            </p>
+            {job.description && (
+              <p className="mt-1 text-base/7 text-foreground/80">
+                {job.description}
+              </p>
+            )}
           </li>
         ))}
       </ul>

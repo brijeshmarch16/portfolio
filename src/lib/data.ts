@@ -128,24 +128,21 @@ export const portfolio = {
       title: "Senior Full Stack Engineer",
       company: "Freelance",
       period: "May 2023 - Present",
-      description:
-        "Working directly with clients on production web applications: frontend architecture in React and Next.js, APIs and data handling on the backend, TypeScript across both, and performance work. Usually involved from problem definition through to release.",
+      description: "",
       current: true,
     },
     {
       title: "Full Stack Engineer",
       company: "SolGuruz®",
       period: "Mar 2022 - Apr 2023",
-      description:
-        "Worked across frontend and backend on client products — building interfaces, writing APIs, and handling data and authentication. This is where I stopped treating the backend as someone else's job.",
+      description: "",
       current: false,
     },
     {
       title: "Frontend Engineer",
       company: "Emperor Brains",
       period: "May 2021 - Feb 2022",
-      description:
-        "My first developer role. Shipped interfaces for real users and learned how production code, code review, and working in a team actually operate.",
+      description: "",
       current: false,
     },
   ],

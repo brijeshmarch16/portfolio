@@ -61,6 +61,6 @@ Today, I work directly with clients and build products end-to-end.
 
 ## Experience
 
-- Senior Full Stack Engineer, Freelance: May 2023 - Present. Working directly with clients on production web applications: frontend architecture in React and Next.js, APIs and data handling on the backend, TypeScript across both, and performance work. Usually involved from problem definition through to release.
-- Full Stack Engineer at SolGuruz®: Mar 2022 - Apr 2023. Worked across frontend and backend on client products — building interfaces, writing APIs, and handling data and authentication. This is where I stopped treating the backend as someone else's job.
-- Frontend Engineer at Emperor Brains: May 2021 - Feb 2022. My first developer role. Shipped interfaces for real users and learned how production code, code review, and working in a team actually operate.
+- Senior Full Stack Engineer, Freelance: May 2023 - Present.
+- Full Stack Engineer at SolGuruz®: Mar 2022 - Apr 2023.
+- Frontend Engineer at Emperor Brains: May 2021 - Feb 2022.
