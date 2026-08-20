@@ -8,22 +8,8 @@
 
 Personal portfolio to showcase my work as Full Stack Engineer
 
-## Stack
-
-- [Next.js 16](https://nextjs.org/) (App Router, React Compiler, Turbopack)
-- [React 19](https://react.dev/) · [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS v4](https://tailwindcss.com/) · [shadcn/ui](https://ui.shadcn.com/)
-- Deployed on [Vercel](https://vercel.com/)
-
-## Development
-
-```bash
-pnpm install
-pnpm dev        # start dev server
-pnpm build      # production build
-pnpm typecheck  # tsc --noEmit
-pnpm lint       # eslint
-```
+![Portfolio Preview – Dark](.github/screenshot-dark.png#gh-dark-mode-only)
+![Portfolio Preview – Light](.github/screenshot-light.png#gh-light-mode-only)
 
 ## License
 
