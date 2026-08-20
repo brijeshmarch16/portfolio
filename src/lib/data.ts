@@ -66,7 +66,6 @@ export const portfolio = {
       items: [
         { label: "NodeJS", href: "https://nodejs.org/" },
         { label: "NestJS", href: "https://nestjs.com/" },
-        { label: "Prisma", href: "https://www.prisma.io/" },
         {
           label: "SQL",
           href: "https://developer.mozilla.org/docs/Glossary/SQL",
