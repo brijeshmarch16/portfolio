@@ -5,7 +5,7 @@ export const portfolio = {
     name: "brijeshkumaryadav",
     title: "Brijeshkumar Yadav - Full Stack Developer",
     description:
-      "I'm Brijeshkumar Yadav, a full stack developer based in India. I started with frontend development and gradually moved into the full stack, building products end to end with Next.js, React, TypeScript, Node.js, and PostgreSQL.",
+      "I'm Brijeshkumar Yadav, a self-taught full stack engineer based in India. I started coding in 2020, got my first developer job in 2021, and now freelance, working directly with clients to build products end to end, from idea to reality.",
     ogDescription: "Full Stack Developer",
     keywords: [
       "Brijeshkumar Yadav",
