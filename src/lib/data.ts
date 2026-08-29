@@ -21,7 +21,7 @@ export const portfolio = {
   },
   profile: {
     name: "Brijeshkumar Yadav",
-    role: "Senior Full Stack Engineer",
+    role: "Full Stack Engineer",
     company: "Freelance",
     intro:
       "I'm Brijeshkumar, a developer who started with frontend development and gradually moved into the full stack. I enjoy turning ideas and problems into simple, reliable digital products.",
@@ -124,7 +124,7 @@ export const portfolio = {
   ],
   experience: [
     {
-      title: "Senior Full Stack Engineer",
+      title: "Full Stack Engineer",
       company: "Freelance",
       period: "May 2023 - Present",
       description: "",
