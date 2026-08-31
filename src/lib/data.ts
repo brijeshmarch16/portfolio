@@ -3,19 +3,20 @@ import type { Portfolio } from "@/types/home"
 export const portfolio = {
   site: {
     name: "brijeshkumaryadav",
-    title: "Brijeshkumar Yadav - Full Stack Developer",
+    title: "Brijeshkumar Yadav - Full Stack Engineer",
     description:
       "I'm Brijeshkumar Yadav, a self-taught full stack engineer based in India. I started coding in 2020, got my first developer job in 2021, and now freelance, working directly with clients to build products end to end, from idea to reality.",
-    ogDescription: "Full Stack Developer",
+    ogDescription: "Full Stack Engineer",
     keywords: [
       "Brijeshkumar Yadav",
+      "Full Stack Engineer",
       "Full Stack Developer",
-      "Full Stack Developer India",
+      "Full Stack Engineer India",
       "React Developer",
       "Next.js Developer",
       "TypeScript Developer",
       "Node.js Developer",
-      "Freelance Full Stack Developer",
+      "Freelance Full Stack Engineer",
     ],
     url: "https://brijeshkumaryadav.com",
   },
