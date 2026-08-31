@@ -130,7 +130,8 @@ export function createSiteJsonLd(): SiteJsonLd {
         name: portfolio.profile.name,
         url: siteUrl,
         jobTitle: portfolio.profile.role,
-        description: portfolio.profile.intro,
+        description:
+          "I’m a Full Stack Engineer with 5+ years of experience building products end-to-end across frontend, backend, and infrastructure. I started coding in 2020 while I was still in 12th class, learning on my own and building things from scratch. In 2021, I got my first developer job before finishing school, where I started as a frontend engineer. Over time, I expanded into backend development and became a full-stack engineer, working on production applications and building features across the stack. Today, I work as a freelance Full Stack Engineer, building products for clients and using AI-assisted, spec-driven development to move from an idea to a working product.",
         email: social("Email").href,
         sameAs: [
           social("GitHub").href,

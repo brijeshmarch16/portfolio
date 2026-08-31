@@ -6,11 +6,11 @@ This file follows the [llms.txt specification](https://llmstxt.org), a proposed 
 
 ## About me
 
-I'm a full-stack engineer who builds products from idea to reality.
+I’m a Full Stack Engineer with 5+ years of experience building products end-to-end across frontend, backend, and infrastructure.
 
-I started coding in 2020 while I was still in 12th class, learning on my own and building things from scratch. In 2021, I got my first developer job before finishing school. After gaining experience working with companies, I moved into freelancing.
+I started coding in 2020 while I was still in 12th class, learning on my own and building things from scratch. In 2021, I got my first developer job before finishing school, where I started as a frontend engineer. Over time, I expanded into backend development and became a full-stack engineer, working on production applications and building features across the stack.
 
-Today, I work directly with clients and build products end-to-end.
+Today, I work as a freelance Full Stack Engineer, building products for clients and using AI-assisted, spec-driven development to move from an idea to a working product.
 
 ## Social Links
 
@@ -51,7 +51,16 @@ Today, I work directly with clients and build products end-to-end.
 
 ## Projects
 
-- [ReactUseKit](https://reactusekit.vercel.app) — A collection of reusable React hooks and helpers for the small pieces you end up rewriting in every project. You can copy and paste them, or install them with the shadcn CLI so they land in your codebase as code you own rather than another dependency. Built with Next.js, TypeScript, Tailwind CSS, fumadocs, and the shadcn CLI. Source: [GitHub](https://github.com/brijeshmarch16/reactusekit).
+### ReactUseKit
+
+- Open source collection of reusable React hooks and helpers for common frontend development tasks.
+- Built reusable React hooks and utilities to simplify common application patterns.
+- Added support for using components directly in projects or installing them through the shadcn CLI.
+- Built and maintained the project as an open source developer tool.
+
+Tech: React, TypeScript, shadcn CLI
+Website: [ReactUseKit](https://reactusekit.vercel.app)
+Source: [GitHub](https://github.com/brijeshmarch16/reactusekit)
 
 ## Posts
 

@@ -11,7 +11,6 @@ export interface Profile {
   name: string
   role: string
   company: string
-  intro: string
   story: string[]
   social: SocialLink[]
 }
@@ -27,6 +26,8 @@ export interface WorkExperience {
 export interface ProjectItem {
   title: string
   description: string
+  highlights?: string[]
+  tech?: string[]
   githubUrl?: string
   liveUrl?: string
 }

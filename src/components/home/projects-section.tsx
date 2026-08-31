@@ -20,6 +20,28 @@ export function ProjectsSection({ projects }: { projects: ProjectItem[] }) {
               {project.description}
             </p>
 
+            {project.highlights && project.highlights.length > 0 && (
+              <ul className="flex list-disc flex-col gap-2 pl-5 text-base/7 text-foreground/80">
+                {project.highlights.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            )}
+
+            {project.tech && project.tech.length > 0 && (
+              <div className="flex flex-wrap items-center gap-2 text-sm text-foreground/75">
+                <span className="font-medium text-foreground/90">Tech:</span>
+                {project.tech.map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-md bg-muted/60 px-2.5 py-1 text-sm/5 text-foreground/80"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            )}
+
             <div className="flex flex-wrap items-center gap-3">
               {project.liveUrl && (
                 <Button asChild size="xs" className="text-xs/4 font-medium">

@@ -24,12 +24,10 @@ export const portfolio = {
     name: "Brijeshkumar Yadav",
     role: "Full Stack Engineer",
     company: "Freelance",
-    intro:
-      "I'm Brijeshkumar, a developer who started with frontend development and gradually moved into the full stack. I enjoy turning ideas and problems into simple, reliable digital products.",
     story: [
-      "I'm a full-stack engineer who builds products from idea to reality.",
-      "I started coding in 2020 while I was still in 12th class, learning on my own and building things from scratch. In 2021, I got my first developer job before finishing school. After gaining experience working with companies, I moved into freelancing.",
-      "Today, I work directly with clients and build products end-to-end.",
+      "I’m a Full Stack Engineer with 5+ years of experience building products end-to-end across frontend, backend, and infrastructure.",
+      "I started coding in 2020 while I was still in 12th class, learning on my own and building things from scratch. In 2021, I got my first developer job before finishing school, where I started as a frontend engineer. Over time, I expanded into backend development and became a full-stack engineer, working on production applications and building features across the stack.",
+      "Today, I work as a freelance Full Stack Engineer, building products for clients and using AI-assisted, spec-driven development to move from an idea to a working product.",
     ],
     social: [
       {
@@ -95,7 +93,13 @@ export const portfolio = {
     {
       title: "ReactUseKit",
       description:
-        "A collection of reusable React hooks and helpers for the small pieces you end up rewriting in every project. You can copy and paste them, or install them with the shadcn CLI so they land in your codebase as code you own rather than another dependency.",
+        "Open source collection of reusable React hooks and helpers for common frontend development tasks.",
+      highlights: [
+        "Built reusable React hooks and utilities to simplify common application patterns.",
+        "Added support for using components directly in projects or installing them through the shadcn CLI.",
+        "Built and maintained the project as an open source developer tool.",
+      ],
+      tech: ["React", "TypeScript", "shadcn CLI"],
       githubUrl: "https://github.com/brijeshmarch16/reactusekit",
       liveUrl: "https://reactusekit.vercel.app",
     },
