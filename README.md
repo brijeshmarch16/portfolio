@@ -6,7 +6,7 @@
 
 # Portfolio
 
-Personal portfolio to showcase my work as Full Stack Engineer
+Personal portfolio showcasing my journey, projects, experience, and technical skills as a Full Stack Engineer.
 
 ![Portfolio Preview – Dark](.github/screenshot-dark.png#gh-dark-mode-only)
 ![Portfolio Preview – Light](.github/screenshot-light.png#gh-light-mode-only)
