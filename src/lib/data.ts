@@ -27,7 +27,7 @@ export const portfolio = {
     story: [
       "I’m a Full Stack Engineer with 5+ years of experience building products end-to-end across frontend, backend, and infrastructure.",
       "I started coding in 2020 while I was still in 12th class, learning on my own and building things from scratch. In 2021, I got my first developer job before finishing school, starting as a frontend engineer. Over time, I moved into backend development and became a full-stack engineer, working on production applications across the stack.",
-      "Currently, I work as a freelancer, building products from idea to production with AI-assisted, spec-driven development.",
+      "Currently, I work as a freelancer, building products from idea to production with AI-assisted development.",
     ],
     social: [
       {
