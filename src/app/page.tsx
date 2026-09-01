@@ -19,7 +19,10 @@ export default function Home() {
             __html: JSON.stringify(createSiteJsonLd()),
           }}
         />
-        <StorySection story={portfolio.profile.story} />
+        <StorySection
+          story={portfolio.profile.story}
+          social={portfolio.profile.social}
+        />
         <ProjectsSection projects={portfolio.projects} />
         <PostsSection posts={portfolio.posts} />
         <SkillSection groups={portfolio.skills} />

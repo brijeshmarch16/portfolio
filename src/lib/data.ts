@@ -5,7 +5,7 @@ export const portfolio = {
     name: "brijeshkumaryadav",
     title: "Brijeshkumar Yadav - Full Stack Engineer",
     description:
-      "I'm Brijeshkumar Yadav, a self-taught full stack engineer based in India. I started coding in 2020, got my first developer job in 2021, and now freelance, working directly with clients to build products end to end, from idea to reality.",
+      "Brijeshkumar Yadav is a Full Stack Engineer with 5+ years of experience building end-to-end web applications using React, Next.js, Node.js, NestJS, PostgreSQL and modern web technologies.",
     ogDescription: "Full Stack Engineer",
     keywords: [
       "Brijeshkumar Yadav",
@@ -26,8 +26,8 @@ export const portfolio = {
     company: "Freelance",
     story: [
       "I’m a Full Stack Engineer with 5+ years of experience building products end-to-end across frontend, backend, and infrastructure.",
-      "I started coding in 2020 while I was still in 12th class, learning on my own and building things from scratch. In 2021, I got my first developer job before finishing school, where I started as a frontend engineer. Over time, I expanded into backend development and became a full-stack engineer, working on production applications and building features across the stack.",
-      "Today, I work as a freelance Full Stack Engineer, building products for clients and using AI-assisted, spec-driven development to move from an idea to a working product.",
+      "I started coding in 2020 while I was still in 12th class, learning on my own and building things from scratch. In 2021, I got my first developer job before finishing school, starting as a frontend engineer. Over time, I moved into backend development and became a full-stack engineer, working on production applications across the stack.",
+      "Currently, I work as a freelancer, building products from idea to production with AI-assisted, spec-driven development.",
     ],
     social: [
       {
