@@ -5,18 +5,18 @@ export const portfolio = {
     name: "brijeshkumaryadav",
     title: "Brijeshkumar Yadav - Full Stack Engineer",
     description:
-      "Brijeshkumar Yadav is a Full Stack Engineer with 5+ years of experience building end-to-end web applications using React, Next.js, Node.js, NestJS, PostgreSQL and modern web technologies.",
+      "Brijeshkumar Yadav is a Full Stack Engineer who builds modern web applications across frontend, backend, and AI-powered features, with a focus on clean code, thoughtful technical decisions, and reliable products.",
     ogDescription: "Full Stack Engineer",
     keywords: [
       "Brijeshkumar Yadav",
-      "Full Stack Engineer",
       "Full Stack Developer",
-      "Full Stack Engineer India",
+      "Full Stack Engineer",
+      "AI-Powered Applications",
+      "Web Application Development",
+      "JavaScript Developer",
       "React Developer",
       "Next.js Developer",
-      "TypeScript Developer",
       "Node.js Developer",
-      "Freelance Full Stack Engineer",
     ],
     url: "https://brijeshkumaryadav.com",
   },
@@ -25,9 +25,9 @@ export const portfolio = {
     role: "Full Stack Engineer",
     company: "Freelance",
     story: [
-      "I’m a Full Stack Engineer with 5+ years of experience building products end-to-end across frontend, backend, and infrastructure.",
-      "I started coding in 2020 while I was still in 12th class, learning on my own and building things from scratch. In 2021, I got my first developer job before finishing school, starting as a frontend engineer. Over time, I moved into backend development and became a full-stack engineer, working on production applications across the stack.",
-      "Currently, I work as a freelancer, building products from idea to production with AI-assisted development.",
+      "I’m a Full Stack Engineer who builds modern web applications across frontend, backend, and AI-powered features.",
+      "I care about writing clean code, making thoughtful technical decisions, and building products that are reliable, practical, and easy to use.",
+      "I started coding in 2020 while I was still in 12th class, learning on my own and building things from scratch. In 2021, before finishing school, I got my first job as a frontend engineer. Later, I moved into backend development and became a full stack engineer.",
     ],
     social: [
       {
