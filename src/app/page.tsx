@@ -1,33 +1,27 @@
-import { Header } from "@/components/header"
-import { ExperienceSection } from "@/components/home/experience-section"
-import { PostsSection } from "@/components/home/posts-section"
-import { ProjectsSection } from "@/components/home/projects-section"
-import { SiteFooter } from "@/components/home/site-footer"
-import { SkillSection } from "@/components/home/skill-section"
-import { StorySection } from "@/components/home/story-section"
-import { portfolio } from "@/lib/data"
+import { Intro } from "@/components/intro"
+import { Projects } from "@/components/projects"
+import { Elsewhere } from "@/components/elsewhere"
+import { Footer } from "@/components/footer"
 import { createSiteJsonLd } from "@/lib/metadata"
+import { portfolio } from "@/lib/data"
 
 export default function Home() {
   return (
     <>
-      <Header />
-      <main className="flex flex-col gap-16">
+      <main className="flex flex-col gap-20">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(createSiteJsonLd()),
           }}
         />
-        <StorySection
-          story={portfolio.profile.story}
+        <Intro
+          about={portfolio.profile.about}
           social={portfolio.profile.social}
         />
-        <ProjectsSection projects={portfolio.projects} />
-        <PostsSection posts={portfolio.posts} />
-        <SkillSection groups={portfolio.skills} />
-        <ExperienceSection experience={portfolio.experience} />
-        <SiteFooter />
+        <Projects projects={portfolio.projects} />
+        <Elsewhere social={portfolio.profile.social} />
+        <Footer />
       </main>
     </>
   )

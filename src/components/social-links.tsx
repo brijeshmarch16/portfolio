@@ -1,8 +1,8 @@
-import { Mail } from "lucide-react"
 import type { SocialLink } from "@/types/home"
 import { Button } from "@/components/ui/button"
 import { GithubDark } from "@/components/ui/svgs/githubDark"
 import { GithubLight } from "@/components/ui/svgs/githubLight"
+import { InstagramIcon } from "@/components/ui/svgs/instagramIcon"
 import { Linkedin } from "@/components/ui/svgs/linkedin"
 import { X } from "@/components/ui/svgs/x"
 import { XDark } from "@/components/ui/svgs/xDark"
@@ -25,8 +25,8 @@ function SocialIcon({ label }: { label: string }) {
       )
     case "LinkedIn":
       return <Linkedin aria-hidden className="size-4" />
-    case "Email":
-      return <Mail aria-hidden className="size-4" />
+    case "Instagram":
+      return <InstagramIcon aria-hidden className="size-4" />
     default:
       return null
   }
