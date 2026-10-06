@@ -1,11 +1,40 @@
 import type { Metadata } from "next"
 import type { MetadataRoute } from "next"
-import { portfolio } from "./data"
+
+const site = {
+  name: "brijeshkumaryadav",
+  title: "Brijeshkumar Yadav - Full Stack Engineer",
+  description:
+    "Brijeshkumar Yadav is a Full Stack Engineer with 5+ years of experience building products where every detail matters. I work across the stack, from frontend to backend, with a focus on reliable engineering and thoughtful solutions.",
+  url: "https://brijeshkumaryadav.com",
+  profileName: "Brijeshkumar Yadav",
+  role: "Full Stack Engineer",
+  company: "Freelance",
+  email: "mailto:brijeshkumaryadav2026@gmail.com",
+  socialLinks: [
+    "https://github.com/brijeshmarch16",
+    "https://linkedin.com/in/brijeshmarch16",
+    "https://instagram.com/brijeshmarch16",
+    "https://x.com/brijeshmarch",
+  ],
+  xHandle: "@brijeshmarch",
+  keywords: [
+    "Brijeshkumar Yadav",
+    "Full Stack Developer",
+    "Full Stack Engineer",
+    "AI-Powered Applications",
+    "Web Application Development",
+    "JavaScript Developer",
+    "React Developer",
+    "Next.js Developer",
+    "Node.js Developer",
+  ],
+}
 
 function createBaseUrl(): URL {
   return process.env.NODE_ENV === "development"
     ? new URL("http://localhost:3000")
-    : new URL(portfolio.site.url)
+    : new URL(site.url)
 }
 
 export const baseUrl = createBaseUrl()
@@ -42,12 +71,6 @@ type SiteJsonLd = {
   ]
 }
 
-function social(label: string) {
-  const found = portfolio.profile.social.find((s) => s.label === label)
-  if (!found) throw new Error(`Missing social link: ${label}`)
-  return found
-}
-
 function createMetadata(override: Metadata): Metadata {
   return {
     ...override,
@@ -57,20 +80,20 @@ function createMetadata(override: Metadata): Metadata {
       description: override.description ?? undefined,
       url: override.openGraph?.url ?? createCanonical("/"),
       images: override.openGraph?.images,
-      siteName: portfolio.site.name,
+      siteName: site.name,
     },
     twitter: {
       ...override.twitter,
       card: "summary_large_image",
-      creator: social("X").handle,
+      creator: site.xHandle,
       title: override.twitter?.title ?? override.title ?? undefined,
       description: override.description ?? undefined,
       images: override.twitter?.images ?? override.openGraph?.images,
     },
-    authors: [{ name: portfolio.profile.name, url: portfolio.site.url }],
-    creator: portfolio.profile.name,
-    publisher: portfolio.profile.name,
-    keywords: override.keywords ?? portfolio.site.keywords,
+    authors: [{ name: site.profileName, url: site.url }],
+    creator: site.profileName,
+    publisher: site.profileName,
+    keywords: override.keywords ?? site.keywords,
     alternates: {
       ...override.alternates,
     },
@@ -81,25 +104,13 @@ export function createCanonical(path: string): string {
   return new URL(path, baseUrl).toString()
 }
 
-function createOgImageUrl(title: string, description: string): string {
-  return createCanonical(
-    `/og?title=${encodeURIComponent(title)}&description=${encodeURIComponent(description)}`
-  )
-}
-
 export function createSiteMetadata(): Metadata {
   const canonicalUrl = createCanonical("/")
-  const ogImageUrl = createOgImageUrl(
-    portfolio.site.title,
-    portfolio.site.description
-  )
+  const ogImageUrl = createCanonical("/opengraph-image.png")
 
   return createMetadata({
-    title: {
-      default: portfolio.site.title,
-      template: "%s - " + portfolio.profile.name,
-    },
-    description: portfolio.site.description,
+    title: site.title,
+    description: site.description,
     alternates: {
       canonical: canonicalUrl,
     },
@@ -108,8 +119,8 @@ export function createSiteMetadata(): Metadata {
         {
           url: ogImageUrl,
           width: 1200,
-          height: 630,
-          alt: portfolio.site.title,
+          height: 1200,
+          alt: site.title,
         },
       ],
     },
@@ -127,29 +138,24 @@ export function createSiteJsonLd(): SiteJsonLd {
       {
         "@type": "Person",
         "@id": personId,
-        name: portfolio.profile.name,
+        name: site.profileName,
         url: siteUrl,
-        jobTitle: portfolio.profile.role,
-        description: portfolio.site.description,
-        email: social("Email").href,
-        sameAs: [
-          social("GitHub").href,
-          social("LinkedIn").href,
-          social("Instagram").href,
-          social("X").href,
-        ],
+        jobTitle: site.role,
+        description: site.description,
+        email: site.email,
+        sameAs: site.socialLinks,
         knowsAbout: [],
         worksFor: {
           "@type": "Organization",
-          name: portfolio.profile.company,
+          name: site.company,
         },
       },
       {
         "@type": "WebSite",
         "@id": websiteId,
         url: siteUrl,
-        name: portfolio.site.title,
-        description: portfolio.site.description,
+        name: site.title,
+        description: site.description,
         publisher: {
           "@id": personId,
         },
@@ -178,6 +184,11 @@ export function createSitemap(): MetadataRoute.Sitemap {
       url: createCanonical("/"),
       changeFrequency: "monthly",
       priority: 1,
+    },
+    {
+      url: createCanonical("/about"),
+      changeFrequency: "monthly",
+      priority: 0.8,
     },
   ]
 }

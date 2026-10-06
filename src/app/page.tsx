@@ -1,9 +1,8 @@
 import { Intro } from "@/components/intro"
-import { Projects } from "@/components/projects"
-import { Elsewhere } from "@/components/elsewhere"
+import { SelectedWork } from "@/components/selected-work"
+import { Experience } from "@/components/experience"
 import { Footer } from "@/components/footer"
 import { createSiteJsonLd } from "@/lib/metadata"
-import { portfolio } from "@/lib/data"
 
 export default function Home() {
   return (
@@ -15,12 +14,9 @@ export default function Home() {
             __html: JSON.stringify(createSiteJsonLd()),
           }}
         />
-        <Intro
-          about={portfolio.profile.about}
-          social={portfolio.profile.social}
-        />
-        <Projects projects={portfolio.projects} />
-        <Elsewhere social={portfolio.profile.social} />
+        <Intro />
+        <SelectedWork />
+        <Experience />
         <Footer />
       </main>
     </>

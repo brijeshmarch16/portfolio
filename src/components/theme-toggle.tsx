@@ -23,8 +23,9 @@ export function ThemeToggle() {
   return (
     <Button
       type="button"
-      variant="outline"
-      size="icon"
+      variant="ghost"
+      size="icon-lg"
+      className="rounded-full text-muted-foreground"
       onClick={() => setTheme(nextTheme)}
       aria-label={`Switch to ${nextTheme} theme`}
     >

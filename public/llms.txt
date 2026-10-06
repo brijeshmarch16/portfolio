@@ -4,24 +4,33 @@
 
 This file follows the [llms.txt specification](https://llmstxt.org), a proposed standard that helps AI language models and agents understand a website's content and structure.
 
+## Summary
+
+Brijeshkumar Yadav is a full stack engineer based in India with 5+ years of experience building products where every detail matters. He works across the stack, from frontend to backend, with a focus on reliable engineering and thoughtful solutions.
+
+You can reach me on [LinkedIn](https://linkedin.com/in/brijeshmarch16), [X](https://x.com/brijeshmarch), [Instagram](https://instagram.com/brijeshmarch16), [GitHub](https://github.com/brijeshmarch16)
+
 ## About me
 
-I’m a Full Stack Engineer who builds modern web applications across frontend, backend, and AI-powered features.
+I’m Brijeshkumar, a full stack engineer based in India. I build products where every detail matters.
 
-I care about writing clean code, making thoughtful technical decisions, and building products that are reliable, practical, and easy to use.
+I was born in Uttar Pradesh and moved to Gujarat, where I started my schooling.
 
-I started coding in 2020 while I was still in 12th class, learning on my own and building things from scratch. In 2021, before finishing school, I got my first job as a frontend engineer. Later, I moved into backend development and became a full stack engineer.
+During the COVID pandemic, schools shut down and I suddenly had a lot of time at home. I didn’t have a clear plan for what to do next, but I wanted to learn something. That’s when I discovered coding through YouTube.
 
-You can reach me on [LinkedIn](https://linkedin.com/in/brijeshmarch16), via [Email](mailto:brijeshkumaryadav2026@gmail.com), or check out my code on [GitHub](https://github.com/brijeshmarch16).
+I started learning from home, following tutorials, writing code, and slowly building things on my own. There was no degree, bootcamp, or structured roadmap—just YouTube, curiosity, and a lot of time spent figuring things out.
+
+In 2021, before finishing school, I landed my first job as a Frontend Engineer.
+
+Now, I’m still learning, building, and exploring.
 
 ## Projects
 
 ### [ReactUseKit](https://reactusekit.vercel.app)
 A collection of reusable React hooks and helpers
 
-## Elsewhere
+## Experience
 
-- [LinkedIn](https://linkedin.com/in/brijeshmarch16)
-- [X](https://x.com/brijeshmarch)
-- [Instagram](https://instagram.com/brijeshmarch16)
-- [GitHub](https://github.com/brijeshmarch16)
+- **Freelance** — Full Stack Engineer (May 2023 — Present)
+- **SolGuruz®** — Full Stack Engineer (Mar 2022 — Apr 2023)
+- **Emperor Brains** — Frontend Engineer (May 2021 — Feb 2022)
