@@ -106,23 +106,12 @@ export function createCanonical(path: string): string {
 
 export function createSiteMetadata(): Metadata {
   const canonicalUrl = createCanonical("/")
-  const ogImageUrl = createCanonical("/opengraph-image.png")
 
   return createMetadata({
     title: site.title,
     description: site.description,
     alternates: {
       canonical: canonicalUrl,
-    },
-    openGraph: {
-      images: [
-        {
-          url: ogImageUrl,
-          width: 1200,
-          height: 1200,
-          alt: site.title,
-        },
-      ],
     },
   })
 }
