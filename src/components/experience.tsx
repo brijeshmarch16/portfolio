@@ -22,9 +22,12 @@ export function Experience() {
       aria-labelledby="experience-heading"
       className="flex flex-col gap-4"
     >
-      <h2 id="experience-heading" className="text-base font-medium">
-        Experience
-      </h2>
+      <div className="flex items-baseline justify-between gap-4">
+        <h2 id="experience-heading" className="text-base font-medium">
+          Experience
+        </h2>
+        <p className="text-sm text-muted-foreground">5+ years</p>
+      </div>
 
       <div>
         {experience.map((item) => (
