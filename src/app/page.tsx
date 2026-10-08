@@ -17,7 +17,14 @@ export default function Home() {
         <Intro />
         <SelectedWork />
         <Experience />
-        <Footer />
+        <footer className="mx-auto w-fit max-w-full pt-6 text-center">
+          <p className="text-lg/relaxed text-foreground italic">
+            &quot;You have control over your actions, not their results.&quot;
+          </p>
+          <p className="mt-2 text-right text-sm text-muted-foreground">
+            — Bhagavad Gita
+          </p>
+        </footer>
       </main>
     </>
   )

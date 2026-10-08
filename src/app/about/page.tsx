@@ -1,5 +1,3 @@
-import { Footer } from "@/components/footer"
-
 export const metadata = {
   title: "About Brijeshkumar Yadav - Full Stack Engineer in India",
   alternates: {
@@ -9,7 +7,7 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="flex flex-col gap-20">
+    <main className="flex flex-col gap-10">
       <section className="flex flex-col gap-6">
         <header>
           <h1 className="text-xl font-bold">Hi, I&apos;m Brijeshkumar</h1>
@@ -48,7 +46,14 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
-      <Footer />
+      <footer className="mx-auto w-fit max-w-full pt-6 text-center">
+        <p className="text-lg/relaxed text-foreground italic">
+          &quot;Lift yourself through your own effort; never let yourself fall.&quot;
+        </p>
+        <p className="mt-2 text-right text-sm text-muted-foreground">
+          — Bhagavad Gita
+        </p>
+      </footer>
     </main>
   )
 }
