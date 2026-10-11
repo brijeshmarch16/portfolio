@@ -106,22 +106,10 @@ export function createCanonical(path: string): string {
 
 export function createSiteMetadata(): Metadata {
   const canonicalUrl = createCanonical("/")
-  const openGraphImage = {
-    url: createCanonical("/opengraph.png"),
-    width: 1200,
-    height: 630,
-    alt: "Brijeshkumar Yadav, Full Stack Engineer",
-  }
 
   return createMetadata({
     title: site.title,
     description: site.description,
-    openGraph: {
-      images: [openGraphImage],
-    },
-    twitter: {
-      images: [openGraphImage],
-    },
     alternates: {
       canonical: canonicalUrl,
     },
