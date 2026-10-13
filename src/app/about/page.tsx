@@ -19,27 +19,21 @@ export default function AboutPage() {
             detail matters.
           </p>
           <p>
-            I was born in{" "}
-            <strong className="font-semibold">Uttar Pradesh</strong> and moved
-            to <strong className="font-semibold">Gujarat</strong>, where I
-            started my schooling.
+            In 2020, when schools closed during COVID, I started learning to
+            code through YouTube.
           </p>
           <p>
-            During the <strong className="font-semibold">COVID pandemic</strong>
-            , schools shut down and I suddenly had a lot of time at home. I
-            didn&apos;t have a clear plan for what to do next, but I wanted to
-            learn something. That&apos;s when I discovered{" "}
-            <strong className="font-semibold">coding through YouTube</strong>.
+            I didn&apos;t have a roadmap, a bootcamp, or a clear plan for my
+            future. I just kept learning, building things, making mistakes, and
+            improving little by little.
           </p>
           <p>
-            I started learning from home, following tutorials, writing code, and
-            slowly building things on my own. There was no degree, bootcamp, or
-            structured roadmap — just YouTube, curiosity, and a lot of time
-            spent figuring things out.
-          </p>
-          <p>
-            In 2021, before finishing school, I landed my first job as a{" "}
+            In 2021, before finishing school, I got my first job as a{" "}
             <strong className="font-semibold">Frontend Engineer</strong>.
+          </p>
+          <p>
+            What started as a way to spend my time became the beginning of my
+            career.
           </p>
           <p className="font-semibold text-foreground">
             Now, I&apos;m still learning, building, and exploring.
