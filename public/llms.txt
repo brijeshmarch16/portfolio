@@ -6,9 +6,13 @@ This file follows the [llms.txt specification](https://llmstxt.org), a proposed 
 
 ## Summary
 
-I'm a Full Stack Engineer who builds products end to end. I have 5+ years of experience working across the stack, from frontend to backend, with a focus on reliable engineering and thoughtful solutions. I use AI to explore solutions and accelerate implementation while taking ownership of technical decisions and the quality of what ships.
+I'm a Full Stack Engineer who builds products end to end.
 
-You can reach me on [LinkedIn](https://linkedin.com/in/brijeshmarch16), [X](https://x.com/brijeshmarch), [Instagram](https://instagram.com/brijeshmarch16), [GitHub](https://github.com/brijeshmarch16)
+I have 5+ years of experience working across the stack, from frontend to backend, with a focus on reliable engineering and thoughtful solutions.
+
+I use AI to explore solutions and accelerate implementation while taking ownership of technical decisions and the quality of what ships.
+
+Reach out to me via [email](mailto:brijeshkumaryadav2026@gmail.com), [LinkedIn](https://linkedin.com/in/brijeshmarch16), [X](https://x.com/brijeshmarch), or [GitHub](https://github.com/brijeshmarch16).
 
 ## About me
 

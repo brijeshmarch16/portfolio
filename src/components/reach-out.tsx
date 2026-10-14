@@ -58,9 +58,30 @@ export function ReachOut({ social }: { social: SocialLink[] }) {
 
   return (
     <div className="flex flex-wrap items-center gap-1">
-      <p className="text-lg">Reach out to me on</p>
+      <p className="text-lg">Reach out to me via</p>
       <TooltipProvider>
         <div className="flex items-center gap-1">
+          {email && (
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  type="button"
+                  variant="outline"
+                  size="icon"
+                  className="rounded-full text-muted-foreground hover:text-foreground"
+                  onClick={copyEmail}
+                  aria-label={copied ? "Email copied" : "Copy email address"}
+                >
+                  {copied ? (
+                    <Check aria-hidden className="size-4" />
+                  ) : (
+                    <Mail aria-hidden className="size-4" />
+                  )}
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>Click to copy email</TooltipContent>
+            </Tooltip>
+          )}
           {social
             .filter((item) => item.label !== "Email")
             .map((item) => (
@@ -85,27 +106,6 @@ export function ReachOut({ social }: { social: SocialLink[] }) {
                 <TooltipContent>{item.label}</TooltipContent>
               </Tooltip>
             ))}
-          {email && (
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Button
-                  type="button"
-                  variant="outline"
-                  size="icon"
-                  className="rounded-full text-muted-foreground hover:text-foreground"
-                  onClick={copyEmail}
-                  aria-label={copied ? "Email copied" : "Copy email address"}
-                >
-                  {copied ? (
-                    <Check aria-hidden className="size-4" />
-                  ) : (
-                    <Mail aria-hidden className="size-4" />
-                  )}
-                </Button>
-              </TooltipTrigger>
-              <TooltipContent>Click to copy email</TooltipContent>
-            </Tooltip>
-          )}
         </div>
       </TooltipProvider>
     </div>
