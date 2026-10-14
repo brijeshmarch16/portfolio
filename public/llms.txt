@@ -24,7 +24,7 @@ In 2021, before finishing school, I landed my first job as a Frontend Engineer.
 
 Over time, I moved into backend development and grew into a Full Stack Engineer.
 
-Now, I’m continuing to build, learn, and explore what’s possible.
+Now, I’m continuing to build, learn, and explore.
 
 ## Projects
 

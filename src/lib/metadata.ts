@@ -3,9 +3,9 @@ import type { MetadataRoute } from "next"
 
 const site = {
   name: "brijeshkumaryadav",
-  title: "Brijeshkumar Yadav - Full Stack Engineer",
+  title: "Brijeshkumar Yadav | Full Stack Engineer",
   description:
-    "Brijeshkumar Yadav is a Full Stack Engineer with 5+ years of experience building products where every detail matters. I work across the stack, from frontend to backend, with a focus on reliable engineering and thoughtful solutions.",
+    "I'm a Full Stack Engineer who builds products end to end. I have 5+ years of experience working across the stack, from frontend to backend, with a focus on reliable engineering and thoughtful solutions.",
   url: "https://brijeshkumaryadav.com",
   profileName: "Brijeshkumar Yadav",
   role: "Full Stack Engineer",
@@ -76,7 +76,7 @@ function createMetadata(override: Metadata): Metadata {
     ...override,
     openGraph: {
       ...override.openGraph,
-      title: override.openGraph?.title,
+      title: override.openGraph?.title ?? override.title ?? undefined,
       description: override.description ?? undefined,
       url: override.openGraph?.url ?? createCanonical("/"),
       images: override.openGraph?.images,
@@ -104,16 +104,30 @@ export function createCanonical(path: string): string {
   return new URL(path, baseUrl).toString()
 }
 
-export function createSiteMetadata(): Metadata {
-  const canonicalUrl = createCanonical("/")
+export function createPageMetadata(
+  override: Metadata,
+  path: string
+): Metadata {
+  const canonicalUrl = createCanonical(path)
 
   return createMetadata({
-    title: site.title,
-    description: site.description,
+    ...override,
+    openGraph: {
+      ...override.openGraph,
+      url: canonicalUrl,
+    },
     alternates: {
+      ...override.alternates,
       canonical: canonicalUrl,
     },
   })
+}
+
+export function createSiteMetadata(): Metadata {
+  return createPageMetadata({
+    title: site.title,
+    description: site.description,
+  }, "/")
 }
 
 export function createSiteJsonLd(): SiteJsonLd {

@@ -1,9 +1,14 @@
-export const metadata = {
-  title: "About Brijeshkumar Yadav - Full Stack Engineer in India",
-  alternates: {
-    canonical: "/about",
+import type { Metadata } from "next"
+import { createPageMetadata } from "@/lib/metadata"
+
+export const metadata: Metadata = createPageMetadata(
+  {
+    title: "About Brijeshkumar Yadav | Full Stack Engineer",
+    description:
+      "Hi, I'm Brijeshkumar. I'm a Full Stack Engineer who builds products end to end. In 2020, when schools closed during COVID, I started learning to code. In 2021, before finishing school, I landed my first job as a Frontend Engineer.",
   },
-}
+  "/about"
+)
 
 export default function AboutPage() {
   return (
@@ -36,8 +41,7 @@ export default function AboutPage() {
             <strong className="font-semibold">Full Stack Engineer</strong>.
           </p>
           <p className="font-semibold text-foreground">
-            Now, I&apos;m continuing to build, learn, and explore what&apos;s
-            possible.
+            Now, I&apos;m continuing to build, learn, and explore.
           </p>
         </div>
       </section>
