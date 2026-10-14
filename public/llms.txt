@@ -18,7 +18,7 @@ Reach out to me via [email](mailto:brijeshkumaryadav2026@gmail.com), [LinkedIn](
 
 Hi, I’m Brijeshkumar. I’m a Full Stack Engineer who builds products end to end.
 
-In 2020, when schools closed during COVID, I started learning to code.
+Back in 2020, when schools closed during COVID, I started learning to code.
 
 I had no roadmap, no bootcamp, and no degree. I started with YouTube tutorials and learned by building things, making mistakes, and figuring things out along the way.
 

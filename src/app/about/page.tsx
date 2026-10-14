@@ -5,7 +5,7 @@ export const metadata: Metadata = createPageMetadata(
   {
     title: "About Brijeshkumar Yadav | Full Stack Engineer",
     description:
-      "Hi, I'm Brijeshkumar. I'm a Full Stack Engineer who builds products end to end. In 2020, when schools closed during COVID, I started learning to code. In 2021, before finishing school, I landed my first job as a Frontend Engineer.",
+      "Hi, I'm Brijeshkumar. I'm a Full Stack Engineer who builds products end to end. Back in 2020, when schools closed during COVID, I started learning to code. In 2021, before finishing school, I landed my first job as a Frontend Engineer.",
   },
   "/about"
 )
@@ -23,7 +23,7 @@ export default function AboutPage() {
             I&apos;m a Full Stack Engineer who builds products end to end.
           </p>
           <p>
-            In 2020, when schools closed during COVID, I started learning to
+            Back in 2020, when schools closed during COVID, I started learning to
             code.
           </p>
           <p>
