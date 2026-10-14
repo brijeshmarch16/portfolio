@@ -15,28 +15,29 @@ export default function AboutPage() {
 
         <div className="flex flex-col gap-4 text-lg/relaxed">
           <p>
-            A full stack engineer based in India. I build products where every
-            detail matters.
+            I&apos;m a Full Stack Engineer who builds products end to end.
           </p>
           <p>
             In 2020, when schools closed during COVID, I started learning to
-            code through YouTube.
+            code.
           </p>
           <p>
-            I didn&apos;t have a roadmap, a bootcamp, or a clear plan for my
-            future. I just kept learning, building things, making mistakes, and
-            improving little by little.
+            I had no roadmap, no bootcamp, and no degree. I started with YouTube
+            tutorials and learned by building things, making mistakes, and
+            figuring things out along the way.
           </p>
+          <p>What began as curiosity slowly became something bigger.</p>
           <p>
-            In 2021, before finishing school, I got my first job as a{" "}
+            In 2021, before finishing school, I landed my first job as a{" "}
             <strong className="font-semibold">Frontend Engineer</strong>.
           </p>
           <p>
-            What started as a way to spend my time became the beginning of my
-            career.
+            Over time, I moved into backend development and grew into a{" "}
+            <strong className="font-semibold">Full Stack Engineer</strong>.
           </p>
           <p className="font-semibold text-foreground">
-            Now, I&apos;m still learning, building, and exploring.
+            Now, I&apos;m continuing to build, learn, and explore what&apos;s
+            possible.
           </p>
         </div>
       </section>

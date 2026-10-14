@@ -2,21 +2,26 @@ import { ReachOut } from "@/components/reach-out"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const summary = [
-  "I have 5+ years of experience building products where every detail matters. I work across the stack, from frontend to backend, with a focus on reliable engineering and thoughtful solutions.",
+  "I'm a Full Stack Engineer who builds products end to end.",
+  "I have 5+ years of experience working across the stack, from frontend to backend, with a focus on reliable engineering and thoughtful solutions.",
+  "I use AI to explore solutions and accelerate implementation while taking ownership of technical decisions and the quality of what ships.",
 ]
 
 const highlightedPhrases = [
+  "Full Stack Engineer",
+  "end to end",
   "5+ years of experience",
-  "every detail matters",
   "frontend to backend",
   "reliable engineering and thoughtful solutions.",
+  "use AI",
+  "technical decisions",
+  "quality of what ships.",
 ]
 
 const social = [
   { label: "Email", href: "mailto:brijeshkumaryadav2026@gmail.com" },
   { label: "LinkedIn", href: "https://linkedin.com/in/brijeshmarch16" },
   { label: "X", href: "https://x.com/brijeshmarch", handle: "@brijeshmarch" },
-  { label: "Instagram", href: "https://instagram.com/brijeshmarch16" },
   { label: "GitHub", href: "https://github.com/brijeshmarch16" },
 ]
 

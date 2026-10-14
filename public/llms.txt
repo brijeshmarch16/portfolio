@@ -6,23 +6,25 @@ This file follows the [llms.txt specification](https://llmstxt.org), a proposed 
 
 ## Summary
 
-Brijeshkumar Yadav is a full stack engineer based in India with 5+ years of experience building products where every detail matters. He works across the stack, from frontend to backend, with a focus on reliable engineering and thoughtful solutions.
+I'm a Full Stack Engineer who builds products end to end. I have 5+ years of experience working across the stack, from frontend to backend, with a focus on reliable engineering and thoughtful solutions. I use AI to explore solutions and accelerate implementation while taking ownership of technical decisions and the quality of what ships.
 
 You can reach me on [LinkedIn](https://linkedin.com/in/brijeshmarch16), [X](https://x.com/brijeshmarch), [Instagram](https://instagram.com/brijeshmarch16), [GitHub](https://github.com/brijeshmarch16)
 
 ## About me
 
-I’m Brijeshkumar, a full stack engineer based in India. I build products where every detail matters.
+Hi, I’m Brijeshkumar. I’m a Full Stack Engineer who builds products end to end.
 
-In 2020, when schools closed during COVID, I started learning to code through YouTube.
+In 2020, when schools closed during COVID, I started learning to code.
 
-I didn’t have a roadmap, a bootcamp, or a clear plan for my future. I just kept learning, building things, making mistakes, and improving little by little.
+I had no roadmap, no bootcamp, and no degree. I started with YouTube tutorials and learned by building things, making mistakes, and figuring things out along the way.
 
-In 2021, before finishing school, I got my first job as a Frontend Engineer.
+What began as curiosity slowly became something bigger.
 
-What started as a way to spend my time became the beginning of my career.
+In 2021, before finishing school, I landed my first job as a Frontend Engineer.
 
-Now, I’m still learning, building, and exploring.
+Over time, I moved into backend development and grew into a Full Stack Engineer.
+
+Now, I’m continuing to build, learn, and explore what’s possible.
 
 ## Projects
 
