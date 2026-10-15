@@ -1,7 +1,6 @@
 import { Intro } from "@/components/intro"
 import { SelectedWork } from "@/components/selected-work"
 import { Experience } from "@/components/experience"
-import { Footer } from "@/components/footer"
 import { createSiteJsonLd } from "@/lib/metadata"
 
 export default function Home() {
