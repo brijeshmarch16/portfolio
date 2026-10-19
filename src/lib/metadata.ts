@@ -5,7 +5,7 @@ const site = {
   name: "brijeshkumaryadav",
   title: "Brijeshkumar Yadav | Full Stack Engineer",
   description:
-    "I'm a Full Stack Engineer who builds products end to end. I have 5+ years of experience working across the stack, from frontend to backend, with a focus on reliable engineering and thoughtful solutions.",
+    "I'm a Full Stack Engineer with 5+ years of experience working across the stack, from frontend to backend, focused on reliable engineering and thoughtful solutions.",
   url: "https://brijeshkumaryadav.com",
   profileName: "Brijeshkumar Yadav",
   role: "Full Stack Engineer",
