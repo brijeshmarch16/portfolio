@@ -20,9 +20,12 @@ export function Experience() {
   return (
     <section
       aria-labelledby="experience-heading"
-      className="flex flex-col gap-4"
+      className="mx-auto max-w-4xl px-6 pt-24"
     >
-      <h2 id="experience-heading" className="text-base font-medium">
+      <h2
+        id="experience-heading"
+        className="mb-6 font-mono text-xs font-medium tracking-[0.12em] text-muted-foreground uppercase"
+      >
         Experience
       </h2>
 
@@ -30,15 +33,17 @@ export function Experience() {
         {experience.map((item) => (
           <article
             key={`${item.company}-${item.period}`}
-            className="flex flex-col gap-1 py-2 first:pt-0 last:pb-0 sm:flex-row sm:items-center sm:justify-between sm:gap-4"
+            className="flex flex-col gap-1 border-b border-border py-4 last:border-0 last:pb-0 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4"
           >
             <div>
-              <h3 className="text-lg/relaxed font-medium">{item.company}</h3>
-              <p className="text-base/relaxed text-muted-foreground">
+              <h3 className="text-lg/6 font-semibold tracking-tight">
+                {item.company}
+              </h3>
+              <p className="mt-0.5 text-sm/6 text-muted-foreground">
                 {item.role}
               </p>
             </div>
-            <p className="text-sm text-muted-foreground sm:shrink-0">
+            <p className="font-mono text-xs text-muted-foreground sm:shrink-0">
               {item.period}
             </p>
           </article>

@@ -7,9 +7,10 @@ import {
 
 export function ThemeProvider({
   attribute = "class",
-  defaultTheme = "system",
-  enableSystem = true,
-  storageKey = "theme",
+  defaultTheme = "light",
+  enableSystem = false,
+  forcedTheme = "light",
+  storageKey = "theme-v2",
   ...props
 }: ThemeProviderProps) {
   return (
@@ -17,6 +18,7 @@ export function ThemeProvider({
       attribute={attribute}
       defaultTheme={defaultTheme}
       enableSystem={enableSystem}
+      forcedTheme={forcedTheme}
       storageKey={storageKey}
       {...props}
     />

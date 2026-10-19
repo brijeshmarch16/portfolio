@@ -13,10 +13,15 @@ import { Button } from "@/components/ui/button"
 import {
   Tooltip,
   TooltipContent,
-  TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
-import type { SocialLink } from "@/lib/social"
+
+const social = [
+  { label: "Email", href: "mailto:brijeshkumaryadav2026@gmail.com" },
+  { label: "LinkedIn", href: "https://linkedin.com/in/brijeshmarch16" },
+  { label: "X", href: "https://x.com/brijeshmarch", handle: "@brijeshmarch" },
+  { label: "GitHub", href: "https://github.com/brijeshmarch16" },
+]
 
 function Icon({ label }: { label: string }) {
   switch (label) {
@@ -43,7 +48,7 @@ function Icon({ label }: { label: string }) {
   }
 }
 
-export function ReachOut({ social }: { social: SocialLink[] }) {
+export function ReachOut() {
   const [copied, setCopied] = useState(false)
   const email = social
     .find((item) => item.label === "Email")
@@ -57,57 +62,53 @@ export function ReachOut({ social }: { social: SocialLink[] }) {
   }
 
   return (
-    <div className="flex flex-wrap items-center gap-1">
-      <p className="text-lg">Reach out to me via</p>
-      <TooltipProvider>
-        <div className="flex items-center gap-1">
-          {email && (
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Button
-                  type="button"
-                  variant="outline"
-                  size="icon"
-                  className="rounded-full text-muted-foreground hover:text-foreground"
-                  onClick={copyEmail}
-                  aria-label={copied ? "Email copied" : "Copy email address"}
+    <nav
+      aria-label="Social links"
+      className="mt-7 flex flex-wrap items-center gap-2"
+    >
+      {social.map((item) =>
+        item.label === "Email" ? (
+          <Tooltip key={item.label}>
+            <TooltipTrigger asChild>
+              <Button
+                type="button"
+                variant="outline"
+                size="icon-lg"
+                onClick={copyEmail}
+                aria-label={copied ? "Email copied" : "Copy email address"}
+              >
+                {copied ? (
+                  <Check aria-hidden className="size-4" />
+                ) : (
+                  <Mail aria-hidden className="size-4" />
+                )}
+                <span className="sr-only" aria-live="polite">
+                  {copied ? "Email copied" : ""}
+                </span>
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>
+              {copied ? "Email copied" : "Click to copy email"}
+            </TooltipContent>
+          </Tooltip>
+        ) : (
+          <Tooltip key={item.label}>
+            <TooltipTrigger asChild>
+              <Button asChild variant="outline" size="icon-lg">
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={item.label}
                 >
-                  {copied ? (
-                    <Check aria-hidden className="size-4" />
-                  ) : (
-                    <Mail aria-hidden className="size-4" />
-                  )}
-                </Button>
-              </TooltipTrigger>
-              <TooltipContent>Click to copy email</TooltipContent>
-            </Tooltip>
-          )}
-          {social
-            .filter((item) => item.label !== "Email")
-            .map((item) => (
-              <Tooltip key={item.label}>
-                <TooltipTrigger asChild>
-                  <Button
-                    asChild
-                    variant="outline"
-                    size="icon"
-                    className="rounded-full text-muted-foreground hover:text-foreground"
-                  >
-                    <a
-                      href={item.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={item.label}
-                    >
-                      <Icon label={item.label} />
-                    </a>
-                  </Button>
-                </TooltipTrigger>
-                <TooltipContent>{item.label}</TooltipContent>
-              </Tooltip>
-            ))}
-        </div>
-      </TooltipProvider>
-    </div>
+                  <Icon label={item.label} />
+                </a>
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>{item.label}</TooltipContent>
+          </Tooltip>
+        )
+      )}
+    </nav>
   )
 }

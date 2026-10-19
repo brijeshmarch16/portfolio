@@ -17,8 +17,10 @@ const projects = [
 
 export function SelectedWork() {
   return (
-    <section className="flex flex-col gap-4">
-      <h2 className="text-base font-medium">Selected work</h2>
+    <section className="mx-auto max-w-4xl px-6 pt-24">
+      <h2 className="mb-6 font-mono text-xs font-medium tracking-[0.12em] text-muted-foreground uppercase">
+        Selected work
+      </h2>
 
       <div className="grid gap-6">
         {projects.map((project) => (
@@ -41,8 +43,12 @@ export function SelectedWork() {
                 />
               </div>
               <CardHeader className="p-4">
-                <CardTitle>{project.title}</CardTitle>
-                <CardDescription>{project.description}</CardDescription>
+                <CardTitle className="text-lg/6 font-semibold tracking-tight">
+                  {project.title}
+                </CardTitle>
+                <CardDescription className="text-sm/6">
+                  {project.description}
+                </CardDescription>
               </CardHeader>
             </Card>
           </a>

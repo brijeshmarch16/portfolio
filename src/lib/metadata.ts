@@ -104,10 +104,7 @@ export function createCanonical(path: string): string {
   return new URL(path, baseUrl).toString()
 }
 
-export function createPageMetadata(
-  override: Metadata,
-  path: string
-): Metadata {
+export function createPageMetadata(override: Metadata, path: string): Metadata {
   const canonicalUrl = createCanonical(path)
 
   return createMetadata({
@@ -124,10 +121,13 @@ export function createPageMetadata(
 }
 
 export function createSiteMetadata(): Metadata {
-  return createPageMetadata({
-    title: site.title,
-    description: site.description,
-  }, "/")
+  return createPageMetadata(
+    {
+      title: site.title,
+      description: site.description,
+    },
+    "/"
+  )
 }
 
 export function createSiteJsonLd(): SiteJsonLd {
@@ -187,11 +187,6 @@ export function createSitemap(): MetadataRoute.Sitemap {
       url: createCanonical("/"),
       changeFrequency: "monthly",
       priority: 1,
-    },
-    {
-      url: createCanonical("/about"),
-      changeFrequency: "monthly",
-      priority: 0.8,
     },
   ]
 }

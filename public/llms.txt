@@ -1,39 +1,25 @@
 # Brijeshkumar Yadav
 
-> Full Stack Engineer.
-
-This file follows the [llms.txt specification](https://llmstxt.org), a proposed standard that helps AI language models and agents understand a website's content and structure.
-
-## Summary
-
-I'm a Full Stack Engineer who builds products end to end.
-
-I have 5+ years of experience working across the stack, from frontend to backend, with a focus on reliable engineering and thoughtful solutions.
-
-I use AI to explore solutions and accelerate implementation while taking ownership of technical decisions and the quality of what ships.
-
-Reach out to me via [email](mailto:brijeshkumaryadav2026@gmail.com), [LinkedIn](https://linkedin.com/in/brijeshmarch16), [X](https://x.com/brijeshmarch), or [GitHub](https://github.com/brijeshmarch16).
+> Full Stack Engineer with 5+ years of experience working across the frontend and backend, focused on reliable engineering and thoughtful solutions.
 
 ## About me
 
-Hi, I’m Brijeshkumar. I’m a Full Stack Engineer who builds products end to end.
+I'm a Full Stack Engineer with 5+ years of experience working across the stack, from frontend to backend, focused on reliable engineering and thoughtful solutions.
 
-Back in 2020, when schools closed during COVID, I started learning to code.
+I use AI to accelerate implementation while taking ownership of technical decisions and the quality of what I build.
 
-I had no roadmap, no bootcamp, and no degree. I started with YouTube tutorials and learned by building things, making mistakes, and figuring things out along the way.
+💻 How I got here
+Back in 2020, during COVID, I started learning to code through YouTube tutorials.
 
-What began as curiosity slowly became something bigger.
+In 2021, before finishing school, I landed my first job as a Frontend Engineer. Over time, I moved into backend development and grew into a Full Stack Engineer.
 
-In 2021, before finishing school, I landed my first job as a Frontend Engineer.
+Now I'm continuing to build, learn, and explore.
 
-Over time, I moved into backend development and grew into a Full Stack Engineer.
-
-Now, I’m continuing to build, learn, and explore.
+Reach out to me via [email](mailto:brijeshkumaryadav2026@gmail.com), [LinkedIn](https://linkedin.com/in/brijeshmarch16), [X](https://x.com/brijeshmarch), or [GitHub](https://github.com/brijeshmarch16).
 
 ## Projects
 
-### [ReactUseKit](https://reactusekit.vercel.app)
-A collection of reusable React hooks and helpers
+- [ReactUseKit](https://reactusekit.vercel.app): A collection of reusable React hooks and helpers
 
 ## Experience
 
