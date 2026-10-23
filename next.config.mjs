@@ -4,6 +4,7 @@ const config = {
   reactCompiler: true,
   typedRoutes: true,
   experimental: {
+    agentUpgrade: "security",
     typedEnv: true,
     // TS is aliased to @typescript/typescript6 (API for typescript-eslint)
     // with native TS 7 as @typescript/native for `tsc`; Next's CLI checker
