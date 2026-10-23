@@ -5,7 +5,7 @@ const site = {
   name: "brijeshkumaryadav",
   title: "Brijeshkumar Yadav | Full Stack Engineer",
   description:
-    "I'm a Full Stack Engineer with 5+ years of experience working across the stack, from frontend to backend, focused on reliable engineering and thoughtful solutions.",
+    "Full Stack Engineer with 5+ years of experience building reliable web products with TypeScript, React, Next.js and NestJS.",
   url: "https://brijeshkumaryadav.com",
   profileName: "Brijeshkumar Yadav",
   role: "Full Stack Engineer",
@@ -14,7 +14,6 @@ const site = {
   socialLinks: [
     "https://github.com/brijeshmarch16",
     "https://linkedin.com/in/brijeshmarch16",
-    "https://instagram.com/brijeshmarch16",
     "https://x.com/brijeshmarch",
   ],
   xHandle: "@brijeshmarch",

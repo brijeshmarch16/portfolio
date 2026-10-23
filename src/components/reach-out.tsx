@@ -64,7 +64,7 @@ export function ReachOut() {
   return (
     <nav
       aria-label="Social links"
-      className="mt-7 flex flex-wrap items-center gap-2"
+      className="flex flex-wrap items-center gap-2"
     >
       {social.map((item) =>
         item.label === "Email" ? (
@@ -73,7 +73,8 @@ export function ReachOut() {
               <Button
                 type="button"
                 variant="outline"
-                size="icon-lg"
+                size="icon"
+                className="rounded-full border-border bg-muted text-card-foreground shadow-none hover:bg-secondary hover:text-card-foreground"
                 onClick={copyEmail}
                 aria-label={copied ? "Email copied" : "Copy email address"}
               >
@@ -94,7 +95,12 @@ export function ReachOut() {
         ) : (
           <Tooltip key={item.label}>
             <TooltipTrigger asChild>
-              <Button asChild variant="outline" size="icon-lg">
+              <Button
+                asChild
+                variant="outline"
+                size="icon"
+                className="rounded-full border-border bg-muted text-card-foreground shadow-none hover:bg-secondary hover:text-card-foreground"
+              >
                 <a
                   href={item.href}
                   target="_blank"

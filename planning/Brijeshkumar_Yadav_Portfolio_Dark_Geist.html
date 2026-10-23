@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html data-theme="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<title>Brijeshkumar Yadav | Full Stack Engineer (React, Next.js, Node.js)</title>
+<meta content="Full Stack Engineer with 5+ years of experience building reliable web products with TypeScript, React, Next.js and NestJS." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --bg:#111112; --text:#dedee1; --strong:#fafafa; --muted:#a0a0a6;
+  --soft:#1b1b1d; --line:#303033; --chip:#242427;
+  --purple:#b5a0ff; --blue:#8caaff; --green:#91d39c;
+  --amber:#e8c46b; --pink:#f0a0ca; --amber-bg:#302817;
+  box-sizing:border-box; color-scheme:dark;
+}
+
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.78 "Geist",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:42rem;margin-inline:auto;padding:3rem 1.25rem 2.5rem}
+h1,h2,h3{font-family:"Geist",system-ui,sans-serif;color:var(--strong);margin:0}
+h1{font-size:clamp(2.35rem,7vw,3.4rem);font-weight:800;letter-spacing:-.065em;line-height:1.04}
+.role{color:var(--muted);font-size:.98rem;margin:12px 0 28px}
+.intro{font-size:1.04rem;line-height:1.85;max-width:64ch;margin:0 0 15px}
+.hl{font-weight:600}.hl svg{width:.92em;height:.92em;vertical-align:-.1em;margin-left:.13em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.purple{color:var(--purple)}.blue{color:var(--blue)}.green{color:var(--green)}.amber{color:var(--amber)}.pink{color:var(--pink)}
+.chip{display:inline-block;padding:3px 10px;border:1px solid var(--line);border-radius:999px;background:var(--soft);color:var(--strong);text-decoration:none;font-size:.9em;font-weight:500;overflow-wrap:anywhere}
+.section-block{margin-top:4.5rem}
+.section-heading{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 12px;margin-bottom:1.25rem}
+.section-heading h2{font-size:1.08rem;line-height:1.3;letter-spacing:-.025em;font-weight:700;text-transform:none}
+.eyebrow{display:block;width:100%;font-family:"Geist Mono",ui-monospace,monospace;font-size:.7rem;letter-spacing:.12em;font-weight:700;color:var(--muted);line-height:1.4}
+p{max-width:66ch;margin:0 0 16px}
+.story p{margin-bottom:14px}.story p:last-child{margin-bottom:0}
+.skills{margin:0}
+.skills div{display:grid;grid-template-columns:112px minmax(0,1fr);gap:16px;padding:12px 14px;border-radius:10px}
+.skills div{background:transparent!important}
+.skills dt{font-size:.9rem;color:var(--muted);font-weight:500}.skills dd{margin:0;color:var(--strong);font-size:.94rem;overflow-wrap:anywhere;line-height:1.65}
+.work-section a.work{display:block;padding:22px;border:1px solid var(--line);border-radius:16px;background:var(--soft);text-decoration:none;transition:transform .18s ease,border-color .18s ease}
+.work-section a.work:hover{transform:translateY(-2px);border-color:var(--muted)}
+.work h3{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:1.08rem}.work h3 svg{width:20px;height:20px;stroke:var(--muted);fill:none;stroke-width:2;flex:none}.work p{margin:7px 0 0;color:var(--muted);font-size:.94rem}
+.exp{list-style:none;margin:0;padding:0}.exp li{display:flex;align-items:center;gap:0;padding:14px 0;border-radius:0}.exp li:nth-child(odd){background:transparent}
+
+.exp .who{flex:1;min-width:0}.exp b{display:block;font-weight:600;color:var(--strong);line-height:1.4}.exp .sub{display:block;color:var(--muted);font-size:.88rem;margin-top:3px;line-height:1.45}.exp .when{color:var(--muted);font-size:.82rem;max-width:100px;white-space:normal;text-align:right;line-height:1.4}
+.badge{border:1px solid var(--line);border-radius:999px;background:var(--soft);color:var(--muted);font-size:.78rem;font-weight:600;padding:4px 10px;white-space:nowrap}
+.quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.quote{display:flex;flex-direction:column;justify-content:space-between;min-width:0;padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--soft)}
+.quote p{font-size:.94rem;line-height:1.72;color:var(--strong);margin:0 0 16px}.quote cite{font-size:.82rem;color:var(--muted);font-style:normal;line-height:1.5}.quote cite b{color:var(--strong);font-weight:600}
+.links{display:flex;flex-wrap:wrap;gap:9px;padding:0}.links a{display:inline-block;padding:7px 13px;border:1px solid var(--line);border-radius:999px;background:var(--soft);color:var(--strong);text-decoration:none;font-size:.88rem;overflow-wrap:anywhere}.links a:hover{background:var(--chip)}
+footer{margin-top:4rem;padding-top:1rem;color:var(--muted);font-size:.84rem}
+@media(max-width:480px){main{padding:2rem 1rem 2rem}h1{font-size:clamp(2.15rem,10vw,2.8rem)}.intro{font-size:1rem;line-height:1.8}.section-block{margin-top:3.5rem}.section-heading{margin-bottom:1rem}.skills div{grid-template-columns:1fr;gap:2px;padding:11px 12px}.quotes{grid-template-columns:1fr}.quote{padding:18px}.exp li{align-items:flex-start;gap:10px;padding:12px 7px}.tile{width:36px;height:36px}.exp .when{max-width:84px;font-size:.76rem}.work-section a.work{padding:19px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
+</style>
+</head>
+<body>
+<main class="mx-auto w-full max-w-2xl px-5 py-12 sm:px-8 sm:py-16">
+<header>
+<h1>Brijeshkumar Yadav</h1>
+<div class="role">Full Stack Engineer</div>
+<p class="intro">I’m a Full Stack Engineer with 5+ years of experience working <span class="hl blue">across the stack<svg viewbox="0 0 24 24"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"></path><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"></path></svg></span>, from frontend to backend, focused on <span class="hl green">reliable engineering<svg viewbox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg></span> and <span class="hl amber">thoughtful solutions<svg viewbox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg></span>.</p>
+<p class="intro">I use <span class="hl purple">AI to accelerate implementation<svg viewbox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"></path><path d="M19 17v4M17 19h4"></path></svg></span> while <span class="hl pink">taking ownership<svg viewbox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7z"></path></svg></span> of technical decisions and the quality of what I build.</p>
+<p class="intro">Open to full-time roles and freelance projects. Let’s talk. <a class="chip" href="mailto:brijeshkumaryadav2026@gmail.com">brijeshkumaryadav2026@gmail.com</a></p>
+</header>
+<section class="section-block story">
+<div class="section-heading"><span class="eyebrow">01 / HOW I STARTED MY CODING JOURNEY</span></div>
+<p>Back in 2020, when schools closed during COVID, I started learning to code.</p>
+<p>I had no roadmap, no bootcamp, and no degree. I started with YouTube tutorials and learned by building things, making mistakes, and figuring things out along the way.</p>
+<p>In 2021, before finishing school, I landed my first job as a Frontend Engineer.</p>
+<p>Over time, I moved into backend development and grew into a Full Stack Engineer.</p>
+<p>Now, I’m continuing to build, learn, and explore.</p>
+</section>
+<section class="section-block">
+<div class="section-heading"><span class="eyebrow">02 / SKILL</span></div>
+<dl class="skills">
+<div><dt>Frontend</dt><dd>React, Next.js, TypeScript, JavaScript, Tailwind CSS, shadcn/ui</dd></div>
+<div><dt>Backend</dt><dd>Node.js, NestJS, REST APIs</dd></div>
+<div><dt>Database</dt><dd>PostgreSQL</dd></div>
+<div><dt>Infrastructure</dt><dd>Docker, Vercel</dd></div>
+<div><dt>AI</dt><dd>Claude, Codex, AI-assisted development</dd></div>
+<div><dt>Development</dt><dd>Git, GitHub, Spec-driven development</dd></div>
+</dl>
+</section>
+<section class="section-block testimonials-section">
+<div class="section-heading"><span class="eyebrow">03 / WHAT PEOPLE SAY ABOUT WORKING WITH ME</span></div>
+<div class="quotes">
+<div class="quote"><p>His combination of technical expertise, leadership, and dedication to excellence makes him one of the best developers I have had the pleasure of working with.</p><cite><b>Ven Vadlamani, CFA</b>, Entrepreneur</cite></div>
+<div class="quote"><p>He consistently transforms static HTML into dynamic, responsive React applications with precision.</p><cite><b>Chetan Mahajan</b>, Founder &amp; CEO, ThingsLinker</cite></div>
+<div class="quote"><p>Working with brijesh on development is really good experience. He has very good knowledge to complete task in timely with quality code.</p><cite><b>Upwork Client</b>, rated 5.0 / 5.0</cite></div>
+<div class="quote"><p>Brijeshkumar did a great job with the CRUD opperations and corresponding UI for my app. He demonstrated an excellent skill set and communicated well. I’m very happy with the result. Recommended.</p><cite><b>Upwork Client</b>, rated 5.0 / 5.0</cite></div>
+<div class="quote"><p>His proficiency in understanding complex problems and swiftly proposing effective solutions sets him apart.</p><cite><b>Shreya Prajapati</b>, Founder &amp; AI Full Stack Engineer</cite></div>
+<div class="quote"><p>He consistently demonstrates a strong commitment to best practices, code maintainability, and project timelines.</p><cite><b>Bala Kodai</b>, Manager, NEWERO Techspot</cite></div>
+</div>
+</section>
+<section class="section-block work-section">
+<div class="section-heading"><span class="eyebrow">04 / SELECTED WORK</span></div>
+<a class="work" href="https://reactusekit.vercel.app">
+<h3>ReactUseKit <svg viewbox="0 0 24 24"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></h3>
+<p>A collection of reusable React hooks and helpers.</p>
+</a>
+</section>
+<section class="section-block experience-section">
+<div class="section-heading"><span class="eyebrow">05 / EXPERIENCE</span></div>
+<ul class="exp">
+<li><div class="who"><b>Freelance</b><span class="sub">Full Stack Engineer</span></div><span class="when">May 2023 to present</span></li>
+<li><div class="who"><b>SolGuruz</b><span class="sub">Full Stack Engineer</span></div><span class="when">Mar 2022 to Apr 2023</span></li>
+<li><div class="who"><b>Emperor Brains</b><span class="sub">Frontend Engineer</span></div><span class="when">May 2021 to Feb 2022</span></li>
+</ul>
+</section>
+<section class="section-block elsewhere-section">
+<div class="section-heading"><span class="eyebrow">06 / ELSEWHERE</span></div>
+<div class="links">
+<a href="https://linkedin.com/in/brijeshmarch16">LinkedIn</a>
+<a href="https://x.com/brijeshmarch">X</a>
+<a href="https://github.com/brijeshmarch16">GitHub</a>
+<a href="mailto:brijeshkumaryadav2026@gmail.com">brijeshkumaryadav2026@gmail.com</a>
+</div>
+</section>
+<footer>© 2026 Brijeshkumar Yadav</footer>
+</main>
+</body>
+</html>
