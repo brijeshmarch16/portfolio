@@ -35,7 +35,7 @@ export function Skills() {
             className="grid grid-cols-1 gap-1 rounded-lg py-3 min-[481px]:grid-cols-[112px_minmax(0,1fr)] min-[481px]:gap-4"
           >
             <dt className="text-sm text-muted-foreground">{skill.category}</dt>
-            <dd className="m-0 text-[0.94rem] leading-relaxed break-words text-card-foreground">
+            <dd className="m-0 text-[0.94rem] leading-relaxed wrap-break-word text-card-foreground">
               {skill.items}
             </dd>
           </div>
