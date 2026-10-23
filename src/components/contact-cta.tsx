@@ -33,7 +33,7 @@ export function ContactCta() {
         </a>
         .{" "}
         <span className="inline-flex max-w-full items-center gap-1 rounded-full border border-border bg-secondary px-2 py-0.5 align-middle text-sm/6 text-card-foreground">
-          <a className="min-w-0 break-all font-medium" href={`mailto:${email}`}>
+          <a className="min-w-0 font-medium break-all" href={`mailto:${email}`}>
             {email}
           </a>
           <Tooltip>
