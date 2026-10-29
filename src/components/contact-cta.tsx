@@ -22,7 +22,7 @@ export function ContactCta() {
   }
 
   return (
-    <div className="mt-6 text-sm/7 text-foreground sm:text-base/8">
+    <div className="mt-6 text-base/8 text-foreground sm:text-[1.04rem]/[1.85]">
       <p>
         Open to full-time roles and freelance projects. Let&apos;s{" "}
         <a

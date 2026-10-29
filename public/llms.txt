@@ -6,9 +6,11 @@ Full Stack Engineer with 5+ years of experience building reliable web products w
 
 ## About me
 
-I'm a Full Stack Engineer with 5+ years of experience working across the stack, from frontend to backend, focused on reliable engineering and thoughtful solutions.
+I'm a Full Stack Engineer with 5+ years of experience building web applications, from frontend interfaces to backend services.
 
-I use AI to accelerate implementation while taking ownership of technical decisions and the quality of what I build.
+I care about how software is built, not just whether it works. I prioritize maintainable architecture, performance, reliable implementations, and thoughtful engineering decisions.
+
+I use agentic coding to accelerate implementation while taking ownership of technical decisions, code quality, and the software I deliver.
 
 ## How I started my coding journey
 

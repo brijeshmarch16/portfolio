@@ -1,4 +1,13 @@
-import { Heart, Layers, Lightbulb, ShieldCheck, Sparkles } from "lucide-react"
+import {
+  CircleCheck,
+  Gauge,
+  Heart,
+  Layers,
+  Lightbulb,
+  Server,
+  ShieldCheck,
+  Sparkles,
+} from "lucide-react"
 import { ContactCta } from "@/components/contact-cta"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
@@ -10,14 +19,14 @@ export function Intro() {
     >
       <header>
         <div className="flex items-center gap-4">
-          <Avatar className="size-20">
+          <Avatar className="size-16">
             <AvatarImage src="/me.png" alt="Brijeshkumar Yadav" />
             <AvatarFallback>BY</AvatarFallback>
           </Avatar>
           <div className="min-w-0">
             <h1
               id="intro-heading"
-              className="text-[clamp(1.8rem,6vw,2.8rem)] leading-[1.04] font-extrabold tracking-[-0.065em] text-card-foreground"
+              className="text-[clamp(1.5rem,6vw,2rem)] leading-[1.04] font-extrabold tracking-[-0.065em] text-card-foreground"
             >
               Brijeshkumar Yadav
             </h1>
@@ -29,31 +38,63 @@ export function Intro() {
 
         <div className="mt-7 space-y-3 text-base/8 text-foreground sm:text-[1.04rem]/[1.85]">
           <p>
-            I&apos;m a Full Stack Engineer with 5+ years of experience working{" "}
+            I&apos;m a Full Stack Engineer with 5+ years of experience building
+            web applications, from{" "}
             <span className="font-semibold text-portfolio-blue">
-              across the stack
+              frontend interfaces{"\u00a0"}
               <Layers
                 aria-hidden="true"
-                className="ml-[0.13em] inline-block size-[0.92em] align-[-0.1em]"
-                strokeWidth={2}
-              />
-            </span>
-            , from frontend to backend, focused on{" "}
-            <span className="font-semibold text-portfolio-green">
-              reliable engineering
-              <ShieldCheck
-                aria-hidden="true"
-                className="ml-[0.13em] inline-block size-[0.92em] align-[-0.1em]"
-                strokeWidth={2}
+                className="inline-block size-[0.82em] align-[-0.1em]"
+                strokeWidth={1.8}
               />
             </span>{" "}
-            and{" "}
+            to{" "}
+            <span className="font-semibold text-portfolio-purple">
+              backend services{"\u00a0"}
+              <Server
+                aria-hidden="true"
+                className="inline-block size-[0.82em] align-[-0.1em]"
+                strokeWidth={1.8}
+              />
+            </span>
+            .
+          </p>
+          <p>
+            I care about how software is built, not just whether it works. I
+            prioritize{" "}
+            <span className="font-semibold text-portfolio-green">
+              maintainable architecture{"\u00a0"}
+              <ShieldCheck
+                aria-hidden="true"
+                className="inline-block size-[0.82em] align-[-0.1em]"
+                strokeWidth={1.8}
+              />
+            </span>
+            ,{" "}
+            <span className="font-semibold text-portfolio-pink">
+              performance{"\u00a0"}
+              <Gauge
+                aria-hidden="true"
+                className="inline-block size-[0.82em] align-[-0.1em]"
+                strokeWidth={1.8}
+              />
+            </span>
+            ,{" "}
+            <span className="font-semibold text-portfolio-blue">
+              reliable implementations{"\u00a0"}
+              <CircleCheck
+                aria-hidden="true"
+                className="inline-block size-[0.82em] align-[-0.1em]"
+                strokeWidth={1.8}
+              />
+            </span>
+            , and{" "}
             <span className="font-semibold text-portfolio-amber">
-              thoughtful solutions
+              thoughtful engineering decisions{"\u00a0"}
               <Lightbulb
                 aria-hidden="true"
-                className="ml-[0.13em] inline-block size-[0.92em] align-[-0.1em]"
-                strokeWidth={2}
+                className="inline-block size-[0.82em] align-[-0.1em]"
+                strokeWidth={1.8}
               />
             </span>
             .
@@ -61,23 +102,23 @@ export function Intro() {
           <p>
             I use{" "}
             <span className="font-semibold text-portfolio-purple">
-              AI to accelerate implementation
+              agentic coding{"\u00a0"}
               <Sparkles
                 aria-hidden="true"
-                className="ml-[0.13em] inline-block size-[0.92em] align-[-0.1em]"
-                strokeWidth={2}
+                className="inline-block size-[0.82em] align-[-0.1em]"
+                strokeWidth={1.8}
               />
             </span>{" "}
-            while{" "}
+            to accelerate implementation while{" "}
             <span className="font-semibold text-portfolio-pink">
-              taking ownership
+              taking ownership{"\u00a0"}
               <Heart
                 aria-hidden="true"
-                className="ml-[0.13em] inline-block size-[0.92em] align-[-0.1em]"
-                strokeWidth={2}
+                className="inline-block size-[0.82em] align-[-0.1em]"
+                strokeWidth={1.8}
               />
             </span>{" "}
-            of technical decisions and the quality of what I build.
+            of technical decisions, code quality, and the software I deliver.
           </p>
         </div>
         <ContactCta />
