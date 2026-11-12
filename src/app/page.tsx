@@ -13,7 +13,7 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(createSiteJsonLd()),
+          __html: JSON.stringify(createSiteJsonLd()).replace(/</g, "\\u003c"),
         }}
       />
       <Intro />
