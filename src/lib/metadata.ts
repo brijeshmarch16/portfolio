@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next"
 
 const site = {
   name: "brijeshkumaryadav",
-  title: "Brijeshkumar Yadav | Full Stack Engineer | Next.js & NestJS",
+  title: "Brijeshkumar Yadav | Full Stack Engineer | React.js, Next.js and Node.js",
   description:
     "Full Stack Engineer with 5+ years of experience building reliable web products with TypeScript, React, Next.js and NestJS.",
   url: "https://brijeshkumaryadav.com",
