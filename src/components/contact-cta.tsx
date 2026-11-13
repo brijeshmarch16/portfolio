@@ -22,7 +22,7 @@ export function ContactCta() {
   }
 
   return (
-    <div className="mt-6 text-sm/[1.8] text-muted-foreground">
+    <div className="mt-6 text-base/[1.6] text-muted-foreground">
       <p>
         Open to full-time roles and freelance projects. Let&apos;s{" "}
         <a
@@ -32,7 +32,7 @@ export function ContactCta() {
           talk
         </a>
         .{" "}
-        <span className="inline-flex max-w-full items-center gap-1 rounded-full border border-border bg-secondary px-2 py-0.5 align-middle text-sm/6 text-card-foreground">
+        <span className="inline-flex max-w-full items-center gap-1 rounded-full border border-border bg-secondary px-2 py-0.5 align-middle text-base/6 text-card-foreground">
           <a className="min-w-0 break-all" href={`mailto:${email}`}>
             {email}
           </a>

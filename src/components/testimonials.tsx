@@ -49,7 +49,7 @@ export function Testimonials() {
     <section aria-labelledby="testimonials-heading" className="mt-18 w-full">
       <h2
         id="testimonials-heading"
-        className="mb-5 text-sm/5 font-normal text-foreground"
+        className="mb-5 text-base/6 font-medium text-foreground"
       >
         Testimonials
       </h2>
@@ -61,12 +61,12 @@ export function Testimonials() {
             className="border-b border-border py-5 first:pt-0 last:border-0"
           >
             <blockquote>
-              <p className="mb-4 text-sm/[1.8] text-muted-foreground">
+              <p className="mb-4 text-base/[1.65] text-muted-foreground">
                 {testimonial.quote}
               </p>
             </blockquote>
-            <figcaption className="text-sm/[1.8] text-muted-foreground">
-              <span className="text-card-foreground">
+            <figcaption className="text-sm/6 text-muted-foreground">
+              <span className="font-medium text-card-foreground">
                 {testimonial.name}
               </span>
               {`, ${testimonial.role}`}
@@ -79,7 +79,7 @@ export function Testimonials() {
           type="button"
           aria-expanded={showAll}
           aria-controls="testimonials-list"
-          className="mt-3 text-sm text-foreground underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
+          className="mt-3 text-base text-foreground underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
           onClick={() => setShowAll((current) => !current)}
         >
           {showAll ? "Show less" : "Show more"}

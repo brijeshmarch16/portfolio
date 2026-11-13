@@ -35,7 +35,7 @@ export function Experience() {
     <section aria-labelledby="experience-heading" className="mt-12 w-full">
       <h2
         id="experience-heading"
-        className="mb-5 text-sm/5 font-normal text-foreground"
+        className="mb-5 text-base/6 font-medium text-foreground"
       >
         Work Experience
       </h2>
@@ -46,11 +46,11 @@ export function Experience() {
             key={`${item.role}-${item.period}`}
             className="grid grid-cols-1 gap-1 py-4 sm:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)] sm:gap-8 sm:py-5"
           >
-            <p className="text-sm/[1.8] text-muted-foreground sm:pt-0.5">
+            <p className="text-sm/6 text-muted-foreground sm:pt-0.5">
               {item.period}
             </p>
             <div>
-              <h3 className="font-sans text-sm/[1.8] font-normal">
+              <h3 className="font-sans text-base/[1.6] font-medium">
                 {item.employerUrl && item.employer ? (
                   <a
                     href={item.employerUrl}
@@ -69,7 +69,7 @@ export function Experience() {
                   item.role
                 )}
               </h3>
-              <p className="mt-0.5 text-sm/[1.8] text-muted-foreground">
+              <p className="mt-0.5 text-sm/6 text-muted-foreground">
                 {item.location}
               </p>
             </div>
