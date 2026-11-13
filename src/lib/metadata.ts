@@ -8,6 +8,7 @@ const site = {
     "I care about how software is built, not just whether it works. I prioritize maintainable architecture, performance, and reliable implementations from frontend interfaces to backend services.",
   url: "https://brijeshkumaryadav.com",
   image: "/me.png",
+  ogImage: "/og-image.png",
   profileName: "Brijeshkumar Yadav",
   role: "Full Stack Engineer",
   company: "Freelance",
@@ -80,7 +81,7 @@ function createMetadata(override: Metadata): Metadata {
       title: override.openGraph?.title ?? override.title ?? undefined,
       description: override.description ?? undefined,
       url: override.openGraph?.url ?? createCanonical("/"),
-      images: override.openGraph?.images ?? [createCanonical(site.image)],
+      images: override.openGraph?.images ?? [createCanonical(site.ogImage)],
       siteName: site.name,
     },
     twitter: {
@@ -89,7 +90,9 @@ function createMetadata(override: Metadata): Metadata {
       creator: site.xHandle,
       title: override.twitter?.title ?? override.title ?? undefined,
       description: override.description ?? undefined,
-      images: override.twitter?.images ?? override.openGraph?.images,
+      images:
+        override.twitter?.images ??
+        override.openGraph?.images ?? [createCanonical(site.ogImage)],
     },
     authors: [{ name: site.profileName, url: site.url }],
     creator: site.profileName,
