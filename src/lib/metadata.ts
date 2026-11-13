@@ -2,11 +2,12 @@ import type { Metadata } from "next"
 import type { MetadataRoute } from "next"
 
 const site = {
-  name: "brijeshkumaryadav",
-  title: "Brijeshkumar Yadav | Full Stack Engineer | React.js, Next.js and Node.js",
+  name: "Brijeshkumar Yadav",
+  title: "Brijeshkumar Yadav — Full Stack Engineer",
   description:
-    "Full Stack Engineer with 5+ years of experience building reliable web products with TypeScript, React, Next.js and NestJS.",
+    "I care about how software is built, not just whether it works. I prioritize maintainable architecture, performance, and reliable implementations from frontend interfaces to backend services.",
   url: "https://brijeshkumaryadav.com",
+  image: "/me.png",
   profileName: "Brijeshkumar Yadav",
   role: "Full Stack Engineer",
   company: "Freelance",
@@ -18,19 +19,15 @@ const site = {
   ],
   xHandle: "@brijeshmarch",
   keywords: [
-    "Freelance",
-    "Full Stack Engineer",
-    "Next.js Developer",
-    "NestJS Developer",
-    "TypeScript Developer",
     "Brijeshkumar Yadav",
-    "Full Stack Developer",
-    "AI-Powered Applications",
-    "Web Application Development",
-    "JavaScript Developer",
-    "React Developer",
+    "Full Stack Engineer",
+    "Freelance Full Stack Engineer",
+    "TypeScript",
+    "React",
     "Next.js Developer",
-    "Node.js Developer",
+    "Node.js",
+    "NestJS",
+    "PostgreSQL",
   ],
 }
 
@@ -53,6 +50,7 @@ type SiteJsonLd = {
       jobTitle: string
       description: string
       email: string
+      image: string
       sameAs: string[]
       knowsAbout: string[]
       worksFor: {
@@ -82,7 +80,7 @@ function createMetadata(override: Metadata): Metadata {
       title: override.openGraph?.title ?? override.title ?? undefined,
       description: override.description ?? undefined,
       url: override.openGraph?.url ?? createCanonical("/"),
-      images: override.openGraph?.images,
+      images: override.openGraph?.images ?? [createCanonical(site.image)],
       siteName: site.name,
     },
     twitter: {
@@ -128,6 +126,9 @@ export function createSiteMetadata(): Metadata {
     {
       title: site.title,
       description: site.description,
+      openGraph: {
+        type: "profile",
+      },
     },
     "/"
   )
@@ -149,6 +150,7 @@ export function createSiteJsonLd(): SiteJsonLd {
         jobTitle: site.role,
         description: site.description,
         email: site.email,
+        image: createCanonical(site.image),
         sameAs: site.socialLinks,
         knowsAbout: [
           "Full Stack Engineer",

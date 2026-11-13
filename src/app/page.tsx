@@ -17,10 +17,10 @@ export default function Home() {
         }}
       />
       <Intro />
+      <Experience />
+      <SelectedWork />
       <Skills />
       <Testimonials />
-      <SelectedWork />
-      <Experience />
       <Elsewhere />
       <SiteFooter />
     </main>

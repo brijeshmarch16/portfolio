@@ -22,18 +22,18 @@ export function ContactCta() {
   }
 
   return (
-    <div className="mt-6 text-base/8 text-foreground sm:text-[1.04rem]/[1.85]">
+    <div className="mt-6 text-sm/[1.8] text-muted-foreground">
       <p>
         Open to full-time roles and freelance projects. Let&apos;s{" "}
         <a
           href={`mailto:${email}`}
-          className="font-semibold text-card-foreground underline decoration-border underline-offset-4 transition-colors hover:decoration-card-foreground"
+          className="text-card-foreground underline decoration-border underline-offset-4 transition-colors hover:decoration-card-foreground"
         >
           talk
         </a>
         .{" "}
         <span className="inline-flex max-w-full items-center gap-1 rounded-full border border-border bg-secondary px-2 py-0.5 align-middle text-sm/6 text-card-foreground">
-          <a className="min-w-0 font-medium break-all" href={`mailto:${email}`}>
+          <a className="min-w-0 break-all" href={`mailto:${email}`}>
             {email}
           </a>
           <Tooltip>

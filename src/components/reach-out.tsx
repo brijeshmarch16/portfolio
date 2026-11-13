@@ -17,10 +17,10 @@ import {
 } from "@/components/ui/tooltip"
 
 const social = [
-  { label: "Email", href: "mailto:brijeshkumaryadav2026@gmail.com" },
   { label: "LinkedIn", href: "https://linkedin.com/in/brijeshmarch16" },
   { label: "X", href: "https://x.com/brijeshmarch", handle: "@brijeshmarch" },
   { label: "GitHub", href: "https://github.com/brijeshmarch16" },
+  { label: "Email", href: "mailto:brijeshkumaryadav2026@gmail.com" },
 ]
 
 function Icon({ label }: { label: string }) {

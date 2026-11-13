@@ -1,51 +1,78 @@
-const experience = [
+import { ArrowUpRight } from "lucide-react"
+
+type ExperienceItem = {
+  role: string
+  employer?: string
+  employerUrl?: string
+  location: string
+  period: string
+}
+
+const experience: ExperienceItem[] = [
   {
-    company: "Freelance",
-    role: "Full Stack Engineer",
-    period: "May 2023 to present",
+    role: "Freelance Full Stack Engineer",
+    location: "Remote",
+    period: "May 2023 – Present",
   },
   {
-    company: "SolGuruz®",
     role: "Full Stack Engineer",
-    period: "Mar 2022 to Apr 2023",
+    employer: "SolGuruz",
+    employerUrl: "https://solguruz.com/",
+    location: "Remote",
+    period: "March 2022 – April 2023",
   },
   {
-    company: "Emperor Brains",
     role: "Frontend Engineer",
-    period: "May 2021 to Feb 2022",
+    employer: "Emperor Brains",
+    employerUrl: "https://www.emperorbrains.com/",
+    location: "Remote",
+    period: "May 2021 – February 2022",
   },
 ]
 
 export function Experience() {
   return (
-    <section
-      aria-labelledby="experience-heading"
-      className="mx-auto mt-18 w-full max-w-3xl px-6"
-    >
+    <section aria-labelledby="experience-heading" className="mt-12 w-full">
       <h2
         id="experience-heading"
-        className="mb-5 font-mono text-xs leading-relaxed font-semibold tracking-[0.12em] text-muted-foreground uppercase"
+        className="mb-5 text-sm/5 font-normal text-foreground"
       >
-        05 / Experience
+        Work Experience
       </h2>
 
       <div>
         {experience.map((item) => (
           <article
-            key={`${item.company}-${item.period}`}
-            className="flex flex-col gap-1 border-b border-border py-4 last:border-0 last:pb-0 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4"
+            key={`${item.role}-${item.period}`}
+            className="grid grid-cols-1 gap-1 py-4 sm:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)] sm:gap-8 sm:py-5"
           >
-            <div>
-              <h3 className="text-lg/6 font-semibold tracking-tight text-card-foreground">
-                {item.company}
-              </h3>
-              <p className="mt-0.5 text-sm/6 text-muted-foreground">
-                {item.role}
-              </p>
-            </div>
-            <p className="font-mono text-xs text-muted-foreground sm:shrink-0">
+            <p className="text-sm/[1.8] text-muted-foreground sm:pt-0.5">
               {item.period}
             </p>
+            <div>
+              <h3 className="font-sans text-sm/[1.8] font-normal">
+                {item.employerUrl && item.employer ? (
+                  <a
+                    href={item.employerUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
+                  >
+                    {item.role} at {item.employer}
+                    <ArrowUpRight
+                      aria-hidden="true"
+                      className="size-3.5 shrink-0 -translate-y-0.5"
+                      strokeWidth={1.4}
+                    />
+                  </a>
+                ) : (
+                  item.role
+                )}
+              </h3>
+              <p className="mt-0.5 text-sm/[1.8] text-muted-foreground">
+                {item.location}
+              </p>
+            </div>
           </article>
         ))}
       </div>

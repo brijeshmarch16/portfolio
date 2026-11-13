@@ -3,45 +3,47 @@ import { ArrowUpRight } from "lucide-react"
 const projects = [
   {
     title: "ReactUseKit",
-    description: "A collection of reusable React hooks and helpers",
-    liveUrl: "https://reactusekit.vercel.app",
+    description: "A collection of reusable React hooks and helpers.",
+    siteUrl: "https://reactusekit.vercel.app",
   },
 ]
 
 export function SelectedWork() {
   return (
-    <section
-      aria-labelledby="selected-work-heading"
-      className="mx-auto mt-18 w-full max-w-3xl px-6"
-    >
+    <section aria-labelledby="selected-work-heading" className="mt-18 w-full">
       <h2
         id="selected-work-heading"
-        className="mb-5 font-mono text-xs leading-relaxed font-semibold tracking-[0.12em] text-muted-foreground uppercase"
+        className="mb-5 text-sm/5 font-normal text-foreground"
       >
-        04 / Selected work
+        Selected Work
       </h2>
 
       {projects.map((project) => (
-        <a
+        <article
           key={project.title}
-          href={project.liveUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center justify-between gap-4 border-b border-border py-4 no-underline last:border-0 focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
+          className="border-b border-border py-4 last:border-0"
         >
           <div className="min-w-0">
-            <h3 className="text-lg/6 font-semibold tracking-tight text-card-foreground">
-              {project.title}
+            <h3 className="flex items-center gap-1 text-sm/[1.8] text-card-foreground">
+              <a
+                href={project.siteUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
+              >
+                {project.title}
+                <ArrowUpRight
+                  aria-hidden="true"
+                  className="size-3.5 shrink-0 -translate-y-0.5"
+                  strokeWidth={1.4}
+                />
+              </a>
             </h3>
-            <p className="mt-0.5 text-sm/6 text-muted-foreground">
+            <p className="mt-0.5 text-sm/[1.8] text-muted-foreground">
               {project.description}
             </p>
           </div>
-          <ArrowUpRight
-            aria-hidden="true"
-            className="size-5 shrink-0 text-muted-foreground"
-          />
-        </a>
+        </article>
       ))}
     </section>
   )
