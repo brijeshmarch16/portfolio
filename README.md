@@ -10,10 +10,6 @@ Portfolio website built with Next.js, React, TypeScript, Tailwind CSS, and shadc
 ![Portfolio Preview – Dark](.github/screenshot-dark.png#gh-dark-mode-only)
 ![Portfolio Preview – Light](.github/screenshot-light.png#gh-light-mode-only)
 
-## Built with
-
-Next.js, React, TypeScript, Tailwind CSS, and shadcn/ui.
-
 ## How to run locally
 
 ```bash
