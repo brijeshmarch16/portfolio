@@ -17,8 +17,8 @@ export default function Home() {
         }}
       />
       <Intro />
-      <Experience />
       <SelectedWork />
+      <Experience />
       <Skills />
       <Testimonials />
       <Elsewhere />
