@@ -43,7 +43,7 @@ export function SelectedWork() {
     <section aria-labelledby="selected-work-heading" className="mt-18 w-full">
       <h2
         id="selected-work-heading"
-        className="mb-5 text-base/6 font-medium text-foreground"
+        className="mb-5 text-[15px]/[18px] font-semibold text-foreground"
       >
         Selected Work
       </h2>
@@ -54,7 +54,7 @@ export function SelectedWork() {
           className="border-b border-border py-4 last:border-0"
         >
           <div className="min-w-0">
-            <h3 className="flex items-center gap-1 text-base/[1.6] font-medium text-card-foreground">
+            <h3 className="flex items-center gap-1 text-[15px]/[20px] font-medium text-card-foreground">
               {project.siteUrl ? (
                 <a
                   href={project.siteUrl}
@@ -73,7 +73,7 @@ export function SelectedWork() {
                 project.title
               )}
             </h3>
-            <p className="mt-0.5 text-base/[1.6] text-muted-foreground">
+            <p className="mt-0.5 text-base/[26px] text-muted-foreground">
               {project.description}
             </p>
           </div>
