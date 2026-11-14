@@ -22,7 +22,7 @@ export function ContactCta() {
   }
 
   return (
-    <div className="mt-6 text-base/[1.6] text-muted-foreground">
+    <div className="mt-6 text-base/[26px] text-muted-foreground">
       <p>
         Open to full-time roles and freelance projects. Let&apos;s{" "}
         <a

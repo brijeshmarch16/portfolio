@@ -49,7 +49,7 @@ export function Testimonials() {
     <section aria-labelledby="testimonials-heading" className="mt-18 w-full">
       <h2
         id="testimonials-heading"
-        className="mb-5 text-base/6 font-medium text-foreground"
+        className="mb-5 text-[15px]/[18px] font-semibold text-foreground"
       >
         Testimonials
       </h2>
@@ -61,7 +61,7 @@ export function Testimonials() {
             className="border-b border-border py-5 first:pt-0 last:border-0"
           >
             <blockquote>
-              <p className="mb-4 text-base/[1.65] text-muted-foreground">
+              <p className="mb-4 text-base/[26px] text-muted-foreground">
                 {testimonial.quote}
               </p>
             </blockquote>
