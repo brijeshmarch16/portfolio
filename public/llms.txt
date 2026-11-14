@@ -4,15 +4,20 @@ Full Stack Engineer
 
 I care about how software is built, not just whether it works. I prioritize maintainable architecture, performance, and reliable implementations from frontend interfaces to backend services.
 
+## Selected Work
+
+- [SpotJob](https://spotjob.ai/): Neighborhood job matching and local clearance deals platform where I built the admin web interface, backend services for the admin web and mobile app, and integrated the admin web APIs.
+- [etBri](https://etbri.com/): Fine and diamond jewellery e-commerce platform where I built the customer storefront and admin panel.
+- [ByulriLife](https://byulrilife.com/): Post-paid funeral service platform with an interactive self-quote calculator where I built the entire web application, backend APIs, and API integrations.
+- [STAY-G](https://stayg.kr/): Hospitality asset management and OTA operations platform where I built the responsive bilingual user interface.
+- BrightEdge: Solar plant monitoring and generation analysis platform where I built the complete admin web application and backend integrations.
+- [ReactUseKit](https://reactusekit.vercel.app): A collection of reusable React hooks and helpers.
+
 ## Work Experience
 
 - **Freelance Full Stack Engineer** — Remote (May 2023–Present)
 - **Full Stack Engineer at SolGuruz** — Remote (March 2022–April 2023)
 - **Frontend Engineer at Emperor Brains** — Remote (May 2021–February 2022)
-
-## Selected Work
-
-- [ReactUseKit](https://reactusekit.vercel.app): A collection of reusable React hooks and helpers.
 
 ## Skills
 
